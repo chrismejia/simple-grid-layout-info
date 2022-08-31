@@ -9,11 +9,11 @@
   --fullhd: 1344px + (2 * var(--gap));
 
   /* Color Variables */
-  --night: #0e0b16;
-  --vivid: #f600ff;
-  --blurple: #7239f2;
+  --vivid: #f81fff;
+  --purp: #9b00a3;
   --jewel: #251796;
-  --stark: #e7dfdd;
+  --plum: #2a2139;
+  --platinum: #e7dfdd;
 
   /* Font Variables */
   --size-1: 4rem;
@@ -35,7 +35,7 @@
   -webkit-text-size-adjust: 100%;
 
   /* Site Universals */
-  color: var(--stark);
+  color: var(--platinum);
   background-image: url(../../what-the-hex-dark.webp);
 }
 
@@ -57,7 +57,7 @@ h6 {
 
 h1 {
   font-size: var(--size-1);
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 h2 {
@@ -77,20 +77,21 @@ h3 {
 }
 
 .dark-text {
-  color: var(--night);
+  color: var(--purp);
 }
 
 .neon-effect {
-  text-shadow: 0 0 3px var(--blurple), 0 0 7px var(--blurple),
-    0 0 13px var(--blurple), 0 0 25px var(--vivid), 0 0 55px var(--vivid),
-    0 0 95px var(--vivid), 0 0 125px var(--vivid), 0 0 155px var(--vivid);
+  text-shadow: 0 0 3px var(--purp), 0 0 7px var(--purp), 0 0 13px var(--purp),
+    0 0 25px var(--vivid), 0 0 55px var(--vivid), 0 0 95px var(--vivid),
+    0 0 125px var(--vivid), 0 0 155px var(--vivid);
 }
 
 code.inline {
-  background-color: var(--jewel);
+  background-color: var(--plum);
   padding: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 p + p {
-  margin-top: 1.5rem;
+  margin-top: 1.15rem;
 }

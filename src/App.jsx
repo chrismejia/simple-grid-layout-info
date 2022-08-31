@@ -1,10 +1,14 @@
 import Header from "./components/Header";
+import ContainerIntro from "./components/ContainerIntro";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Header />
-    </div>
+      <ContainerIntro />
+
+      <section className="container"></section>
+    </main>
   );
 }
 

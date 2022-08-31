@@ -1,27 +1,50 @@
 .code-wrapper {
   margin-top: 2.25rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.code-label {
-  grid-column: 2/-1;
-  padding: 0 1rem;
-  background-color: var(--night);
-  border-width: 2px 2px 0;
-  border-style: solid;
-  border-color: var(--stark);
-}
-
-pre.example-code {
-  grid-column: span 1;
-  margin: 0;
-  padding: 1rem;
-  background-color: var(--jewel);
+  grid-template:
+    "expl label" auto
+    "expl code" 1fr;
+  column-gap: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .explanation {
-  grid-column: span 1;
+  grid-area: expl;
   padding: 1rem;
-  background-color: var(--night);
+  border-radius: 0.75rem;
+  background-color: var(--plum);
+}
+
+.code-label {
+  grid-area: label;
+  padding: 0 1rem;
+  background-color: var(--plum);
+
+  border: 2px solid var(--platinum);
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+pre.example-code {
+  grid-area: code;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--plum);
+
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-left: 2px solid var(--platinum);
+  border-bottom: 2px solid var(--platinum);
+  border-right: 2px solid var(--platinum);
+}
+
+.outer-wrapper {
+  margin: -0.5rem;
+  padding: 0.75rem;
+  border: 2px dotted var(--platinum);
+}
+
+.outer-wrapper .container {
+  background-color: var(--purp);
 }
