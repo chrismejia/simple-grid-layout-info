@@ -1,0 +1,25 @@
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Manage the container's width at different screen widths */
+
+@media (min-width: 1408px) {
+  .container {
+    max-width: calc(var(--fullhd) - 2 * var(--gap));
+  }
+}
+
+@media (min-width: 1216px) and (max-width: 1407px) {
+  .container {
+    max-width: calc(var(--widescreen) - 2 * var(--gap));
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1215px) {
+  .container {
+    max-width: calc(var(--desktop) - 2 * var(--gap));
+  }
+}

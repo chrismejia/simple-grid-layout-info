@@ -1,0 +1,96 @@
+:root {
+  /* Space & Breakpoint Variables */
+  /* 768px (largest mobile size), 960, 1152, 1344 all divisible by 12 and 16 */
+
+  --gap: 32px;
+  --tablet: 769px;
+  --desktop: 960px + (2 * var(--gap));
+  --widescreen: 1152px + (2 * var(--gap));
+  --fullhd: 1344px + (2 * var(--gap));
+
+  /* Color Variables */
+  --night: #0e0b16;
+  --vivid: #f600ff;
+  --blurple: #7239f2;
+  --jewel: #251796;
+  --stark: #e7dfdd;
+
+  /* Font Variables */
+  --size-1: 4rem;
+  --size-2: 3.4rem;
+  --size-3: 2.6rem;
+  --size-4: 1.8rem;
+  --size-5: 1.4rem;
+  --size-6: 1.1rem;
+
+  /* Font Base */
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Site Universals */
+  color: var(--stark);
+  background-image: url(../../what-the-hex-dark.webp);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Font Settings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vampiro One", serif;
+}
+
+h1 {
+  font-size: var(--size-1);
+  padding: 2rem;
+}
+
+h2 {
+  font-size: var(--size-2);
+}
+
+h3 {
+  font-size: var(--size-3);
+}
+
+.title {
+  font-weight: bold;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.dark-text {
+  color: var(--night);
+}
+
+.neon-effect {
+  text-shadow: 0 0 3px var(--blurple), 0 0 7px var(--blurple),
+    0 0 13px var(--blurple), 0 0 25px var(--vivid), 0 0 55px var(--vivid),
+    0 0 95px var(--vivid), 0 0 125px var(--vivid), 0 0 155px var(--vivid);
+}
+
+code.inline {
+  background-color: var(--jewel);
+  padding: 0.25rem;
+}
+
+p + p {
+  margin-top: 1.5rem;
+}
