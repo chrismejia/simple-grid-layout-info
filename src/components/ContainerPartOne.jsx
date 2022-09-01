@@ -27,13 +27,11 @@ export default function ContainerPartOne() {
           code={container_jsx}
           codeFilename={"App.jsx"}
           codeLang={"jsx"}
-          preClass={"example-code"}
         />
         <HighlightedCode
           code={container_css}
           codeFilename={"styles/container.css"}
           codeLang={"css"}
-          preClass={"example-code"}
         />
       </CodeWrapper>
     </section>

@@ -31,13 +31,11 @@ export default function ContainerPartTwo() {
           code={index_css}
           codeFilename={"styles/index.css"}
           codeLang={"css"}
-          preClass={"example-code"}
         />
         <HighlightedCode
           code={container_with_media}
           codeFilename={"styles/container.css"}
           codeLang={"css"}
-          preClass={"example-code"}
         />
       </CodeWrapper>
 
