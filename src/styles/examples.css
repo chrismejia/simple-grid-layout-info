@@ -1,9 +1,6 @@
 .code-wrapper {
   margin-top: 1.5rem;
   display: grid;
-  /* grid-template:
-    "expl label" auto
-    "expl code" 1fr; */
 
   column-gap: 1rem;
   padding: 0.75rem;
@@ -16,14 +13,12 @@
 }
 
 .explanation {
-  /* grid-area: expl; */
   padding: 1rem;
   border-radius: 0.75rem;
   background-color: var(--plum);
 }
 
 .code-label {
-  /* grid-area: label; */
   padding: 0 1rem;
   background-color: var(--plum);
 
@@ -33,7 +28,6 @@
 }
 
 pre.example-code {
-  /* grid-area: code; */
   margin: 0;
   padding: 1rem;
   background-color: var(--plum);
@@ -45,13 +39,25 @@ pre.example-code {
   border-right: 2px solid var(--platinum);
 }
 
-.outer-wrapper {
-  margin: -0.5rem;
-  padding: 0.75rem;
+.example-wrapper {
   border: 2px dotted var(--platinum);
+  height: 100px;
+  margin-bottom: 2rem;
 }
 
-.outer-wrapper .container {
+.example-wrapper .ex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  padding: 0;
   background-color: var(--purp);
-  height: 100px;
 }
+
+/* grid-template:
+  "expl label" auto
+  "expl code" 1fr; */
+/* grid-area: expl; */
+/* grid-area: label; */
+/* grid-area: code; */

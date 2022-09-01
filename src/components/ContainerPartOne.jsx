@@ -2,7 +2,7 @@ import HighlightedCode from "./helpers/HighlightedCode";
 import CodeWrapper from "./helpers/CodeWrapper";
 import { container_css, container_jsx } from "../code-examples";
 
-export default function ContainerIntro() {
+export default function ContainerPartOne() {
   return (
     <section className="container">
       <h2>Containers + Grid = Win</h2>

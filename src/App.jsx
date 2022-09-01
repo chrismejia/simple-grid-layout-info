@@ -1,18 +1,21 @@
 import Header from "./components/Header";
-import ContainerIntro from "./components/ContainerIntro";
+import ContainerPartOne from "./components/ContainerPartOne";
+import ContainerPartTwo from "./components/ContainerPartTwo";
+import HighlightedElement from "./components/helpers/HighlightedElement";
 
 function App() {
   return (
     <main className="App">
       <Header />
-      <ContainerIntro />
+      <ContainerPartOne />
 
-      <fieldset className="">
-        <legend>
-          <code className="inline">{`<section className="container"/>`}</code>
-        </legend>
-        <div style={{ margin: 0, backgroundColor: "#9b00a3" }}>p</div>
-      </fieldset>
+      <HighlightedElement elementLabel={`<section className="container"/>`}>
+        <div className="ex-container">
+          <p>This is our container.</p>
+        </div>
+      </HighlightedElement>
+
+      <ContainerPartTwo />
     </main>
   );
 }
