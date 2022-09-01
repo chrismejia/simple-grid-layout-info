@@ -1,5 +1,6 @@
 import HighlightedCode from "./helpers/HighlightedCode";
-import { code_container } from "../code-examples";
+import CodeWrapper from "./helpers/CodeWrapper";
+import { container_css, container_jsx } from "../code-examples";
 
 export default function ContainerIntro() {
   return (
@@ -13,25 +14,20 @@ export default function ContainerIntro() {
         center content. Let's set one up.
       </p>
 
-      <div className="code-wrapper">
-        <div className="explanation">Create the class .container</div>
-        <div className="code-label">
-          <p>container.css</p>
-        </div>
-
+      <CodeWrapper sections={2}>
         <HighlightedCode
-          code={code_container}
+          code={container_jsx}
+          codeFilename={"App.jsx"}
+          codeLang={"jsx"}
+          preClass={"example-code"}
+        />
+        <HighlightedCode
+          code={container_css}
+          codeFilename={"styles/container.css"}
           codeLang={"css"}
           preClass={"example-code"}
         />
-      </div>
-
-      <fieldset className="outer-wrapper">
-        <legend>
-          <code className="inline">{`<section className="container"/>`}</code>
-        </legend>
-        <div className="container">p</div>
-      </fieldset>
+      </CodeWrapper>
     </section>
   );
 }

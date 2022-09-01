@@ -1,7 +1,5 @@
 .container {
-  flex-grow: 1;
   margin: 0 auto;
-  position: relative;
 }
 
 /* Manage the container's width at different screen widths */

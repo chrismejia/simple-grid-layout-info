@@ -7,7 +7,12 @@ function App() {
       <Header />
       <ContainerIntro />
 
-      <section className="container"></section>
+      <fieldset className="">
+        <legend>
+          <code className="inline">{`<section className="container"/>`}</code>
+        </legend>
+        <div style={{ margin: 0, backgroundColor: "#9b00a3" }}>p</div>
+      </fieldset>
     </main>
   );
 }

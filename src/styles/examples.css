@@ -1,23 +1,29 @@
 .code-wrapper {
-  margin-top: 2.25rem;
+  margin-top: 1.5rem;
   display: grid;
-  grid-template:
+  /* grid-template:
     "expl label" auto
-    "expl code" 1fr;
+    "expl code" 1fr; */
+
   column-gap: 1rem;
   padding: 0.75rem;
   margin-bottom: 2rem;
 }
 
+.single-code-block {
+  grid-column: span 1;
+  min-height: 100%;
+}
+
 .explanation {
-  grid-area: expl;
+  /* grid-area: expl; */
   padding: 1rem;
   border-radius: 0.75rem;
   background-color: var(--plum);
 }
 
 .code-label {
-  grid-area: label;
+  /* grid-area: label; */
   padding: 0 1rem;
   background-color: var(--plum);
 
@@ -27,7 +33,7 @@
 }
 
 pre.example-code {
-  grid-area: code;
+  /* grid-area: code; */
   margin: 0;
   padding: 1rem;
   background-color: var(--plum);
@@ -47,4 +53,5 @@ pre.example-code {
 
 .outer-wrapper .container {
   background-color: var(--purp);
+  height: 100px;
 }
