@@ -1,11 +1,12 @@
+/* Three Column Article Example Layout */
 .classic-article-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto auto;
+
+  color: black;
   background-color: burlywood;
   margin-top: 2rem;
   border-radius: 0.75rem;
-  color: black;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -21,26 +22,63 @@
 
 header {
   grid-column: span 12;
+  grid-row: span 1;
   border-bottom: 2px solid black;
 }
 
 .sidebar-left {
   grid-column: span 2;
+  grid-row: span 2;
 }
 
-article {
+.article {
   grid-column: span 8;
+  grid-row: span 2;
 }
 
-.sidebar-right {
+.byline {
   grid-column: span 2;
+  grid-row: span 1;
   text-align: right;
+  height: fit-content;
+  background-color: aqua;
+}
+
+.ad {
+  position: sticky;
+  position: -webkit-sticky;
+  margin: 1.5rem 0 3rem;
+  top: 2rem;
+  padding: 0.75rem;
+  grid-column: span 2;
+  grid-row: span 1;
+  text-align: right;
+}
+
+.ad img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .article {
+    grid-column: span 10;
+  }
+  .sidebar-left {
+    grid-column: span 12;
+    grid-row: 4;
+  }
 }
 
 footer {
   grid-column: span 12;
   border-top: 2px solid black;
 }
+
+/* Recent Photos Collage Example Layout */
 
 .picture-grid {
   display: grid;

@@ -42,13 +42,12 @@ export default function TheGrid() {
 
       <h4>Rows, Columns, All at Once.</h4>
       <p>
-        The simplest grid is one that has just 1 column and 1 row. Let's instead
-        make one with 2 columns.
+        The simplest grid is one that has just 1 column or 1 row; essentially
+        just one cell on the grid. Each of these columns{" "}
+        <code className="inline">fraction (fr)</code> of the full wrapper's
+        width.
       </p>
-      <p>
-        Each of these columns <code className="inline">fraction (fr)</code> of
-        the full wrapper's width.
-      </p>
+      <p></p>
 
       <CodeWrapper sections={1}>
         <HighlightedCode
