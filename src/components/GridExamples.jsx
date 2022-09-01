@@ -68,7 +68,7 @@ export default function GridExamples() {
           <img src="../examples/pexels-3.jpg" alt="Hot Air Balloons" />
         </div>
         <div className="titling">
-          <h3 className="centered-text">Recent Photos</h3>
+          <h4 className="centered-text">Recent Photos</h4>
         </div>
         <div className="side-2">
           <img

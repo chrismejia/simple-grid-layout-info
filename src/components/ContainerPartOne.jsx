@@ -6,7 +6,7 @@ import { container_css, container_jsx } from "../code-examples";
 export default function ContainerPartOne() {
   return (
     <section className="container">
-      <fieldset>
+      <fieldset style={{ display: "inline" }}>
         <legend>The Goal</legend>
         <b>
           Build a container that holds a grid to build layouts using columns,

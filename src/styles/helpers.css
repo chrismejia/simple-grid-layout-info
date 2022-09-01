@@ -62,10 +62,3 @@ pre.example-code {
   padding: 0;
   background-color: var(--purp);
 }
-
-/* grid-template:
-  "expl label" auto
-  "expl code" 1fr; */
-/* grid-area: expl; */
-/* grid-area: label; */
-/* grid-area: code; */
