@@ -63,5 +63,12 @@ export const container_with_media = `.container {
 }`;
 
 export const grid_base = `.grid-wrapper {
-  display: grid
+  display: grid;
+}`;
+
+export const grid_cols_base = `.grid-wrapper-rows-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* for visualization */
 }`;

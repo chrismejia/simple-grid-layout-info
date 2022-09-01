@@ -1,6 +1,6 @@
 import CodeWrapper from "./helpers/CodeWrapper";
 import HighlightedCode from "./helpers/HighlightedCode";
-import { grid_base } from "../code-examples";
+import { grid_base, grid_cols_base } from "../code-examples";
 
 export default function TheGrid() {
   return (
@@ -27,9 +27,8 @@ export default function TheGrid() {
 
       <h3>Building A Grid</h3>
       <p>
-        Start with the container. Next, define the styles for your grid.{" "}
-        <code className="inline">grid</code> itself is a{" "}
-        <code className="inline">display</code> CSS value, like{" "}
+        Start with the grid wrapper. <code className="inline">grid</code> itself
+        is a <code className="inline">display</code> CSS value, like{" "}
         <code className="inline">flex</code>, for flexbox is.
       </p>
 
@@ -41,12 +40,35 @@ export default function TheGrid() {
         />
       </CodeWrapper>
 
+      <h4>Rows, Columns, All at Once.</h4>
       <p>
-        That's all our <code className="inline">grid</code> wrapper needs for
-        now.
+        The simplest grid is one that has just 1 column and 1 row. Let's instead
+        make one with 2 columns.
+      </p>
+      <p>
+        Each of these columns <code className="inline">fraction (fr)</code> of
+        the full wrapper's width.
       </p>
 
-      <p>Next,</p>
+      <CodeWrapper sections={1}>
+        <HighlightedCode
+          code={grid_cols_base}
+          codeFilename={"styles/grid.css"}
+          codeLang={"css"}
+        />
+      </CodeWrapper>
+      {/* <p>
+            Remember the width variables from earlier? That{" "}
+            <code className="inline">12</code> comes into play here; this grid will
+            have 12 columns.
+          </p> */}
+      <h4>Who Needs Code When You Have Eyes?</h4>
+      <p>
+        In what's arguably one of the coolest features that CSS Grid offers, you
+        can dictate your <code className="inline">grid-template</code> just by
+        creating a simple text "array" representing each{" "}
+        <code className="inline">grid-area</code>.
+      </p>
     </section>
   );
 }
