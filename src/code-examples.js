@@ -30,7 +30,13 @@ export const index_css = `:root {
 `;
 
 export const container_with_media = `.container {
+  /* 0 top-bottom margin */
+  /* auto set equal left-right margin */
   margin: 0 auto;
+
+  /* to help visualize */
+  background-color: #9600a3;
+  height: 100px;
 }
 
 /* Touch (<1024px) | full window width; automatic */
@@ -54,4 +60,8 @@ export const container_with_media = `.container {
   .container {
     max-width: calc(var(--fullhd) - 2 * var(--gap));
   }
+}`;
+
+export const grid_base = `.grid-wrapper {
+  display: grid
 }`;

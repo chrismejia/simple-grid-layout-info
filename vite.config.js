@@ -11,6 +11,7 @@ export default defineConfig({
         families: [
           { name: "Fira Code", styles: "wght@400;700" },
           "Vampiro One",
+          { name: "Playfair Display", styles: "wght@400;700" },
         ],
       },
     }),

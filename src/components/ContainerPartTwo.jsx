@@ -39,9 +39,13 @@ export default function ContainerPartTwo() {
         />
       </CodeWrapper>
 
-      <h4 style={{ marginBottom: "2rem" }} href={"#asd"}>
-        Our Container Now
-      </h4>
+      <h4 style={{ marginBottom: "2rem" }}>Our Container Now</h4>
+
+      <p>
+        Don't forget to import the new <code className="inline">index</code> CSS
+        file into your App!
+      </p>
+
       <HighlightedElement elementLabel={`<section className="container" />`}>
         <div className="ex-container">
           <p>
