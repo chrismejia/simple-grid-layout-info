@@ -5,6 +5,14 @@ import { container_css, container_jsx } from "../code-examples";
 export default function ContainerPartOne() {
   return (
     <section className="container">
+      <fieldset>
+        <legend>The Goal</legend>
+        <b>
+          Build a container that holds a grid to build layouts using columns and
+          more.
+        </b>
+      </fieldset>
+
       <h2>Containers + Grid = Win</h2>
       <p>
         Let's start with the <code className="inline">container</code>.

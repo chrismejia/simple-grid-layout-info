@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import ContainerPartOne from "./components/ContainerPartOne";
 import ContainerPartTwo from "./components/ContainerPartTwo";
 import HighlightedElement from "./components/helpers/HighlightedElement";
+import TableOfContents from "./components/helpers/TableOfContents";
 
 function App() {
   return (

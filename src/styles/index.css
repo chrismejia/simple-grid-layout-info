@@ -3,7 +3,6 @@
   /* 768px (largest mobile size), 960, 1152, 1344 all divisible by 12 and 16 */
 
   --gap: 32px;
-  --tablet: 769px;
   --desktop: 960px + (2 * var(--gap));
   --widescreen: 1152px + (2 * var(--gap));
   --fullhd: 1344px + (2 * var(--gap));
@@ -26,7 +25,7 @@
   /* Font Base */
   font-family: "Fira Code", monospace;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -53,15 +52,22 @@ h4,
 h5,
 h6 {
   font-family: "Vampiro One", serif;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 h1 {
   font-size: var(--size-1);
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 h2 {
   font-size: var(--size-2);
+  padding-top: 0;
 }
 
 h3 {
@@ -98,4 +104,30 @@ code.inline {
   background-color: var(--plum);
   padding: 0.25rem;
   border-radius: 0.25rem;
+}
+
+fieldset {
+  border: 3px dotted var(--platinum);
+}
+
+table {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--plum);
+  border-radius: 0.75rem;
+}
+
+th {
+  padding: 0.5rem;
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 4rem;
+}
+
+.App {
+  margin-bottom: 2rem;
 }

@@ -9,7 +9,7 @@ export default defineConfig({
     VitePluginFonts({
       google: {
         families: [
-          { name: "Fira Code", styles: "wght@500;700" },
+          { name: "Fira Code", styles: "wght@400;700" },
           "Vampiro One",
         ],
       },

@@ -1,12 +1,13 @@
 .container {
   margin: 0 auto;
+  padding: 1.5rem;
 }
 
 /* Manage the container's width at different screen widths */
 
-@media (min-width: 1408px) {
+@media (min-width: 1024px) and (max-width: 1215px) {
   .container {
-    max-width: calc(var(--fullhd) - 2 * var(--gap));
+    max-width: calc(var(--desktop) - 2 * var(--gap));
   }
 }
 
@@ -16,8 +17,8 @@
   }
 }
 
-@media (min-width: 960px) and (max-width: 1215px) {
+@media (min-width: 1408px) {
   .container {
-    max-width: calc(var(--desktop) - 2 * var(--gap));
+    max-width: calc(var(--fullhd) - 2 * var(--gap));
   }
 }
