@@ -1,6 +1,8 @@
 import CodeWrapper from "./helpers/CodeWrapper";
 import HighlightedCode from "./helpers/HighlightedCode";
 import HighlightedElement from "./helpers/HighlightedElement";
+import ExternalLink from "./helpers/ExternalLink";
+import SectionReferences from "./helpers/SectionReferences";
 import { index_css, container_with_media } from "../code-examples";
 
 export default function ContainerPartTwo() {
@@ -53,6 +55,38 @@ export default function ContainerPartTwo() {
           </p>
         </div>
       </HighlightedElement>
+
+      <SectionReferences sectionTitle={"More About This Section's Topics"}>
+        <ul>
+          <li>
+            <ExternalLink
+              linkUrl={
+                "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+              }
+              linkText={"[MDN] CSS Variables"}
+            />
+            {" - Official reference doc"}
+          </li>
+          <li>
+            <ExternalLink
+              linkUrl={
+                "https://css-tricks.com/a-complete-guide-to-css-media-queries/"
+              }
+              linkText={"[CSS-Tricks] A Complete Guide to CSS Media Queries"}
+            />
+            {" - Great guide with lots of illustrations and codepen examples"}
+          </li>
+          <li>
+            <ExternalLink
+              linkUrl={"https://bulma.io/documentation/layout/container/"}
+              linkText={"[Bulma] Container docs"}
+            />
+            {
+              " - CSS framework element whose breakpoints I shamelessly stole and swear by"
+            }
+          </li>
+        </ul>
+      </SectionReferences>
     </section>
   );
 }

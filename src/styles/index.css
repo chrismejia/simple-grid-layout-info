@@ -82,6 +82,46 @@ p + p {
   margin-top: 1.15rem;
 }
 
+a.external {
+  /* RESET */
+  text-decoration: none;
+  line-height: 1;
+
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 5px 5px;
+  overflow: hidden;
+  color: var(--platinum);
+  vertical-align: bottom;
+  transition: color 0.3s ease-out;
+}
+
+a.external::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    60deg,
+    var(--platinum) 0%,
+    var(--vivid) 100%
+  );
+  transition: transform 0.25s ease-out;
+}
+
+a.external:hover {
+  color: black;
+}
+a.external:hover::before {
+  transform: translateY(0);
+  transition: transform 0.25s ease-out;
+}
+
 .title {
   font-weight: bold;
 }
@@ -130,4 +170,14 @@ nav {
 
 .App {
   margin-bottom: 2rem;
+}
+
+.container.references {
+  margin-top: 2rem;
+  border: 2px solid var(--vivid);
+  border-radius: 1rem;
+}
+
+.references h4 {
+  margin-top: 0;
 }

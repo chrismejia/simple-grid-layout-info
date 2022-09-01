@@ -1,5 +1,6 @@
 import CodeWrapper from "./helpers/CodeWrapper";
 import HighlightedCode from "./helpers/HighlightedCode";
+import ExternalLink from "./helpers/ExternalLink";
 import { grid_base, grid_cols_base } from "../code-examples";
 
 export default function TheGrid() {
@@ -47,7 +48,14 @@ export default function TheGrid() {
         <code className="inline">fraction (fr)</code> of the full wrapper's
         width.
       </p>
-      <p></p>
+      <p>
+        Text then{" "}
+        <ExternalLink
+          linkUrl={"https://developer.mozilla.org/en-US/"}
+          linkText={"MDN Homepage"}
+        />
+        , then text after.
+      </p>
 
       <CodeWrapper sections={1}>
         <HighlightedCode
