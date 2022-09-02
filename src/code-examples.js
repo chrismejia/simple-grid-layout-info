@@ -33,7 +33,6 @@ export const container_with_media = `.container {
   /* auto set equal left-right margin */
   margin: 0 auto;
 
-  /* to help visualize */
   background-color: #9600a3;
   height: 100px;
 }
@@ -68,6 +67,4 @@ export const grid_base = `.grid-wrapper {
 export const grid_cols_base = `.grid-wrapper-rows-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  /* for visualization */
 }`;

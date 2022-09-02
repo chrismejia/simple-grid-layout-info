@@ -1,8 +1,10 @@
 import CodeWrapper from "./helpers/CodeWrapper";
-import HighlightedCode from "./helpers/HighlightedCode";
 import ExternalLink from "./helpers/ExternalLink";
+import Footnote from "./helpers/Footnote";
+import HighlightedCode from "./helpers/HighlightedCode";
 import SectionReferences from "./helpers/SectionReferences";
 import { grid_base, grid_cols_base } from "../code-examples";
+import InteractiveGridCells from "./helpers/InteractiveGridCells";
 
 export default function TheGrid() {
   return (
@@ -56,10 +58,26 @@ export default function TheGrid() {
         <code className="inline">px/pt</code>,{" "}
         <code className="inline">em/rem</code>, and{" "}
         <code className="inline">vw/vh</code> to designate the size of the
-        grid's rows or columns.
+        grid's rows or columns
+        <Footnote refNum={5} />.
       </p>
 
-      <p>CSS Grid also provides the `fr` unit </p>
+      <p>
+        CSS Grid also provides the <code className="inline">fr</code> unit,
+        which allows for fractional divisions of an area
+        <Footnote refNum={6} />. The neat thing about the{" "}
+        <code className="inline">fr</code> unit is that it saves you the hassle
+        of having to manually calculate the percentage for a grid space.
+      </p>
+
+      <p>
+        If you want two even columns, you could write{" "}
+        <code className="inline">grid-template-columns: 50% 50%;</code>, which
+        gives each column half the grid's width, but you could also write{" "}
+        <code className="inline">grid-template-columns: 1fr 1fr;</code>, which
+        does the same thing: divides the grid's width into two parts and
+        allocates 1 part to each.
+      </p>
 
       <CodeWrapper sections={1}>
         <HighlightedCode
@@ -68,11 +86,13 @@ export default function TheGrid() {
           codeLang={"css"}
         />
       </CodeWrapper>
-      {/* <p>
-            Remember the width variables from earlier? That{" "}
-            <code className="inline">12</code> comes into play here; this grid will
-            have 12 columns.
-          </p> */}
+
+      <p>
+        Want more columns? Just keep adding on widths or fractional parts to the{" "}
+        <code className="inline">grid-template-columns</code>!
+      </p>
+
+      <InteractiveGridCells />
 
       <h4>Who Needs Code When You Have Eyes?</h4>
       <p>
@@ -82,31 +102,29 @@ export default function TheGrid() {
         <code className="inline">grid-area</code>.
       </p>
 
-      <SectionReferences>
-        <ul>
-          <li>
-            <ExternalLink
-              url={
-                "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
-              }
-              label={"[MDN] CSS values and units"}
-              description={"Official reference docs"}
-            />
-          </li>
-          <li>
-            <ExternalLink
-              url={"https://css-tricks.com/introduction-fr-css-unit/"}
-              label={"[CSS-Tricks] An Introduction to the `fr` CSS Unit"}
-              description={"Has useful examples and links to more articles"}
-            />
-          </li>
-          <li>
-            <ExternalLink url={""} label={""} description={""} />
-          </li>
-          <li>
-            <ExternalLink url={""} label={""} description={""} />
-          </li>
-        </ul>
+      <p>
+        Similarly, if you wanted two uneven columns, the right 4x wider than the
+        left, you could set values of <code className="inline">20% 80%</code>,
+        or more simply <code className="inline">1fr 4fr</code>.
+      </p>
+
+      <SectionReferences startRefNum={5}>
+        <ExternalLink
+          url={
+            "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+          }
+          label={"[MDN] CSS values and units"}
+          description={"Official reference docs"}
+          refNum={5}
+        />
+        <ExternalLink
+          url={"https://css-tricks.com/introduction-fr-css-unit/"}
+          label={"[CSS-Tricks] An Introduction to the `fr` CSS Unit"}
+          description={"Has useful examples and links to more articles"}
+          refNum={6}
+        />
+        <ExternalLink url={""} label={""} description={""} />
+        <ExternalLink url={""} label={""} description={""} />
       </SectionReferences>
     </section>
   );
