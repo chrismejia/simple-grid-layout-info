@@ -26,8 +26,7 @@ export const index_css = `:root {
   --desktop: 960px + (2 * var(--gap));
   --widescreen: 1152px + (2 * var(--gap));
   --fullhd: 1344px + (2 * var(--gap));
-}
-`;
+}`;
 
 export const container_with_media = `.container {
   /* 0 top-bottom margin */

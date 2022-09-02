@@ -1,4 +1,6 @@
-/* Three Column Article Example Layout */
+/*
+ * Three Column Article Example Layout
+ */
 .classic-article-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -78,8 +80,9 @@ footer {
   border-top: 2px solid black;
 }
 
-/* Recent Photos Collage Example Layout */
-
+/*
+ * Recent Photos Collage Example Layout
+ */
 .picture-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

@@ -82,7 +82,7 @@ p + p {
   margin-top: 1.15rem;
 }
 
-a.external {
+.external {
   /* RESET */
   text-decoration: none;
   line-height: 1;
@@ -97,7 +97,7 @@ a.external {
   transition: color 0.3s ease-out;
 }
 
-a.external::before {
+.external::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -114,12 +114,16 @@ a.external::before {
   transition: transform 0.25s ease-out;
 }
 
-a.external:hover {
+.external:hover {
   color: black;
 }
-a.external:hover::before {
+.external:hover::before {
   transform: translateY(0);
   transition: transform 0.25s ease-out;
+}
+
+.footnote {
+  color: var(--vivid);
 }
 
 .title {
@@ -147,6 +151,7 @@ code.inline {
 }
 
 fieldset {
+  margin-top: 2rem;
   border: 3px dotted var(--platinum);
 }
 
@@ -183,4 +188,9 @@ nav {
 
 .references h4 {
   margin-top: 0;
+}
+
+table {
+  border: 2px solid white;
+  text-align: center;
 }

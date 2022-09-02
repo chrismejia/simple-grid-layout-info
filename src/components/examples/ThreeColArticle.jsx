@@ -1,10 +1,10 @@
 export default function ThreeColArticle() {
   return (
-    <div class="classic-article-grid">
+    <div className="classic-article-grid">
       <header>
         <h3>Lorem Ipsum Dolor</h3>
       </header>
-      <aside class="sidebar-left">
+      <aside className="sidebar-left">
         <p>
           <b>Recent Articles</b>
         </p>

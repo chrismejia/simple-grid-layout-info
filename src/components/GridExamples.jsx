@@ -9,7 +9,7 @@ export default function GridExamples() {
 
       <ThreeColArticle />
 
-      <p>Or like this photo collage.</p>
+      <p style={{ margin: "2rem 0" }}>Or like this photo collage.</p>
 
       <RecentPhotos />
     </>

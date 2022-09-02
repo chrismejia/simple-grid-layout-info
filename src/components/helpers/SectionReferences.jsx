@@ -1,8 +1,8 @@
-export default function SectionReferences({ children }) {
+export default function SectionReferences({ startRefNum, children }) {
   return (
     <section className="references">
       <h4>More About This Section's Topics</h4>
-      {children}
+      <ol start={startRefNum ? `${startRefNum}` : null}>{children}</ol>
     </section>
   );
 }

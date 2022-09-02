@@ -51,6 +51,16 @@ export default function TheGrid() {
         of both.
       </p>
 
+      <p>
+        Just like other CSS, you can use units like{" "}
+        <code className="inline">px/pt</code>,{" "}
+        <code className="inline">em/rem</code>, and{" "}
+        <code className="inline">vw/vh</code> to designate the size of the
+        grid's rows or columns.
+      </p>
+
+      <p>CSS Grid also provides the `fr` unit </p>
+
       <CodeWrapper sections={1}>
         <HighlightedCode
           code={grid_cols_base}
@@ -63,6 +73,7 @@ export default function TheGrid() {
             <code className="inline">12</code> comes into play here; this grid will
             have 12 columns.
           </p> */}
+
       <h4>Who Needs Code When You Have Eyes?</h4>
       <p>
         In what's arguably one of the coolest features that CSS Grid offers, you
@@ -83,7 +94,11 @@ export default function TheGrid() {
             />
           </li>
           <li>
-            <ExternalLink url={""} label={""} description={""} />
+            <ExternalLink
+              url={"https://css-tricks.com/introduction-fr-css-unit/"}
+              label={"[CSS-Tricks] An Introduction to the `fr` CSS Unit"}
+              description={"Has useful examples and links to more articles"}
+            />
           </li>
           <li>
             <ExternalLink url={""} label={""} description={""} />
