@@ -56,34 +56,48 @@ export default function ContainerPartTwo() {
         </div>
       </HighlightedElement>
 
-      <SectionReferences sectionTitle={"More About This Section's Topics"}>
+      <SectionReferences>
         <ul>
           <li>
             <ExternalLink
-              linkUrl={
+              url={
                 "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
               }
-              linkText={"[MDN] CSS Variables"}
+              label={"[MDN] CSS Variables"}
+              description={"Official reference docs"}
             />
-            {" - Official reference doc"}
+            {" - "}
           </li>
           <li>
             <ExternalLink
-              linkUrl={
+              url={
                 "https://css-tricks.com/a-complete-guide-to-css-media-queries/"
               }
-              linkText={"[CSS-Tricks] A Complete Guide to CSS Media Queries"}
+              label={"[CSS-Tricks] A Complete Guide to CSS Media Queries"}
+              description={
+                "Great guide with lots of illustrations and codepen examples"
+              }
             />
-            {" - Great guide with lots of illustrations and codepen examples"}
           </li>
           <li>
             <ExternalLink
-              linkUrl={"https://bulma.io/documentation/layout/container/"}
-              linkText={"[Bulma] Container docs"}
+              url={
+                "https://bulma.io/documentation/overview/responsiveness/#breakpoints"
+              }
+              label={"[Bulma] Responsive docs"}
+              description={
+                "CSS framework whose breakpoint widths I shamelessly stole and swear by"
+              }
             />
-            {
-              " - CSS framework element whose breakpoints I shamelessly stole and swear by"
-            }
+          </li>
+          <li>
+            <ExternalLink
+              url={"https://bulma.io/documentation/layout/container/"}
+              label={"[Bulma] Container docs"}
+              description={
+                "CSS framework whose container element I shamelessly stole and swear by"
+              }
+            />
           </li>
         </ul>
       </SectionReferences>

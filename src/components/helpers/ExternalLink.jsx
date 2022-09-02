@@ -1,7 +1,10 @@
-export default function ExternalLink({ linkUrl, linkText }) {
+export default function ExternalLink({ url, label, description }) {
   return (
-    <a className="external" target="_blank" rel="noopener" href={linkUrl}>
-      {linkText}
-    </a>
+    <>
+      <a className="external" target="_blank" rel="noopener" href={url}>
+        {label}
+      </a>
+      {` - ${description}`}
+    </>
   );
 }

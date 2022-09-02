@@ -1,7 +1,7 @@
-export default function SectionReferences({ sectionTitle, children }) {
+export default function SectionReferences({ children }) {
   return (
-    <section className="container references">
-      <h4>{sectionTitle}</h4>
+    <section className="references">
+      <h4>More About This Section's Topics</h4>
       {children}
     </section>
   );

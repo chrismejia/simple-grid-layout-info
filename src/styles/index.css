@@ -172,10 +172,13 @@ nav {
   margin-bottom: 2rem;
 }
 
-.container.references {
+.references {
+  padding: 1.5rem;
   margin-top: 2rem;
+
   border: 2px solid var(--vivid);
   border-radius: 1rem;
+  margin-bottom: -2rem;
 }
 
 .references h4 {

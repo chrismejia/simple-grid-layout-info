@@ -1,6 +1,7 @@
 import CodeWrapper from "./helpers/CodeWrapper";
 import HighlightedCode from "./helpers/HighlightedCode";
 import ExternalLink from "./helpers/ExternalLink";
+import SectionReferences from "./helpers/SectionReferences";
 import { grid_base, grid_cols_base } from "../code-examples";
 
 export default function TheGrid() {
@@ -44,17 +45,10 @@ export default function TheGrid() {
       <h4>Rows, Columns, All at Once.</h4>
       <p>
         The simplest grid is one that has just 1 column or 1 row; essentially
-        just one cell on the grid. Each of these columns{" "}
-        <code className="inline">fraction (fr)</code> of the full wrapper's
-        width.
-      </p>
-      <p>
-        Text then{" "}
-        <ExternalLink
-          linkUrl={"https://developer.mozilla.org/en-US/"}
-          linkText={"MDN Homepage"}
-        />
-        , then text after.
+        just one cell on the grid. We can dictate the grid's breakdown using{" "}
+        <code className="inline">grid-template-rows</code>,{" "}
+        <code className="inline">grid-template-columns</code>, or a combination
+        of both.
       </p>
 
       <CodeWrapper sections={1}>
@@ -76,6 +70,29 @@ export default function TheGrid() {
         creating a simple text "array" representing each{" "}
         <code className="inline">grid-area</code>.
       </p>
+
+      <SectionReferences>
+        <ul>
+          <li>
+            <ExternalLink
+              url={
+                "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+              }
+              label={"[MDN] CSS values and units"}
+              description={"Official reference docs"}
+            />
+          </li>
+          <li>
+            <ExternalLink url={""} label={""} description={""} />
+          </li>
+          <li>
+            <ExternalLink url={""} label={""} description={""} />
+          </li>
+          <li>
+            <ExternalLink url={""} label={""} description={""} />
+          </li>
+        </ul>
+      </SectionReferences>
     </section>
   );
 }
