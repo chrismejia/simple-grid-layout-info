@@ -22,8 +22,8 @@ export default function ContainerPartOne() {
       <fieldset style={{ display: "inline" }}>
         <legend>The Goal</legend>
         <b>
-          Build a container that holds a grid to build layouts using columns,
-          spans, and more.
+          Build a container that holds a grid to build layouts using rows,
+          columns, and more.
         </b>
       </fieldset>
 
@@ -36,7 +36,7 @@ export default function ContainerPartOne() {
       <p>
         Our container is meant to act as a utility element that allow you to
         center content
-        <Footnote refNum={1} />. Let's set one up.
+        <Footnote refLabel={1} />. Let's set one up.
       </p>
 
       <CodeWrapper sections={2}>

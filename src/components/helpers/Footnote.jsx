@@ -1,8 +1,8 @@
-export default function Footnote({ refNum }) {
+export default function Footnote({ refLabel }) {
   return (
     <sup>
-      <a className="footnote" href={`#ref-${refNum}`}>
-        <i>{`[${refNum}]`}</i>
+      <a className="footnote" href={`#ref-${refLabel}`}>
+        <i>{`[${refLabel}]`}</i>
       </a>
     </sup>
   );

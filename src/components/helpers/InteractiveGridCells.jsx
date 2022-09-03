@@ -1,15 +1,10 @@
 import { useState } from "react";
 import CodeWrapper from "./CodeWrapper";
 import HighlightedCode from "./HighlightedCode";
-import {
-  inter_css_cols_start,
-  inter_css_cols_end,
-  inter_jsx_cols_start,
-  inter_jsx_cols_end,
-} from "../../code-examples";
+import { inter_jsx_cols_start, inter_jsx_cols_end } from "../../code-examples";
 
-export default function InteractiveGridCells() {
-  const initialCSSCode = inter_css_cols_start + inter_css_cols_end;
+export default function InteractiveGridCells({ cssStart, cssEnd }) {
+  const initialCSSCode = cssStart + cssEnd;
   const initialJSXCode = inter_jsx_cols_start + inter_jsx_cols_end;
 
   const [cssCode, setCSSCode] = useState(initialCSSCode);
@@ -18,7 +13,7 @@ export default function InteractiveGridCells() {
 
   /**
    * Gatekeps interactive column adding/removing function to prevent
-   * too many or too few columns. Hard coded limits set to 2 and 6
+   * too many or too few columns. Hard coded limits set to 1 and 8
    * @function colNumChecker
    * @param {string} operation - one of "add" or "minus"
    */
@@ -26,7 +21,7 @@ export default function InteractiveGridCells() {
     // prelim check to gatekeep too few/too many cols
     let nextCols = operation === "add" ? cols + 1 : cols - 1;
 
-    if (nextCols >= 0 && nextCols <= 5) {
+    if (nextCols >= 0 && nextCols <= 7) {
       adjustExample(nextCols, operation);
     }
   };
@@ -48,7 +43,7 @@ export default function InteractiveGridCells() {
 
     // Edit display CSS code
     const cssFr = " 1fr".repeat(numCols);
-    const updatedCSS = `${inter_css_cols_start}${cssFr}${inter_css_cols_end}`;
+    const updatedCSS = `${cssStart}${cssFr}${cssEnd}`;
     setCSSCode(updatedCSS);
 
     // Set new col count

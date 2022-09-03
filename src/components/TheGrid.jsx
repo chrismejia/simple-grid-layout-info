@@ -3,7 +3,14 @@ import ExternalLink from "./helpers/ExternalLink";
 import Footnote from "./helpers/Footnote";
 import HighlightedCode from "./helpers/HighlightedCode";
 import SectionReferences from "./helpers/SectionReferences";
-import { grid_base, grid_cols_base } from "../code-examples";
+import {
+  grid_base,
+  grid_cols_base,
+  inter_css_cols_start,
+  inter_css_cols_end,
+  css_repeat_cols_start,
+  css_repeat_cols_end,
+} from "../code-examples";
 import InteractiveGridCells from "./helpers/InteractiveGridCells";
 
 export default function TheGrid() {
@@ -59,13 +66,13 @@ export default function TheGrid() {
         <code className="inline">em/rem</code>, and{" "}
         <code className="inline">vw/vh</code> to designate the size of the
         grid's rows or columns
-        <Footnote refNum={5} />.
+        <Footnote refLabel={5} />.
       </p>
 
       <p>
         CSS Grid also provides the <code className="inline">fr</code> unit,
         which allows for fractional divisions of an area
-        <Footnote refNum={6} />. The neat thing about the{" "}
+        <Footnote refLabel={6} />. The neat thing about the{" "}
         <code className="inline">fr</code> unit is that it saves you the hassle
         of having to manually calculate the percentage for a grid space.
       </p>
@@ -93,36 +100,68 @@ export default function TheGrid() {
         columns with <code className="inline">column-gap: 1rem</code>.
       </p>
 
-      <InteractiveGridCells />
+      <InteractiveGridCells
+        cssStart={inter_css_cols_start}
+        cssEnd={inter_css_cols_end}
+      />
 
-      <h4>Who Needs Code When You Have Eyes?</h4>
+      <h3>
+        <del>Don't</del> Repeat Yourself
+      </h3>
+
+      <p>
+        Remember how we made our{" "}
+        <a className="external" href="#breakpoints">
+          container widths divisible by 12
+        </a>
+        ? Well, to have 12 columns, we'd need 12{" "}
+        <code className="inline">1fr</code>, like so:
+      </p>
+
+      <p className="centered-text">
+        <code className="inline">
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+        </code>
+      </p>
+
+      <p>
+        This isn't ideal as it's a pain to write that all out, and it's not easy
+        to understand how many columns you've got in your grid at a glance.
+        Thankfully, you can just <code className="inline">repeat</code>{" "}
+        yourself.
+      </p>
+
+      <p className="centered-text">
+        <code className="inline">grid-template-columns: repeat(12, 1fr)</code>
+      </p>
+
+      <InteractiveGridCells
+        cssStart={css_repeat_cols_start}
+        cssEnd={css_repeat_cols_end}
+      />
+
+      <h3>Who Needs Code When You Have Eyes?</h3>
       <p>
         In what's arguably one of the coolest features that CSS Grid offers, you
-        can dictate your <code className="inline">grid-template</code> just by
+        can dictate a <code className="inline">grid-template</code> just by
         creating a simple text "array" representing each{" "}
         <code className="inline">grid-area</code>.
       </p>
 
-      <p>
-        Similarly, if you wanted two uneven columns, the right 4x wider than the
-        left, you could set values of <code className="inline">20% 80%</code>,
-        or more simply <code className="inline">1fr 4fr</code>.
-      </p>
-
-      <SectionReferences startRefNum={5}>
+      <SectionReferences startrefLabel={5}>
         <ExternalLink
           url={
             "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
           }
           label={"[MDN] CSS values and units"}
           description={"Official reference docs"}
-          refNum={5}
+          refLabel={5}
         />
         <ExternalLink
           url={"https://css-tricks.com/introduction-fr-css-unit/"}
           label={"[CSS-Tricks] An Introduction to the `fr` CSS Unit"}
           description={"Has useful examples and links to more articles"}
-          refNum={6}
+          refLabel={6}
         />
         <ExternalLink url={""} label={""} description={""} />
         <ExternalLink url={""} label={""} description={""} />

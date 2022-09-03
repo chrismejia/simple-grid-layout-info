@@ -82,6 +82,10 @@ p + p {
   margin-top: 1.15rem;
 }
 
+section:last-child {
+  margin-bottom: 2rem;
+}
+
 .external {
   /* RESET */
   text-decoration: none;

@@ -19,17 +19,18 @@ export default function ContainerPartTwo() {
       </p>
       <p>
         We can do this by defining some reusable CSS variables
-        <Footnote refNum={2} /> for some widths and creating some media queries
-        <Footnote refNum={3} />.
+        <Footnote refLabel={2} /> for some widths and creating some media
+        queries
+        <Footnote refLabel={3} />.
       </p>
 
-      <h4>Column Widths & Breakpoints</h4>
+      <h4 id="breakpoints">Column Widths & Breakpoints</h4>
       <p>
         We want our <code className="inline">.container</code> to be able to
         split into as many as 12 columns, to give us a bunch of layout options.
         We can set three breakpoint widths that are divisible by 12 so our grid
         columns have integer column sizes
-        <Footnote refNum={4} />:
+        <Footnote refLabel={4} />:
       </p>
 
       <ul>
@@ -86,7 +87,7 @@ export default function ContainerPartTwo() {
           description={
             "CSS framework whose container element I shamelessly stole and swear by"
           }
-          refNum={1}
+          refLabel={1}
         />
         <ExternalLink
           url={
@@ -94,7 +95,7 @@ export default function ContainerPartTwo() {
           }
           label={"[MDN] CSS Variables"}
           description={"Official reference docs"}
-          refNum={2}
+          refLabel={2}
         />
         <ExternalLink
           url={"https://css-tricks.com/a-complete-guide-to-css-media-queries/"}
@@ -102,7 +103,7 @@ export default function ContainerPartTwo() {
           description={
             "Great guide with lots of illustrations and codepen examples"
           }
-          refNum={3}
+          refLabel={3}
         />
         <ExternalLink
           url={
@@ -112,7 +113,7 @@ export default function ContainerPartTwo() {
           description={
             "CSS framework whose breakpoint widths I shamelessly stole and swear by"
           }
-          refNum={4}
+          refLabel={4}
         />
       </SectionReferences>
     </section>
