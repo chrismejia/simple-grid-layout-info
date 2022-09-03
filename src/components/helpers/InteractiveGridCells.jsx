@@ -1,22 +1,23 @@
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import CodeWrapper from "./CodeWrapper";
 import HighlightedCode from "./HighlightedCode";
+import {
+  inter_css_cols_start,
+  inter_css_cols_end,
+  inter_jsx_cols_start,
+  inter_jsx_cols_end,
+} from "../../code-examples";
 
 export default function InteractiveGridCells() {
-  const baseCode = `.grid-wrapper-rows-cols {
-    display: grid;
+  const initialCSSCode = inter_css_cols_start + inter_css_cols_end;
+  const initialJSXCode = inter_jsx_cols_start + inter_jsx_cols_end;
 
-    /* For this example: 2 col min; 6 col max*/
-    grid-template-columns: 1fr`;
-
-  const codeEnd = "\n}";
-  const initialCode = baseCode + codeEnd;
-
-  const [demoCode, setDemoCode] = useState(initialCode);
-  const [cols, setCols] = useState(1);
+  const [cssCode, setCSSCode] = useState(initialCSSCode);
+  const [jsxCode, setJSXCode] = useState(initialJSXCode);
+  const [cols, setCols] = useState(0);
 
   /**
-   * Gatekeesp interactive column adding/removing function to prevent
+   * Gatekeps interactive column adding/removing function to prevent
    * too many or too few columns. Hard coded limits set to 2 and 6
    * @function colNumChecker
    * @param {string} operation - one of "add" or "minus"
@@ -25,40 +26,60 @@ export default function InteractiveGridCells() {
     // prelim check to gatekeep too few/too many cols
     let nextCols = operation === "add" ? cols + 1 : cols - 1;
 
-    if (nextCols >= 1 && nextCols <= 5) {
+    if (nextCols >= 0 && nextCols <= 5) {
       adjustExample(nextCols, operation);
     }
   };
 
   /**
    * Does three things
-   * 1.
-   * 2. Edits the display code
-   * 3. Updates total column count
-   * @function adj
+   * 1. Edits the display JSX & CSS code
+   * 2. Updates total column count
+   * 3. Adds/removes column to interactive example
+   * @function adjustExample
    * @param {number} numCols - number of cols; received from {@link colNumChecker}
    * @param {string} operation - dictates whether to add/remove columns from .result-grid
    */
   const adjustExample = (numCols, operation) => {
-    // Edit the display code
-    const fractionalCode = " 1fr".repeat(numCols);
-    const updated = `${baseCode}${fractionalCode};\n};`;
-    setDemoCode(updated);
+    // Edit display JSX code
+    const jsxDivs = `\n  <div className="ex-col" />`.repeat(numCols);
+    const updatedJSX = `${inter_jsx_cols_start}${jsxDivs}${inter_jsx_cols_end}`;
+    setJSXCode(updatedJSX);
+
+    // Edit display CSS code
+    const cssFr = " 1fr".repeat(numCols);
+    const updatedCSS = `${inter_css_cols_start}${cssFr}${inter_css_cols_end}`;
+    setCSSCode(updatedCSS);
 
     // Set new col count
     setCols(numCols);
 
-    const element = document.getElementById("all-example-cols");
-    const col = singleCol();
+    // Grab the parent div and one of the column
+    const element = document.getElementById("ex-cols");
+    const col = document.getElementsByClassName("ex-col")[0];
+
+    // Use the
     if (operation === "add") {
-      element.appendChild(col);
+      element.appendChild(col.cloneNode(true));
+    } else {
+      element.removeChild(col);
     }
   };
 
-  const singleCol = () => <div className="ex-col" />;
-
   return (
-    <div className="grid interactive">
+    <>
+      <CodeWrapper sections={2}>
+        <HighlightedCode
+          code={jsxCode}
+          codeFilename={"App.jsx"}
+          codeLang={"jsx"}
+        />
+        <HighlightedCode
+          code={cssCode}
+          codeFilename={"styles/grid.css"}
+          codeLang={"css"}
+        />
+      </CodeWrapper>
       <div className="result-grid">
         <div className="column-controls">
           <button
@@ -66,29 +87,23 @@ export default function InteractiveGridCells() {
               colNumChecker("add");
             }}
           >
-            Add a column
+            Add a Column
           </button>
           <button
             onClick={() => {
               colNumChecker("remove");
             }}
           >
-            Remove a column
+            Remove a Column
           </button>
         </div>
         <div
-          id="all-example-cols"
+          id="ex-cols"
           style={{ gridTemplateColumns: `repeat(${cols + 1}, 1fr)` }}
         >
           <div className="ex-col" />
-          <div className="ex-col" />
         </div>
       </div>
-      <HighlightedCode
-        code={demoCode}
-        codeFilename={"styles/grid.css"}
-        codeLang={"css"}
-      />
-    </div>
+    </>
   );
 }

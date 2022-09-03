@@ -137,24 +137,15 @@ footer {
 
 /* Interactive Grid Cells */
 
-.interactive {
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-}
-
 .result-grid {
-  grid-column: span 1;
+  grid-column: span 2;
 
   display: grid;
-  grid-template-rows: 50px 250px;
+  grid-template-rows: 50px 100px;
   row-gap: 0.75rem;
   padding: 1rem;
   border: 2px solid var(--vivid);
   border-radius: 0.75rem;
-}
-
-.grid.interactive > article {
-  grid-column: span 1;
 }
 
 .column-controls {
@@ -163,13 +154,15 @@ footer {
   column-gap: 1rem;
 }
 
-#all-example-cols {
+#ex-cols {
+  grid-column: span 1;
+
   display: grid;
   column-gap: 1rem;
 }
 
 .ex-col {
   background-color: var(--vivid);
-  border: 2px solid white;
+  border: 2px solid var(--platinum);
   border-radius: 0.75rem;
 }

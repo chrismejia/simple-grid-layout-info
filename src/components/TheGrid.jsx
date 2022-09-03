@@ -89,7 +89,8 @@ export default function TheGrid() {
 
       <p>
         Want more columns? Just keep adding on widths or fractional parts to the{" "}
-        <code className="inline">grid-template-columns</code>!
+        <code className="inline">grid-template-columns</code>! Space out these
+        columns with <code className="inline">column-gap: 1rem</code>.
       </p>
 
       <InteractiveGridCells />

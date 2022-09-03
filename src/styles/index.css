@@ -191,6 +191,15 @@ nav {
 }
 
 table {
-  border: 2px solid white;
+  border: 2px solid var(--platinum);
   text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid var(--platinum);
+  border-radius: 0.75rem;
+  font-family: "Vampiro One", serif;
+  font-size: var(--size4);
+  color: var(--platinum);
 }

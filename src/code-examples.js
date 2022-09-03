@@ -30,14 +30,20 @@ export const index_css = `:root {
 
 export const container_with_media = `.container {
   /* 0 top-bottom margin */
-  /* auto set equal left-right margin */
+  /* equal left-right margin */
   margin: 0 auto;
 
+  /* visual aid */
   background-color: #9600a3;
   height: 100px;
 }
 
 /* Touch (<1024px) | full window width; automatic */
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 
 /* Desktop (1024px to 1215px) | 960px wide */
 @media (min-width: 1024px) and (max-width: 1215px) {
@@ -64,7 +70,20 @@ export const grid_base = `.grid-wrapper {
   display: grid;
 }`;
 
-export const grid_cols_base = `.grid-wrapper-rows-cols {
+export const grid_cols_base = `.grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }`;
+
+export const inter_css_cols_start = `.grid-wrapper {
+    display: grid;
+
+    /* For this example: 1 col min; 6 col max */
+    grid-template-columns: 1fr`;
+
+export const inter_css_cols_end = `;\n    column-gap: 1rem;\n}`;
+
+export const inter_jsx_cols_start = `<div className="ex-cols">
+  <div className="ex-col" />`;
+
+export const inter_jsx_cols_end = `\n</div>`;
