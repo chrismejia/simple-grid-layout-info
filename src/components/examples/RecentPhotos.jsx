@@ -1,6 +1,6 @@
 export default function RecentPhotos() {
   return (
-    <div className="picture-grid">
+    <div className="picture-collage">
       <div className="top-horiz">
         <img
           src="../examples/pexels-1.jpg"
