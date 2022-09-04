@@ -21,11 +21,11 @@ export default function OpenGraphLayout() {
         </div>
 
         <div className="grid og-wrapper">
-          <div className="header"></div>
-          <div className="nav"></div>
-          <div className="content"></div>
-          <div className="og-ad"></div>
-          <div className="footer"></div>
+          <div className="header">Header</div>
+          <div className="nav">Nav</div>
+          <div className="content">Content</div>
+          <div className="og-ad">Ad</div>
+          <div className="footer">Footer</div>
         </div>
       </div>
     </section>
