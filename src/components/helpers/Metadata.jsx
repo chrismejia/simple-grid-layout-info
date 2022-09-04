@@ -11,10 +11,6 @@ export default function Metadata() {
         key="og:description"
         content="Flexbox wishes it could do all this as easily..."
       />
-      <meta
-        property="og:image"
-        content="https://build-css-grid-layouts.netlify.app/og-image.png"
-      />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="https://christianmejia.dev" />
@@ -22,10 +18,6 @@ export default function Metadata() {
       <meta
         name="twitter:description"
         content="Flexbox wishes it could do all this as easily..."
-      />
-      <meta
-        property="twitter:image"
-        content="https://build-css-grid-layouts.netlify.app/og-image.png"
       />
     </Helmet>
   );
