@@ -8,7 +8,7 @@ export default function ContainerPartOne() {
   return (
     <section className="container">
       <h1 className="title centered-text neon-effect">
-        Build Layouts using CSS Grid
+        Build Layouts Using CSS Grid
       </h1>
       <p>You want to build a layout for your pages, but you don't want to:</p>
 
