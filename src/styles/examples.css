@@ -186,8 +186,13 @@ footer {
 }
 
 .twelve-cols div {
+  display: grid;
+  place-items: center;
+  color: var(--platinum);
+  font-weight: bold;
+
   height: 100px;
   border: 2px solid var(--platinum);
   border-radius: 0.75rem;
-  background-color: var(--vivid);
+  background-color: var(--purp);
 }

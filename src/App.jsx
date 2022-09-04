@@ -2,6 +2,7 @@ import ContainerPartOne from "./components/ContainerPartOne";
 import ContainerPartTwo from "./components/ContainerPartTwo";
 import HighlightedElement from "./components/helpers/HighlightedElement";
 import TheGrid from "./components/TheGrid";
+import GridTemplating from "./components/GridTemplating";
 import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       </HighlightedElement>
       <ContainerPartTwo />
       <TheGrid />
+      <GridTemplating />
       <OpenGraphLayout />
     </main>
   );

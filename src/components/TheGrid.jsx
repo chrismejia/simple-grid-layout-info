@@ -104,9 +104,9 @@ export default function TheGrid() {
         cssEnd={inter_css_cols_end}
       />
 
-      <h3>
+      <h4>
         <del>Don't</del> Repeat Yourself
-      </h3>
+      </h4>
 
       <p>
         Remember how we made our{" "}
@@ -135,13 +135,17 @@ export default function TheGrid() {
       </p>
 
       <TwelveColumnGrid />
-      <h3>Who Needs Code When You Have Eyes?</h3>
-      <p>
-        In what's arguably one of the coolest features that CSS Grid offers, you
-        can dictate a <code className="inline">grid-template</code> just by
-        creating a simple text "array" representing each{" "}
-        <code className="inline">grid-area</code>.
-      </p>
+
+      <h4>
+        What happens when you declared columns, but not rows and then insert
+        over the number of rows?
+      </h4>
+
+      <h4>Stacks on Stacks on Stacks (rows)</h4>
+
+      <h4>Mixing Sizes (mixing widths and heights)</h4>
+
+      <h4>Start Here, End There (declaring spans)</h4>
 
       <SectionReferences startRef={5}>
         <ExternalLink
