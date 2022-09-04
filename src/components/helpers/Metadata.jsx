@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-export default function Helmet() {
+export default function Metadata() {
   return (
     <Helmet>
       <meta property="og:title" content="Build Layouts Using CSS Grid" />

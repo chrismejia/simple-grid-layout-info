@@ -1,6 +1,6 @@
 import ContainerPartOne from "./components/ContainerPartOne";
 import ContainerPartTwo from "./components/ContainerPartTwo";
-import Helmet from "./components/helpers/Helmet";
+import Metadata from "./components/helpers/Metadata";
 import HighlightedElement from "./components/helpers/HighlightedElement";
 import TheGrid from "./components/TheGrid";
 import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
@@ -8,7 +8,7 @@ import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
 function App() {
   return (
     <main className="App">
-      <Helmet />
+      <Metadata />
       <ContainerPartOne />
       <HighlightedElement elementLabel={`<section className="container"/>`}>
         <div className="ex-container">
