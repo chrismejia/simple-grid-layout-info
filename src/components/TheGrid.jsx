@@ -8,10 +8,9 @@ import {
   grid_cols_base,
   inter_css_cols_start,
   inter_css_cols_end,
-  css_repeat_cols_start,
-  css_repeat_cols_end,
 } from "../code-examples";
 import InteractiveGridCells from "./helpers/InteractiveGridCells";
+import TwelveColumnGrid from "./examples/TwelveColumnGrid";
 
 export default function TheGrid() {
   return (
@@ -135,11 +134,7 @@ export default function TheGrid() {
         <code className="inline">grid-template-columns: repeat(12, 1fr)</code>
       </p>
 
-      <InteractiveGridCells
-        cssStart={css_repeat_cols_start}
-        cssEnd={css_repeat_cols_end}
-      />
-
+      <TwelveColumnGrid />
       <h3>Who Needs Code When You Have Eyes?</h3>
       <p>
         In what's arguably one of the coolest features that CSS Grid offers, you
@@ -148,7 +143,7 @@ export default function TheGrid() {
         <code className="inline">grid-area</code>.
       </p>
 
-      <SectionReferences startrefLabel={5}>
+      <SectionReferences startRef={5}>
         <ExternalLink
           url={
             "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
