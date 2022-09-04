@@ -8,6 +8,7 @@ export default function Metadata() {
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
+        key="og:description"
         content="Flexbox wishes it could do all this as easily..."
       />
       <meta property="og:image" content={`../og-image.png`} />
