@@ -11,11 +11,16 @@ export default function Metadata() {
         key="og:description"
         content="Flexbox wishes it could do all this as easily..."
       />
-      <meta property="og:image" content={`../og-image.png`} />
+      <meta property="og:image" content="../og-image.png" />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="https://christianmejia.dev" />
       <meta name="twitter:creator" content="Christian Mejia" />
+      <meta
+        name="twitter:description"
+        content="Flexbox wishes it could do all this as easily..."
+      />
+      <meta property="twitter:image" content="../og-image.png" />
     </Helmet>
   );
 }
