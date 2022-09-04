@@ -78,20 +78,13 @@ pre.example-code {
 /* OpenGraphLayout */
 .og-image {
   width: 1158px;
-  height: 588px;
+  height: 498px;
   padding: 1rem;
   gap: 1rem;
 
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   border: 5px solid var(--vivid);
-}
-
-.og-image h1 {
-  font-size: 5rem;
-  padding: 0 1rem;
-  margin-top: 0;
-  line-height: 1.2;
 }
 
 .title-space {
@@ -101,6 +94,13 @@ pre.example-code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.og-image h1 {
+  font-size: 4.5rem;
+  padding: 0 1rem;
+  margin-top: 0;
+  line-height: 1.1;
 }
 
 .og-wrapper {
