@@ -81,7 +81,7 @@ export const inter_css_cols_start = `.grid-columns {
     /* For this example: 1 col min; 8 col max */
     grid-template-columns: 1fr`;
 
-export const inter_css_cols_end = `;\n    column-gap: 1rem;\n}`;
+export const inter_css_cols_end = `;\n    column-gap: .75rem;\n}`;
 
 export const inter_jsx_cols_start = `<div className="grid-columns">
   <div className="ex-col" />`;
@@ -95,5 +95,5 @@ export const css_repeat_cols_start = `.grid-columns {
     grid-template-columns: repeat(`;
 
 export const css_repeat_cols_end = `, 1fr);
-    column-gap: 1rem;
+    column-gap: .75rem;
 }`;
