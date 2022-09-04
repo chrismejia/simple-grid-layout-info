@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CodeWrapper from "./CodeWrapper";
 import HighlightedCode from "./HighlightedCode";
+import addRemoveColumns from "../../utils/addRemoveCols";
 import { inter_jsx_cols_start, inter_jsx_cols_end } from "../../code-examples";
 
 export default function InteractiveGridCells({ cssStart, cssEnd }) {
@@ -49,16 +50,7 @@ export default function InteractiveGridCells({ cssStart, cssEnd }) {
     // Set new col count
     setCols(numCols);
 
-    // Grab the parent div and one of the column
-    const element = document.getElementById("ex-cols");
-    const col = document.getElementsByClassName("ex-col")[0];
-
-    // Use the
-    if (operation === "add") {
-      element.appendChild(col.cloneNode(true));
-    } else {
-      element.removeChild(col);
-    }
+    addRemoveColumns(operation);
   };
 
   return (
