@@ -1,4 +1,6 @@
+import ThreeByThree from "./challenges/01-3x3Grid";
 import Pyramid from "./challenges/02-Pyramid";
+import CelticKnot from "./challenges/05-CelticKnot";
 
 export default function LayoutChallenges() {
   return (
@@ -10,11 +12,13 @@ export default function LayoutChallenges() {
       </h4>
       <ol>
         <li>Build a 3x3 grid.</li>
-        <li>Build a pyramid rows tall.</li>
+        <ThreeByThree />
+        <li>Build a pyramid 3 rows tall.</li>
         <Pyramid />
         <li></li>
         <li></li>
-        <li></li>
+        <li>Build a Celtic Knot</li>
+        <CelticKnot />
       </ol>
     </section>
   );

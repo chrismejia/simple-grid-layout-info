@@ -186,6 +186,7 @@ footer {
 
 .twelve-cols div,
 .four-cols-wide div {
+  grid-auto-flow: row;
   display: grid;
   place-items: center;
   color: var(--platinum);

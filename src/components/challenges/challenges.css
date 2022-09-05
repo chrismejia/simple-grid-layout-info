@@ -1,11 +1,31 @@
 .challenge {
-  margin-top: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
   column-gap: 0.75rem;
   border: 2px solid var(--vivid);
 }
 
+.challenge * {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.filled {
+  background-color: var(--purp);
+}
+
+/* CHALLENGE #1 */
+
+.three-square {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  gap: 1rem;
+}
+
+/* CHALLENGE #2 */
 .pyramid {
-  padding: 2rem;
   height: auto;
   gap: 1rem;
   grid-template:
@@ -18,10 +38,6 @@
 }
 
 .pyramid * {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
   font-weight: bold;
 }
 
@@ -53,4 +69,52 @@
 
 .pyramid .base {
   grid-area: base;
+}
+
+/* Celtic Knot */
+
+.celtic-knot {
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(9, 100px);
+  gap: 0;
+}
+
+.tl-curve {
+  border-top-left-radius: 100%;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+}
+
+.bl-curve {
+  border-bottom-left-radius: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+.tr-curve {
+  border-top-right-radius: 100%;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.br-curve {
+  border-bottom-right-radius: 100%;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.h-segment {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.v-segment {
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.h-overlap {
+  grid-column: span 5;
+  border-top: 5px solid yellow;
+  border-bottom: 5px solid yellow;
 }
