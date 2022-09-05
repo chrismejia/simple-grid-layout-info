@@ -86,6 +86,11 @@ section:last-child {
   margin-bottom: 2rem;
 }
 
+del {
+  padding: 10px;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--vivid);
+}
 .external {
   /* RESET */
   text-decoration: none;
