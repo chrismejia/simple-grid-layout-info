@@ -94,7 +94,6 @@ footer {
  */
 
 .picture-collage {
-  display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 9vw);
   background-color: var(--vivid);
@@ -174,18 +173,19 @@ footer {
   border-radius: 0.75rem;
 }
 
-/* TwelveColumnGrid */
+/* Grid Example Base Styles */
 
-.twelve-cols {
+.twelve-cols,
+.four-cols-wide {
   margin-top: 2rem;
-  grid-template-columns: repeat(12, 1fr);
   column-gap: 0.75rem;
   border: 2px solid var(--vivid);
   padding: 1rem;
   border-radius: 0.75rem;
 }
 
-.twelve-cols div {
+.twelve-cols div,
+.four-cols-wide div {
   display: grid;
   place-items: center;
   color: var(--platinum);
@@ -195,4 +195,16 @@ footer {
   border: 2px solid var(--platinum);
   border-radius: 0.75rem;
   background-color: var(--purp);
+}
+
+/* Specific Grid Examples */
+
+.twelve-cols {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.four-cols-wide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }

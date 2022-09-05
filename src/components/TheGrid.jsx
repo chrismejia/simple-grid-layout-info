@@ -11,6 +11,7 @@ import {
 } from "../code-examples";
 import InteractiveGridCells from "./helpers/InteractiveGridCells";
 import TwelveColumnGrid from "./examples/TwelveColumnGrid";
+import GridFlowExample from "./sections/GridFlowExample";
 
 export default function TheGrid() {
   return (
@@ -50,7 +51,7 @@ export default function TheGrid() {
         />
       </CodeWrapper>
 
-      <h4>Rows, Columns, All at Once.</h4>
+      <h3>Rows, Columns, All at Once.</h3>
       <p>
         The simplest grid is one that has just 1 column or 1 row; essentially
         just one cell on the grid. We can dictate the grid's breakdown using{" "}
@@ -77,7 +78,7 @@ export default function TheGrid() {
       </p>
 
       <p>
-        If you want two even columns, you could write{" "}
+        If you wanted two even columns, you could write{" "}
         <code className="inline">grid-template-columns: 50% 50%;</code>, which
         gives each column half the grid's width, but you could also write{" "}
         <code className="inline">grid-template-columns: 1fr 1fr;</code>, which
@@ -104,9 +105,9 @@ export default function TheGrid() {
         cssEnd={inter_css_cols_end}
       />
 
-      <h4>
+      <h3>
         <del>Don't</del> Repeat Yourself
-      </h4>
+      </h3>
 
       <p>
         Remember how we made our{" "}
@@ -134,14 +135,11 @@ export default function TheGrid() {
         <code className="inline">grid-template-columns: repeat(12, 1fr)</code>
       </p>
 
-      <TwelveColumnGrid />
+      <TwelveColumnGrid numCols={12} />
 
-      <h4>
-        What happens when you declared columns, but not rows and then insert
-        over the number of rows?
-      </h4>
+      <GridFlowExample />
 
-      <h4>Stacks on Stacks on Stacks (rows)</h4>
+      <h3>Stacks on Stacks on Stacks (rows)</h3>
 
       <h4>Mixing Sizes (mixing widths and heights)</h4>
 
