@@ -3,7 +3,10 @@ export const container_jsx = `import "./styles/container.css"
 export default function App() {
   return (
     <section className="container">
-      This is our container.
+      <p>
+        This is our container. It currently extends
+        the full width of your browser window.
+      </p>
     </section>
   )
 }`;
@@ -97,3 +100,17 @@ export const css_repeat_cols_start = `.grid-columns {
 export const css_repeat_cols_end = `, 1fr);
     column-gap: .75rem;
 }`;
+
+export const four_cols_wide_css = `.four-cols-wide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}`;
+
+export const four_cols_wide_jsx = `<div class="four-cols-wide">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+</div>`;

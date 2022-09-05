@@ -1,0 +1,56 @@
+.challenge {
+  margin-top: 2rem;
+  column-gap: 0.75rem;
+  border: 2px solid var(--vivid);
+}
+
+.pyramid {
+  padding: 2rem;
+  height: auto;
+  gap: 1rem;
+  grid-template:
+    ". width width width width width"
+    "height . . tip . ."
+    "height . middle middle middle ."
+    "height base base base base base";
+  grid-template-columns: 50px repeat(5, 1fr);
+  grid-template-rows: 25px repeat(3, 100px);
+}
+
+.pyramid * {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+
+.pyramid *:not(.width):not(.height) {
+  border: 2px solid var(--platinum);
+  background-color: var(--purp);
+}
+
+.pyramid .width {
+  grid-area: width;
+  border-bottom: 2px dotted var(--platinum);
+}
+
+.pyramid .height {
+  height: calc(100% - 0.7rem);
+  grid-area: height;
+  grid-column: 1;
+  grid-row: 2 / span 4;
+  border-right: 2px dotted var(--platinum);
+}
+
+.pyramid .tip {
+  grid-area: tip;
+}
+
+.pyramid .middle {
+  grid-area: middle;
+}
+
+.pyramid .base {
+  grid-area: base;
+}
