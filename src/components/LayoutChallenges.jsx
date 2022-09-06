@@ -1,6 +1,6 @@
 import ThreeByThree from "./challenges/01-3x3Grid";
 import Pyramid from "./challenges/02-Pyramid";
-import CelticKnot from "./challenges/05-CelticKnot";
+import CelticKnot from "./challenges/CelticKnots";
 
 export default function LayoutChallenges() {
   return (
@@ -17,7 +17,11 @@ export default function LayoutChallenges() {
         <Pyramid />
         <li></li>
         <li></li>
-        <li>Build a Celtic Knot</li>
+        <li>Build a Celtic Knot; bonus points for:</li>
+        <ul>
+          <li>rounded corners</li>
+          <li>shadowing to replicate the overlapping lines</li>
+        </ul>
         <CelticKnot />
       </ol>
     </section>
