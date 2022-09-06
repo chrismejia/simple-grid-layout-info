@@ -34,7 +34,7 @@
     "height . middle middle middle ."
     "height base base base base base";
   grid-template-columns: 50px repeat(5, 1fr);
-  grid-template-rows: 25px repeat(3, 100px);
+  grid-template-rows: 2inner 0 repeat(3, 100px);
 }
 
 .pyramid * {
@@ -74,47 +74,48 @@
 /* Celtic Knot */
 
 .celtic-knot {
-  grid-template-columns: repeat(9, 100px);
-  grid-template-rows: repeat(9, 100px);
-  gap: 0;
+  grid-template-columns: repeat(7, 100px);
+  grid-template-rows: repeat(7, 100px);
+  column-gap: 0;
 }
 
 .tl-curve {
   border-top-left-radius: 100%;
-  border-top: 5px solid white;
-  border-left: 5px solid white;
 }
 
 .bl-curve {
   border-bottom-left-radius: 100%;
-  border-bottom: 5px solid white;
-  border-left: 5px solid white;
 }
 
 .tr-curve {
   border-top-right-radius: 100%;
-  border-top: 5px solid white;
-  border-right: 5px solid white;
 }
 
 .br-curve {
   border-bottom-right-radius: 100%;
-  border-bottom: 5px solid white;
-  border-right: 5px solid white;
-}
-
-.h-segment {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-}
-
-.v-segment {
-  border-left: 5px solid white;
-  border-right: 5px solid white;
 }
 
 .h-overlap {
-  grid-column: span 5;
-  border-top: 5px solid yellow;
-  border-bottom: 5px solid yellow;
+  grid-column: span 3;
+  background-color: aqua;
+}
+
+.v-overlap {
+  grid-row: span 3;
+  background-color: grey;
+}
+
+.v-top-inter {
+  border-bottom: 5px solid;
+}
+
+.h-blank {
+  background-color: yellowgreen;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.v-blank {
+  grid-column: span 2;
+  grid-row: span 1;
 }
