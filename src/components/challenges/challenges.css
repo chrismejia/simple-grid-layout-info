@@ -12,8 +12,14 @@
   height: 100%;
 }
 
-.filled {
+.challenge legend {
+  padding: 0.5rem;
+  border: 2px dotted white;
   background-color: var(--purp);
+}
+
+.filled {
+  background-color: var(--vivid);
 }
 
 /* CHALLENGE #1 */
@@ -74,8 +80,8 @@
 /* Celtic Knot */
 
 .celtic-knot {
-  grid-template-columns: repeat(7, 100px);
-  grid-template-rows: repeat(7, 100px);
+  grid-template-columns: repeat(7, 75px);
+  grid-template-rows: repeat(7, 75px);
   column-gap: 0;
 }
 
@@ -97,12 +103,11 @@
 
 .h-overlap {
   grid-column: span 3;
-  background-color: aqua;
 }
 
 .v-overlap {
   grid-row: span 3;
-  background-color: grey;
+  background: grey;
 }
 
 .v-top-inter {
@@ -110,7 +115,6 @@
 }
 
 .h-blank {
-  background-color: yellowgreen;
   grid-column: span 1;
   grid-row: span 2;
 }
@@ -118,4 +122,22 @@
 .v-blank {
   grid-column: span 2;
   grid-row: span 1;
+}
+
+/* Directional gradients to black */
+
+.l-to-black {
+  background: linear-gradient(to right, var(--vivid) 50%, var(--purp));
+}
+
+.r-to-black {
+  background: linear-gradient(to left, var(--vivid) 50%, var(--purp));
+}
+
+.t-to-black {
+  background: linear-gradient(to bottom, var(--vivid) 50%, var(--purp));
+}
+
+.b-to-black {
+  background: linear-gradient(to top, var(--vivid) 50%, var(--purp));
 }
