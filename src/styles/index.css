@@ -87,10 +87,10 @@ section:last-child {
 }
 
 del {
-  padding: 10px;
   text-decoration-thickness: 4px;
   text-decoration-color: var(--vivid);
 }
+
 .external {
   /* RESET */
   text-decoration: none;
@@ -179,7 +179,8 @@ th {
 nav {
   position: sticky;
   position: -webkit-sticky;
-  top: 4rem;
+  top: 3rem;
+  background-image: url(../../memphis-mini-dark.webp);
 }
 
 .App {
@@ -211,4 +212,28 @@ button {
   font-family: "Vampiro One", serif;
   font-size: var(--size-6);
   color: var(--platinum);
+}
+
+.site-nav {
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  padding: 1rem;
+  border: 5px solid var(--platinum);
+  box-shadow: rgba(248, 31, 255, 0.6) -5px 5px,
+    rgba(248, 31, 255, 0.4) -10px 10px, rgba(248, 31, 255, 0.2) -15px 15px,
+    rgba(248, 31, 255, 0.1) -20px 20px, rgba(248, 31, 255, 0.05) -25px 25px;
+}
+.site-nav a {
+  font-size: var(--size-5);
+  color: var(--platinum);
+}
+
+.nav-active {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    60deg,
+    var(--platinum) 0%,
+    var(--vivid) 100%
+  );
 }

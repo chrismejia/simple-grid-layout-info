@@ -1,9 +1,9 @@
 export default function CelticKnot() {
   return (
     <section className="container">
-      <img src={"../celtic-knot.jpg"} alt="" height={200} />
+      <img src={"../square-knot.jpg"} alt="" height={200} />
 
-      <fieldset className="grid challenge celtic-knot">
+      <fieldset className="grid challenge square-knot">
         <legend>CelticKnot.jsx</legend>
         {/* row 1 */}
         <div className="filled tl-curve" />
