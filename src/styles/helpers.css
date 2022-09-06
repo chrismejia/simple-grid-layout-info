@@ -1,5 +1,3 @@
-/*  */
-
 .code-wrapper {
   display: grid;
 
@@ -58,16 +56,18 @@ pre.example-code {
   border-right: 2px solid var(--platinum);
 }
 
-.example-wrapper .ex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*  HightlightedElement.jsx */
+.highlighted-element {
+  margin: 0.75rem 0;
 
-  height: 100px;
+  display: grid;
+  place-items: center;
+
   height: 100%;
   padding: 0;
-  background-color: var(--plum);
+}
 
+.ex-container {
   color: var(--platinum);
   font-size: var(--size-5);
   font-weight: bold;
@@ -146,4 +146,15 @@ pre.example-code {
 
 .footer {
   grid-column: span 3;
+}
+
+/* Layout Challenges */
+
+.single-challenge {
+  grid-template-columns: minmax(200px, max-content) 1fr;
+  column-gap: 2rem;
+}
+
+.single-challenge:not(:first-child) {
+  margin-top: 2rem;
 }

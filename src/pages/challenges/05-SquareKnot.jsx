@@ -1,7 +1,11 @@
+import {
+  regularKnotJSX,
+  regularKnotCSS,
+} from "../../code-samples/ challenge-code";
 import AnswerPageBase from "../../components/helpers/AnswerPageBase";
 
 import CodeWrapper from "../../components/helpers/CodeWrapper";
-import HightlightedCode from "../../components/helpers/HighlightedCode";
+import HighlightedCode from "../../components/helpers/HighlightedCode";
 import HighlightedElement from "../../components/helpers/HighlightedElement";
 
 import RegularKnot from "./knots/RegularKnot";
@@ -12,7 +16,18 @@ export default function PageSquareKnot() {
       <h2>Square Knot</h2>
       <article>
         <h3>Regular Square Knot</h3>
-        <CodeWrapper sections={2}></CodeWrapper>
+        <CodeWrapper sections={2}>
+          <HighlightedCode
+            code={regularKnotJSX}
+            codeFilename={"RegularKnot.jsx"}
+            codeLang={"jsx"}
+          />
+          <HighlightedCode
+            code={regularKnotCSS}
+            codeFilename={"regular-knot.css"}
+            codeLang={"css"}
+          />
+        </CodeWrapper>
         <HighlightedElement elementLabel={"RegularKnot.jsx"}>
           <RegularKnot />
         </HighlightedElement>

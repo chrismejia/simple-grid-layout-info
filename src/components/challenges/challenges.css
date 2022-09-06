@@ -1,68 +1,32 @@
-.challenge {
-  padding: 2rem;
-  margin: 2rem 0;
-  column-gap: 0.75rem;
-  border: 2px solid var(--vivid);
+.filled {
+  background-color: var(--vivid);
 }
 
 .challenge * {
   display: grid;
   place-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.challenge legend {
-  padding: 0.5rem;
-  border: 2px dotted white;
-  background-color: var(--purp);
-}
-
-.filled {
-  background-color: var(--vivid);
+  font-weight: bold;
+  color: black;
 }
 
 /* CHALLENGE #1 */
 
 .three-square {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
   gap: 1rem;
 }
 
 /* CHALLENGE #2 */
 .pyramid {
+  width: 100%;
   height: auto;
-  gap: 1rem;
   grid-template:
-    ". width width width width width"
-    "height . . tip . ."
-    "height . middle middle middle ."
-    "height base base base base base";
-  grid-template-columns: 50px repeat(5, 1fr);
-  grid-template-rows: 2inner 0 repeat(3, 100px);
-}
-
-.pyramid * {
-  font-weight: bold;
-}
-
-.pyramid *:not(.width):not(.height) {
-  border: 2px solid var(--platinum);
-  background-color: var(--purp);
-}
-
-.pyramid .width {
-  grid-area: width;
-  border-bottom: 2px dotted var(--platinum);
-}
-
-.pyramid .height {
-  height: calc(100% - 0.7rem);
-  grid-area: height;
-  grid-column: 1;
-  grid-row: 2 / span 4;
-  border-right: 2px dotted var(--platinum);
+    ". . tip . ."
+    ". middle middle middle ."
+    "base base base base base";
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(3, 100px);
 }
 
 .pyramid .tip {

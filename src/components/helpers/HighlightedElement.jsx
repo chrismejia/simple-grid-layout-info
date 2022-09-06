@@ -1,6 +1,6 @@
 export default function HighlightedElement({ elementLabel, children }) {
   return (
-    <fieldset className="example-wrapper">
+    <fieldset className="highlighted-element">
       <legend>
         <code className="inline">{elementLabel}</code>
       </legend>

@@ -99,3 +99,39 @@ export const regularKnotJSX = `export default function RegularKnot() {
     </section>
   );
 }`;
+
+export const regularKnotCSS = `.grid {
+  display: grid;
+}
+
+.square-knot {
+  grid-template-columns: repeat(7, 125px);
+  grid-template-rows: repeat(7, 125px);
+  column-gap: 0;
+}
+
+.filled {
+  background-color: var(--vivid)
+}
+
+/* Universal blank spaces */
+
+.h-blank {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.v-blank {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* Unstyled Knot Segments */
+
+.knot-3-wide {
+  grid-column: span 3;
+}
+
+.knot-full {
+  grid-column: span 7;
+}`;
