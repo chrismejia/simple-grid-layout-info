@@ -59,12 +59,12 @@ pre.example-code {
 /*  HightlightedElement.jsx */
 .highlighted-element {
   margin: 0.75rem 0;
+  padding: 0 0.75rem;
 
   display: grid;
   place-items: center;
 
   height: 100%;
-  padding: 0;
 }
 
 .ex-container {
@@ -153,6 +153,12 @@ pre.example-code {
 .single-challenge {
   grid-template-columns: minmax(200px, max-content) 1fr;
   column-gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .single-challenge {
+    grid-template-columns: auto;
+  }
 }
 
 .single-challenge:not(:first-child) {

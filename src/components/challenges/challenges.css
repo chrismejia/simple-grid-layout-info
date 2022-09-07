@@ -9,6 +9,10 @@
   color: black;
 }
 
+.challenge-info {
+  grid-template-rows: max-content 3rem;
+}
+
 /* CHALLENGE #1 */
 
 .three-square {
@@ -25,7 +29,7 @@
     ". . tip . ."
     ". middle middle middle ."
     "base base base base base";
-  grid-template-columns: repeat(5, 100px);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 100px);
 }
 

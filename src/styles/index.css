@@ -170,6 +170,8 @@ table {
   width: 100%;
   background-color: var(--plum);
   border-radius: 0.75rem;
+  border: 2px solid var(--platinum);
+  text-align: center;
 }
 
 th {
@@ -181,6 +183,25 @@ nav {
   position: -webkit-sticky;
   top: 3rem;
   background-image: url(../../memphis-mini-dark.webp);
+}
+
+button {
+  background-color: var(--plum);
+  border: 2px solid var(--platinum);
+  border-radius: 0.75rem;
+  font-family: "Vampiro One", serif;
+  font-size: var(--size-6);
+  color: var(--platinum);
+  transition: 0.125s cubic-bezier(0.39, 0.575, 0.565, 1) all;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--jewel);
+}
+
+button:active {
+  background-color: var(--purp);
 }
 
 .App {
@@ -200,20 +221,6 @@ nav {
   margin-top: 0;
 }
 
-table {
-  border: 2px solid var(--platinum);
-  text-align: center;
-}
-
-button {
-  background-color: var(--plum);
-  border: 2px solid var(--platinum);
-  border-radius: 0.75rem;
-  font-family: "Vampiro One", serif;
-  font-size: var(--size-6);
-  color: var(--platinum);
-}
-
 .site-nav {
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
@@ -223,6 +230,7 @@ button {
     rgba(248, 31, 255, 0.4) -10px 10px, rgba(248, 31, 255, 0.2) -15px 15px,
     rgba(248, 31, 255, 0.1) -20px 20px, rgba(248, 31, 255, 0.05) -25px 25px;
 }
+
 .site-nav a {
   font-size: var(--size-5);
   color: var(--platinum);
