@@ -13,8 +13,33 @@ export default function LayoutChallenges() {
       challengeComponent: ThreeByThree,
     },
     pyramid: {
-      challengeText: "Build a pyramid 3 levels high",
-      challengeNum: 1,
+      challengeText: "Build a pyramid 3 levels high.",
+      challengeNum: 2,
+      challengeFileLabel: "Pyramid.jsx",
+      challengeComponent: Pyramid,
+    },
+    staircase: {
+      challengeText: "Build a pyramid 3 levels high.",
+      challengeNum: 3,
+      challengeFileLabel: "Pyramid.jsx",
+      challengeComponent: Pyramid,
+    },
+    brickWall: {
+      challengeText: "Build a pyramid 3 levels high.",
+      challengeNum: 4,
+      challengeFileLabel: "Pyramid.jsx",
+      challengeComponent: Pyramid,
+    },
+    weave: {
+      challengeText: "Build a pyramid 3 levels high.",
+      challengeNum: 5,
+      challengeFileLabel: "Pyramid.jsx",
+      challengeComponent: Pyramid,
+    },
+    squareKnot: {
+      challengeText: "Build a square knot.",
+      extras: [],
+      challengeNum: 6,
       challengeFileLabel: "Pyramid.jsx",
       challengeComponent: Pyramid,
     },
@@ -27,7 +52,7 @@ export default function LayoutChallenges() {
       <SingleChallenge {...allChallengeProps.tic_tac_toe} />
       <SingleChallenge {...allChallengeProps.pyramid} />
 
-      <ol>
+      {/* <ol>
         <li>Build a 3x3 grid.</li>
         <li>Build a pyramid 3 rows tall.</li>
         <li>Build a staircase</li>
@@ -40,7 +65,7 @@ export default function LayoutChallenges() {
           <li>shadowing to replicate the overlapping lines</li>
         </ul>
         <CelticKnot />
-      </ol>
+      </ol> */}
     </section>
   );
 }
