@@ -1,8 +1,8 @@
-import CodeWrapper from "./helpers/CodeWrapper";
-import ExternalLink from "./helpers/ExternalLink";
-import Footnote from "./helpers/Footnote";
-import HighlightedCode from "./helpers/HighlightedCode";
-import SectionReferences from "./helpers/SectionReferences";
+import CodeWrapper from "../helpers/CodeWrapper";
+import ExternalLink from "../helpers/ExternalLink";
+import Footnote from "../helpers/Footnote";
+import HighlightedCode from "../helpers/HighlightedCode";
+import SectionReferences from "../helpers/SectionReferences";
 
 export default function GridTemplating() {
   return (

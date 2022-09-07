@@ -1,5 +1,5 @@
-import ThreeColArticle from "./examples/ThreeColArticle";
-import RecentPhotos from "./examples/RecentPhotos";
+import ThreeColArticle from "../examples/ThreeColArticle";
+import RecentPhotos from "../examples/RecentPhotos";
 
 export default function GridExamples() {
   return (

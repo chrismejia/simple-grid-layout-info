@@ -6,7 +6,7 @@ export default function TwelveColumnGrid() {
   }
 
   return (
-    <article className="grid twelve-cols">
+    <article className="grid outer-border twelve-cols generic-ex">
       {labels.map((num) => (
         <div key={num}>{num}</div>
       ))}

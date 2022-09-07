@@ -1,19 +1,20 @@
-import CodeWrapper from "./helpers/CodeWrapper";
-import ExternalLink from "./helpers/ExternalLink";
-import Footnote from "./helpers/Footnote";
-import HighlightedCode from "./helpers/HighlightedCode";
-import SectionReferences from "./helpers/SectionReferences";
+import CodeWrapper from "../helpers/CodeWrapper";
+import ExternalLink from "../helpers/ExternalLink";
+import Footnote from "../helpers/Footnote";
+import HighlightedCode from "../helpers/HighlightedCode";
+import SectionReferences from "../helpers/SectionReferences";
+import InteractiveGridCells from "../examples/InteractiveGridCells";
+import TwelveColumnGrid from "../examples/TwelveColumnGrid";
+import GridFlowExample from "../sections/GridFlowExample";
+import MindTheGap from "../sections/MindTheGap";
 import {
   grid_base,
   grid_cols_base,
   inter_css_cols_start,
   inter_css_cols_end,
-} from "../code-examples";
-import InteractiveGridCells from "./helpers/InteractiveGridCells";
-import TwelveColumnGrid from "./examples/TwelveColumnGrid";
-import GridFlowExample from "./sections/GridFlowExample";
+} from "../../code-samples/code-examples";
 
-export default function TheGrid() {
+export default function GridBasics() {
   return (
     <section className="container">
       <h2>Enter The Grid</h2>
@@ -22,7 +23,6 @@ export default function TheGrid() {
         you lay content out in rows and columns. It has many features that make
         building complex layouts straightforward.
       </p>
-
       <h3>What is Grid Layout?</h3>
       <p>
         A grid is a collection of horizontal and vertical lines creating a
@@ -35,14 +35,12 @@ export default function TheGrid() {
         A grid will typically have columns, rows, and then gaps between each row
         and column. The gaps are commonly referred to as gutters.
       </p>
-
       <h3>Building A Grid</h3>
       <p>
         Start with the grid wrapper. <code className="inline">grid</code> itself
         is a <code className="inline">display</code> CSS value, like{" "}
         <code className="inline">flex</code>, for flexbox is.
       </p>
-
       <CodeWrapper sections={1}>
         <HighlightedCode
           code={grid_base}
@@ -50,7 +48,6 @@ export default function TheGrid() {
           codeLang={"css"}
         />
       </CodeWrapper>
-
       <h3>Rows, Columns, All at Once.</h3>
       <p>
         The simplest grid is one that has just 1 column or 1 row; essentially
@@ -59,7 +56,6 @@ export default function TheGrid() {
         <code className="inline">grid-template-columns</code>, or a combination
         of both.
       </p>
-
       <p>
         Just like other CSS, you can use units like{" "}
         <code className="inline">px/pt</code>,{" "}
@@ -68,7 +64,6 @@ export default function TheGrid() {
         grid's rows or columns
         <Footnote refLabel={5} />.
       </p>
-
       <p>
         CSS Grid also provides the <code className="inline">fr</code> unit,
         which allows for fractional divisions of an area
@@ -76,7 +71,6 @@ export default function TheGrid() {
         <code className="inline">fr</code> unit is that it saves you the hassle
         of having to manually calculate the percentage for a grid space.
       </p>
-
       <p>
         If you wanted two even columns, you could write{" "}
         <code className="inline">grid-template-columns: 50% 50%;</code>, which
@@ -85,7 +79,6 @@ export default function TheGrid() {
         does the same thing: divides the grid's width into two parts and
         allocates 1 part to each.
       </p>
-
       <CodeWrapper sections={1}>
         <HighlightedCode
           code={grid_cols_base}
@@ -93,22 +86,21 @@ export default function TheGrid() {
           codeLang={"css"}
         />
       </CodeWrapper>
-
       <p>
         Want more columns? Just keep adding on widths or fractional parts to the{" "}
         <code className="inline">grid-template-columns</code>! Space out these
         columns with <code className="inline">column-gap: 1rem</code>.
       </p>
-
       <InteractiveGridCells
         cssStart={inter_css_cols_start}
         cssEnd={inter_css_cols_end}
       />
 
+      <MindTheGap />
+
       <h3>
         <del>Don't</del> Repeat Yourself
       </h3>
-
       <p>
         Remember how we made our{" "}
         <a className="external" href="#breakpoints">
@@ -117,20 +109,17 @@ export default function TheGrid() {
         ? Well, to have 12 columns, we'd need 12{" "}
         <code className="inline">1fr</code>, like so:
       </p>
-
       <p className="centered-text">
         <code className="inline">
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
         </code>
       </p>
-
       <p>
         This isn't ideal as it's a pain to write that all out, and it's not easy
         to understand how many columns you've got in your grid at a glance.
         Thankfully, you can just <code className="inline">repeat</code>{" "}
         yourself.
       </p>
-
       <p className="centered-text">
         <code className="inline">grid-template-columns: repeat(12, 1fr)</code>
       </p>
@@ -140,9 +129,7 @@ export default function TheGrid() {
       <GridFlowExample />
 
       <h3>Stacks on Stacks on Stacks (rows)</h3>
-
       <h4>Mixing Sizes (mixing widths and heights)</h4>
-
       <h4>Start Here, End There (declaring spans)</h4>
 
       <SectionReferences startRef={5}>

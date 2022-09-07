@@ -88,6 +88,21 @@ export const inter_jsx_cols_start = `<div className="grid-columns">
 
 export const inter_jsx_cols_end = `\n</div>`;
 
+/**************************************
+ * MindTheGap.jsx
+ *************************************/
+export const no_gap_jsx = `<div className="grid no-gap outer-border">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>`;
+
+export const no_gap_css = ``;
+
+/**
+ * InteractiveGridCells.jsx
+ */
 export const css_repeat_cols_start = `.grid-columns {
     display: grid;
 
@@ -98,13 +113,16 @@ export const css_repeat_cols_end = `, 1fr);
     column-gap: .75rem;
 }`;
 
-export const four_cols_wide_css = `.four-cols-wide {
+/**************************************
+ * FiveColsFourWide.jsx
+ *************************************/
+export const four_cols_wide_css = `.outer-border {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }`;
 
-export const four_cols_wide_jsx = `<div class="four-cols-wide">
+export const four_cols_wide_jsx = `<div class="outer-border">
   <div>1</div>
   <div>2</div>
   <div>3</div>

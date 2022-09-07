@@ -1,12 +1,13 @@
-import ContainerPartOne from "./components/ContainerPartOne";
-import ContainerPartTwo from "./components/ContainerPartTwo";
-import HighlightedElement from "./components/helpers/HighlightedElement";
-import TheGrid from "./components/TheGrid";
-import GridTemplating from "./components/GridTemplating";
-import LayoutChallenges from "./components/LayoutChallenges";
-import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
+import ContainerPartOne from "./components/chapters/ContainerPartOne";
+import ContainerPartTwo from "./components/chapters/ContainerPartTwo";
+import GridBasics from "./components/chapters/GridBasics";
+import GridTemplating from "./components/chapters/GridTemplating";
+import LayoutChallenges from "./components/chapters/LayoutChallenges";
 
-function App() {
+import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
+import HighlightedElement from "./components/helpers/HighlightedElement";
+
+export default function App() {
   return (
     <main className="App">
       <ContainerPartOne />
@@ -19,12 +20,10 @@ function App() {
         </div>
       </HighlightedElement>
       <ContainerPartTwo />
-      <TheGrid />
+      <GridBasics />
       <GridTemplating />
-      <LayoutChallenges />
+      {/* <LayoutChallenges /> */}
       {/* <OpenGraphLayout /> */}
     </main>
   );
 }
-
-export default App;

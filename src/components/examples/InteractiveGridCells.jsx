@@ -1,8 +1,11 @@
 import { useState } from "react";
-import CodeWrapper from "./CodeWrapper";
-import HighlightedCode from "./HighlightedCode";
+import CodeWrapper from "../helpers/CodeWrapper";
+import HighlightedCode from "../helpers/HighlightedCode";
 import addRemoveColumns from "../../utils/addRemoveCols";
-import { inter_jsx_cols_start, inter_jsx_cols_end } from "../../code-examples";
+import {
+  inter_jsx_cols_start,
+  inter_jsx_cols_end,
+} from "../../code-samples/code-examples";
 
 export default function InteractiveGridCells({ cssStart, cssEnd }) {
   const initialCSSCode = cssStart + cssEnd;

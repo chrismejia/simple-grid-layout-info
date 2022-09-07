@@ -1,11 +1,14 @@
-import CodeWrapper from "./helpers/CodeWrapper";
-import BreakpointWidths from "./BreakpointWidths";
-import HighlightedCode from "./helpers/HighlightedCode";
-import HighlightedElement from "./helpers/HighlightedElement";
-import ExternalLink from "./helpers/ExternalLink";
-import SectionReferences from "./helpers/SectionReferences";
-import Footnote from "./helpers/Footnote";
-import { index_css, container_with_media } from "../code-examples";
+import CodeWrapper from "../helpers/CodeWrapper";
+import BreakpointWidths from "../sections/BreakpointWidths";
+import HighlightedCode from "../helpers/HighlightedCode";
+import HighlightedElement from "../helpers/HighlightedElement";
+import ExternalLink from "../helpers/ExternalLink";
+import SectionReferences from "../helpers/SectionReferences";
+import Footnote from "../helpers/Footnote";
+import {
+  index_css,
+  container_with_media,
+} from "../../code-samples/code-examples";
 
 export default function ContainerPartTwo() {
   return (

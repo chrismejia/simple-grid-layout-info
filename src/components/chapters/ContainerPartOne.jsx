@@ -1,8 +1,8 @@
-import CodeWrapper from "./helpers/CodeWrapper";
-import Footnote from "./helpers/Footnote";
-import GridExamples from "./GridExamples";
-import HighlightedCode from "./helpers/HighlightedCode";
-import { container_css, container_jsx } from "../code-examples";
+import CodeWrapper from "../helpers/CodeWrapper";
+import Footnote from "../helpers/Footnote";
+import GridExamples from "../sections/GridExamples";
+import HighlightedCode from "../helpers/HighlightedCode";
+import { container_css, container_jsx } from "../../code-samples/code-examples";
 
 export default function ContainerPartOne() {
   return (
