@@ -2,7 +2,10 @@ import CodeWrapper from "../helpers/CodeWrapper";
 import Footnote from "../helpers/Footnote";
 import GridExamples from "../sections/GridExamples";
 import HighlightedCode from "../helpers/HighlightedCode";
-import { container_css, container_jsx } from "../../code-samples/code-examples";
+import {
+  full_width_container_css,
+  full_width_container_jsx,
+} from "../../code-samples/ex-fullWidthContainer";
 
 export default function ContainerPartOne() {
   return (
@@ -20,8 +23,8 @@ export default function ContainerPartOne() {
       </ul>
 
       <fieldset style={{ display: "inline" }}>
-        <legend>The Goal</legend>
-        <b>
+        <legend style={{ fontSize: "var(--size-5)" }}>The Goal</legend>
+        <b style={{ fontSize: "var(--size-5)" }}>
           Build a container that holds a grid to build layouts using rows,
           columns, and more.
         </b>
@@ -41,12 +44,12 @@ export default function ContainerPartOne() {
 
       <CodeWrapper sections={2}>
         <HighlightedCode
-          code={container_jsx}
+          code={full_width_container_jsx}
           codeFilename={"App.jsx"}
           codeLang={"jsx"}
         />
         <HighlightedCode
-          code={container_css}
+          code={full_width_container_css}
           codeFilename={"styles/container.css"}
           codeLang={"css"}
         />
