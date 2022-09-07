@@ -8,7 +8,7 @@ export default function TwelveColumnGrid() {
   return (
     <article className="grid twelve-cols">
       {labels.map((num) => (
-        <div>{num}</div>
+        <div key={num}>{num}</div>
       ))}
     </article>
   );
