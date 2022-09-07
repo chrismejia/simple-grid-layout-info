@@ -1,5 +1,6 @@
 import ThreeByThree from "./challenges/01-3x3Grid";
 import Pyramid from "./challenges/02-Pyramid";
+import Staircase from "./challenges/03-Staircase";
 import CelticKnot from "./challenges/CelticKnots";
 
 import SingleChallenge from "./helpers/SingleChallenge";
@@ -7,25 +8,25 @@ import SingleChallenge from "./helpers/SingleChallenge";
 export default function LayoutChallenges() {
   const allChallengeProps = {
     tic_tac_toe: {
-      challengeText: "Build a 3x3 tic-tac-toe board.",
+      challengeText: "Build a 3x3 grid.",
       challengeNum: 1,
       challengeFileLabel: "ThreeByThree.jsx",
       challengeComponent: ThreeByThree,
     },
     pyramid: {
-      challengeText: "Build a pyramid 3 levels high.",
+      challengeText: "Build a pyramid 5 levels high.",
       challengeNum: 2,
       challengeFileLabel: "Pyramid.jsx",
       challengeComponent: Pyramid,
     },
     staircase: {
-      challengeText: "Build a pyramid 3 levels high.",
+      challengeText: "Build an ascending staircase with 7 steps.",
       challengeNum: 3,
       challengeFileLabel: "Pyramid.jsx",
-      challengeComponent: Pyramid,
+      challengeComponent: Staircase,
     },
     brickWall: {
-      challengeText: "Build a pyramid 3 levels high.",
+      challengeText: "Build a pyramid 5 levels high.",
       challengeNum: 4,
       challengeFileLabel: "Pyramid.jsx",
       challengeComponent: Pyramid,
@@ -51,6 +52,7 @@ export default function LayoutChallenges() {
 
       <SingleChallenge {...allChallengeProps.tic_tac_toe} />
       <SingleChallenge {...allChallengeProps.pyramid} />
+      <SingleChallenge {...allChallengeProps.staircase} />
 
       {/* <ol>
         <li>Build a 3x3 grid.</li>

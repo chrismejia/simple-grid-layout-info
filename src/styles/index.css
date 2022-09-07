@@ -197,11 +197,11 @@ button {
 
 button:hover,
 button:focus {
-  background-color: var(--jewel);
+  background-color: var(--purp);
 }
 
 button:active {
-  background-color: var(--purp);
+  background-color: var(--jewel);
 }
 
 .App {

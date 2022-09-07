@@ -22,7 +22,7 @@ export default function SingleChallenge({
           <li>{challengeText}</li>
         </ol>
         <button className="button" onClick={toggleOpen}>
-          Show Example
+          {open ? "Hide Example" : "Show Example"}
         </button>
       </div>
       <ShowExample isOpen={open}>

@@ -151,7 +151,7 @@ pre.example-code {
 /* Layout Challenges */
 
 .single-challenge {
-  grid-template-columns: minmax(200px, max-content) 1fr;
+  grid-template-columns: minmax(150px, 25%) 1fr;
   column-gap: 2rem;
 }
 

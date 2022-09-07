@@ -2,6 +2,10 @@
   background-color: var(--vivid);
 }
 
+.challenge {
+  width: 100%;
+}
+
 .challenge * {
   display: grid;
   place-items: center;
@@ -13,39 +17,97 @@
   grid-template-rows: max-content 3rem;
 }
 
-/* CHALLENGE #1 */
+/****************
+* 3x3 Square Grid
+*****************/
 
 .three-square {
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, 50px);
   gap: 1rem;
 }
 
-/* CHALLENGE #2 */
+/****************
+* Pyramid
+*****************/
 .pyramid {
-  width: 100%;
-  height: auto;
-  grid-template:
-    ". . tip . ."
-    ". middle middle middle ."
-    "base base base base base";
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 75px);
+  grid-template-areas:
+    ". . . . level5 . . . ."
+    ". . . level4 level4 level4 . . ."
+    ". . level3 level3 level3 level3 level3 . ."
+    ". level2 level2 level2 level2 level2 level2 level2 ."
+    "level1 level1 level1 level1 level1 level1 level1 level1 level1";
 }
 
-.pyramid .tip {
-  grid-area: tip;
+.level5 {
+  grid-area: level5;
 }
 
-.pyramid .middle {
-  grid-area: middle;
+.level4 {
+  grid-area: level4;
 }
 
-.pyramid .base {
-  grid-area: base;
+.level3 {
+  grid-area: level3;
 }
 
-/* Celtic Knot */
+.level2 {
+  grid-area: level2;
+}
+
+.level1 {
+  grid-area: level1;
+}
+
+/****************
+* Staircase
+*****************/
+
+.stairs {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 50px);
+}
+
+.step-1 {
+  grid-column: 1 / span 1;
+  grid-row: 7 / span 1;
+}
+
+.step-2 {
+  grid-column: 2 / span 1;
+  grid-row: 6 / span 2;
+}
+
+.step-3 {
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 3;
+}
+
+.step-4 {
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 4;
+}
+
+.step-5 {
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 5;
+}
+
+.step-6 {
+  grid-column: 6 / span 1;
+  grid-row: 2 / span 6;
+}
+
+.step-7 {
+  grid-column: 7 / span 1;
+  grid-row: 1 / span 7;
+}
+
+/****************
+* Square Knot
+*****************/
 
 .square-knot {
   grid-template-columns: repeat(7, 125px);
