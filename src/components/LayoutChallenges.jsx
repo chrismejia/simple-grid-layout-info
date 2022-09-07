@@ -13,17 +13,17 @@ export default function LayoutChallenges() {
       challengeFileLabel: "ThreeByThree.jsx",
       challengeComponent: ThreeByThree,
     },
-    pyramid: {
-      challengeText: "Build a pyramid 5 levels high.",
-      challengeNum: 2,
-      challengeFileLabel: "Pyramid.jsx",
-      challengeComponent: Pyramid,
-    },
     staircase: {
       challengeText: "Build an ascending staircase with 7 steps.",
-      challengeNum: 3,
+      challengeNum: 2,
       challengeFileLabel: "Pyramid.jsx",
       challengeComponent: Staircase,
+    },
+    pyramid: {
+      challengeText: "Build a pyramid 5 levels high.",
+      challengeNum: 3,
+      challengeFileLabel: "Pyramid.jsx",
+      challengeComponent: Pyramid,
     },
     brickWall: {
       challengeText: "Build a pyramid 5 levels high.",
@@ -51,8 +51,8 @@ export default function LayoutChallenges() {
       <h3>Layout Challenges</h3>
 
       <SingleChallenge {...allChallengeProps.tic_tac_toe} />
-      <SingleChallenge {...allChallengeProps.pyramid} />
       <SingleChallenge {...allChallengeProps.staircase} />
+      <SingleChallenge {...allChallengeProps.pyramid} />
 
       {/* <ol>
         <li>Build a 3x3 grid.</li>

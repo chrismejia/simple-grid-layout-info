@@ -4,7 +4,7 @@ export default function BreakpointWidths() {
       <thead>
         <tr>
           <th>Breakpoints</th>
-          <th>Container Widths</th>
+          <th>.container width</th>
         </tr>
       </thead>
       <tbody>

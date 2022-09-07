@@ -76,7 +76,7 @@ header {
 
 @media (max-width: 768px) {
   .article {
-    grid-column: span 10;
+    grid-column: minmax(30ch, 65ch);
   }
   .sidebar-left {
     grid-column: span 12;
