@@ -1,6 +1,10 @@
 import CodeWrapper from "../helpers/CodeWrapper";
 import HighlightedCode from "../helpers/HighlightedCode";
-import { four_cols_wide_css, four_cols_wide_jsx } from "../../code-examples";
+import FiveColsFourWide from "../examples/FiveColsFourWide";
+import {
+  four_cols_wide_css,
+  four_cols_wide_jsx,
+} from "../../code-samples/code-examples";
 
 export default function GridFlowExample() {
   return (
@@ -23,13 +27,7 @@ export default function GridFlowExample() {
         />
       </CodeWrapper>
 
-      <div className="grid four-cols-wide">
-        <div className="ex-col">1</div>
-        <div className="ex-col">2</div>
-        <div className="ex-col">3</div>
-        <div className="ex-col">4</div>
-        <div className="ex-col">5</div>
-      </div>
+      <FiveColsFourWide />
     </>
   );
 }

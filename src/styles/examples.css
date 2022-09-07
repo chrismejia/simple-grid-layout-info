@@ -175,23 +175,21 @@ footer {
 
 /* Grid Example Base Styles */
 
-.twelve-cols,
-.four-cols-wide {
+.outer-border {
   margin-top: 2rem;
-  column-gap: 0.75rem;
   border: 2px solid var(--vivid);
   padding: 1rem;
   border-radius: 0.75rem;
 }
 
-.twelve-cols div,
-.four-cols-wide div {
-  grid-auto-flow: row;
+.outer-border div {
   display: grid;
   place-items: center;
   color: var(--platinum);
   font-weight: bold;
+}
 
+.generic-ex * {
   height: 100px;
   border: 2px solid var(--platinum);
   border-radius: 0.75rem;
@@ -200,12 +198,15 @@ footer {
 
 /* Specific Grid Examples */
 
+.twelve-cols,
+.four-cols {
+  gap: 0.75rem;
+}
+
 .twelve-cols {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.four-cols-wide {
-  display: grid;
+.four-cols {
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
 }
