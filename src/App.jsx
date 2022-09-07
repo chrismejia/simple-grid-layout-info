@@ -22,7 +22,7 @@ function App() {
       <TheGrid />
       <GridTemplating />
       <LayoutChallenges />
-      <OpenGraphLayout />
+      {/* <OpenGraphLayout /> */}
     </main>
   );
 }

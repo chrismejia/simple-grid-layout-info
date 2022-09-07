@@ -1,5 +1,3 @@
-import ThreeColArticle from "../examples/ThreeColArticle";
-
 export default function OpenGraphLayout() {
   return (
     <section className="container">
@@ -16,7 +14,7 @@ export default function OpenGraphLayout() {
               marginTop: "4rem",
             }}
           >
-            (like this link image)
+            {"(like this link image)"}
           </p>
         </div>
 
