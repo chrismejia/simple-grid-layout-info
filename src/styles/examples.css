@@ -210,3 +210,23 @@ footer {
 .four-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
+/**************************************
+* MindTheGap.jsx
+**************************************/
+
+.no-gap {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50px);
+}
+
+.no-gap :first-child,
+.no-gap :last-child {
+  background-color: var(--jewel);
+}
+
+.no-gap :nth-child(2),
+.no-gap :nth-child(3) {
+  color: black;
+  background-color: var(--vivid);
+}

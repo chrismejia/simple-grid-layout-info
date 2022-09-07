@@ -1,14 +1,11 @@
-import {
-  regularKnotJSX,
-  regularKnotCSS,
-} from "../../code-samples/ challenge-code";
-import AnswerPageBase from "../../components/helpers/AnswerPageBase";
+import { regularKnotJSX, regularKnotCSS } from "../code-samples/challenge-code";
+import AnswerPageBase from "../components/helpers/AnswerPageBase";
 
-import CodeWrapper from "../../components/helpers/CodeWrapper";
-import HighlightedCode from "../../components/helpers/HighlightedCode";
-import HighlightedElement from "../../components/helpers/HighlightedElement";
+import CodeWrapper from "../components/helpers/CodeWrapper";
+import HighlightedCode from "../components/helpers/HighlightedCode";
+import HighlightedElement from "../components/helpers/HighlightedElement";
 
-import RegularKnot from "./knots/RegularKnot";
+import RegularKnot from "../components/challenges/knots/RegularKnot";
 
 export default function PageSquareKnot() {
   return (

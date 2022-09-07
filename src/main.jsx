@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App";
-import PageSquareKnot from "./pages/challenges/05-SquareKnot";
+import PageSquareKnot from "./pages/05-SquareKnot";
 
 import "./styles/index.css";
+import "./styles/challenges.css";
 import "./styles/container.css";
 import "./styles/examples.css";
 import "./styles/helpers.css";

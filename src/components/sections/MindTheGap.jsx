@@ -1,7 +1,7 @@
-import { no_gap_jsx } from "../../code-samples/code-examples";
 import CodeWrapper from "../helpers/CodeWrapper";
 import HighlightedCode from "../helpers/HighlightedCode";
-import HighlightedElement from "../helpers/HighlightedElement";
+import NoGaps from "../examples/NoGaps";
+import { no_gap_jsx, no_gap_css } from "../../code-samples/code-examples";
 
 export default function MindTheGap() {
   return (
@@ -21,18 +21,13 @@ export default function MindTheGap() {
           codeLang={"jsx"}
         />
         <HighlightedCode
-          code={no_gap_jsx}
-          codeFilename={"NoGaps.jsx"}
-          codeLang={"jsx"}
+          code={no_gap_css}
+          codeFilename={"styles/examples.css"}
+          codeLang={"css"}
         />
       </CodeWrapper>
 
-      <div className="grid no-gap outer-border">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-      </div>
+      <NoGaps />
     </>
   );
 }

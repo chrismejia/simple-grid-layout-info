@@ -1,5 +1,3 @@
-import "./challenges.css";
-
 export default function Pyramid() {
   return (
     <div className="grid pyramid challenge">
