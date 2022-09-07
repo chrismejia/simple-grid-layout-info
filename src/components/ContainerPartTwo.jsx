@@ -33,23 +33,6 @@ export default function ContainerPartTwo() {
         <Footnote refLabel={4} />:
       </p>
 
-      <ul>
-        <li>
-          <code className="inline">960px</code>
-        </li>
-        <li>
-          <code className="inline">1152px</code>
-        </li>
-        <li>
-          <code className="inline">1344px</code>
-        </li>
-      </ul>
-
-      <p>
-        It is also useful to set up a <code className="inline">gap</code>{" "}
-        variable to help manage
-      </p>
-
       <BreakpointWidths />
 
       <CodeWrapper sections={2}>

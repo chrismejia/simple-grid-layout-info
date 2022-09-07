@@ -1,11 +1,10 @@
 :root {
-  /* Space & Breakpoint Variables */
+  /* Breakpoint Variables */
   /* 768px (largest mobile size), 960, 1152, 1344 all divisible by 12 and 16 */
 
-  --gap: 32px;
-  --desktop: 960px + (2 * var(--gap));
-  --widescreen: 1152px + (2 * var(--gap));
-  --fullhd: 1344px + (2 * var(--gap));
+  --desktop: 960px;
+  --widescreen: 1152px;
+  --fullhd: 1344px;
 
   /* Color Variables */
   --vivid: #f81fff;
@@ -26,7 +25,6 @@
   font-family: "Fira Code", monospace;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -45,6 +43,10 @@ body {
 }
 
 /* Font Settings */
+p {
+  line-height: 1.5;
+}
+
 h1,
 h2,
 h3,
@@ -78,17 +80,61 @@ h4 {
   font-size: var(--size-4);
 }
 
+del {
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--vivid);
+}
+
+fieldset {
+  margin-top: 2rem;
+  border: 3px dotted var(--platinum);
+}
+
+table {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--plum);
+  border-radius: 0.75rem;
+  border: 2px solid var(--platinum);
+  text-align: center;
+}
+
+th {
+  padding: 0.5rem;
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 3rem;
+  background-image: url(../../memphis-mini-dark.webp);
+}
+
+button {
+  background-color: var(--plum);
+  border: 2px solid var(--platinum);
+  border-radius: 0.75rem;
+  font-family: "Vampiro One", serif;
+  font-size: var(--size-6);
+  color: var(--platinum);
+  transition: 0.125s cubic-bezier(0.39, 0.575, 0.565, 1) all;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--purp);
+}
+
+button:active {
+  background-color: var(--jewel);
+}
+
 p + p {
   margin-top: 1.15rem;
 }
 
 section:last-child {
   margin-bottom: 2rem;
-}
-
-del {
-  text-decoration-thickness: 4px;
-  text-decoration-color: var(--vivid);
 }
 
 .external {
@@ -153,55 +199,10 @@ del {
     0 0 125px var(--vivid);
 }
 
-code.inline {
+.inline {
   background-color: var(--plum);
   padding: 0.25rem;
   border-radius: 0.25rem;
-}
-
-fieldset {
-  margin-top: 2rem;
-  border: 3px dotted var(--platinum);
-}
-
-table {
-  margin-top: 2rem;
-  padding: 1rem;
-  width: 100%;
-  background-color: var(--plum);
-  border-radius: 0.75rem;
-  border: 2px solid var(--platinum);
-  text-align: center;
-}
-
-th {
-  padding: 0.5rem;
-}
-
-nav {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 3rem;
-  background-image: url(../../memphis-mini-dark.webp);
-}
-
-button {
-  background-color: var(--plum);
-  border: 2px solid var(--platinum);
-  border-radius: 0.75rem;
-  font-family: "Vampiro One", serif;
-  font-size: var(--size-6);
-  color: var(--platinum);
-  transition: 0.125s cubic-bezier(0.39, 0.575, 0.565, 1) all;
-}
-
-button:hover,
-button:focus {
-  background-color: var(--purp);
-}
-
-button:active {
-  background-color: var(--jewel);
 }
 
 .App {

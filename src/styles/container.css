@@ -11,18 +11,18 @@
 
 @media (min-width: 1024px) and (max-width: 1215px) {
   .container {
-    max-width: calc(var(--desktop) - 2 * var(--gap));
+    max-width: var(--desktop);
   }
 }
 
 @media (min-width: 1216px) and (max-width: 1407px) {
   .container {
-    max-width: calc(var(--widescreen) - 2 * var(--gap));
+    max-width: var(--widescreen);
   }
 }
 
 @media (min-width: 1408px) {
   .container {
-    max-width: calc(var(--fullhd) - 2 * var(--gap));
+    max-width: var(--fullhd);
   }
 }
