@@ -7,7 +7,7 @@
  */
 
 .classic-article {
-  grid-template-columns: repeat(12, 1fr);
+  grid-template: auto 1fr auto / auto 1fr auto;
 
   color: black;
   background-color: burlywood;
@@ -23,18 +23,20 @@
 .classic-article h3 {
   font-family: "Playfair Display";
   font-weight: bold;
-  margin-top: -1rem;
+  margin-top: 0;
+}
+
+.article-text {
+  line-height: 1.25;
 }
 
 header {
-  grid-column: span 12;
-  grid-row: span 1;
+  grid-column: 1 / 4;
   border-bottom: 2px solid black;
 }
 
 .sidebar-left {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: 1 / 2;
 }
 
 .sidebar-left a {
@@ -43,26 +45,25 @@ header {
 }
 
 .article {
-  grid-column: span 8;
-  grid-row: span 2;
+  grid-column: 2 / 3;
 }
 
 .byline {
-  grid-column: span 2;
-  grid-row: span 1;
+  /* grid-column: span 2;
+  grid-row: span 1; */
   text-align: right;
   height: fit-content;
   background-color: aqua;
 }
 
 .ad {
+  grid-column: 3 / 4;
+
   position: sticky;
   position: -webkit-sticky;
   margin: 1.5rem 0 3rem;
   top: 2rem;
   padding: 0.75rem;
-  grid-column: span 2;
-  grid-row: span 1;
   text-align: right;
 }
 
@@ -74,13 +75,23 @@ header {
   border-radius: 0.75rem;
 }
 
-@media (max-width: 768px) {
-  .article {
-    grid-column: minmax(30ch, 65ch);
+@media (max-width: 1024px) {
+  .classic-article {
+    grid-template: auto 1fr auto / minmax(30ch, 65ch) 1fr;
   }
+
+  .article {
+    grid-column: 1 / 2;
+  }
+
+  .ad {
+    grid-column: 2 / 3;
+  }
+
   .sidebar-left {
-    grid-column: span 12;
-    grid-row: 4;
+    grid-column: 1/3;
+    grid-row: 3;
+    display: inline-block;
   }
 }
 

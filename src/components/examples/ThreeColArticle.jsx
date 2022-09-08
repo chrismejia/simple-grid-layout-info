@@ -5,34 +5,34 @@ export default function ThreeColArticle() {
         <h3>Lorem Ipsum Dolor</h3>
       </header>
       <aside className="sidebar-left">
-        <p>
+        <p className="article-text">
           <b>Recent Articles</b>
         </p>
-        <p>
+        <p className="article-text">
           <a href="#">Volutpat ac</a>
         </p>
-        <p>
+        <p className="article-text">
           <a href="#">Migurd eneos</a>
         </p>
-        <p>
+        <p className="article-text">
           <a href="#">Ciborgifis</a>
         </p>
-        <p>
+        <p className="article-text">
           <a href="#">Ix Peron Al</a>
         </p>
       </aside>{" "}
       <article className="article">
-        <p>
+        <p className="article-text">
           <i>by Ixion</i>
         </p>
         <time></time>
-        <p>
+        <p className="article-text">
           Dolor purus non enim praesent elementum facilisis leo vel. Iaculis
           nunc sed augue lacus. Quam id leo in vitae turpis massa sed elementum.
           Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit.
           Vitae turpis massa sed elementum.
         </p>
-        <p>
+        <p className="article-text">
           Vitae turpis massa sed elementum tempus egestas sed sed risus. Auctor
           neque vitae tempus quam pellentesque nec nam aliquam. Justo eget magna
           fermentum iaculis eu non diam. Mauris ultrices eros in cursus turpis.
@@ -45,7 +45,7 @@ export default function ThreeColArticle() {
           turpis egestas maecenas pharetra. Tristique senectus et netus et
           malesuada fames ac.
         </p>
-        <p>
+        <p className="article-text">
           Mattis aliquam faucibus purus in massa tempor nec feugiat. Tempus quam
           pellentesque nec nam. Rutrum tellus pellentesque eu tincidunt tortor
           aliquam nulla. Viverra vitae congue eu consequat ac. Tincidunt
@@ -59,15 +59,6 @@ export default function ThreeColArticle() {
           fermentum odio eu feugiat. Netus et malesuada fames ac turpis egestas
           maecenas pharetra convallis. Placerat orci nulla pellentesque
           dignissim enim.
-        </p>
-        <p>
-          Risus viverra adipiscing at in tellus integer feugiat scelerisque. Et
-          netus et malesuada fames ac turpis. Leo urna molestie at elementum.
-          Enim neque volutpat ac tincidunt vitae semper quis. Id eu nisl nunc mi
-          ipsum faucibus vitae aliquet nec. Egestas erat imperdiet sed euismod
-          nisi porta lorem mollis. Aenean sed adipiscing diam donec adipiscing
-          tristique risus. Sed odio morbi quis commodo odio aenean sed
-          adipiscing diam. Enim nec dui nunc mattis enim ut tellus elementum.
         </p>
       </article>
       <aside className="ad">
