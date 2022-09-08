@@ -11,7 +11,7 @@ export default defineConfig({
         families: [
           { name: "Noto Sans Mono", styles: "wght@400;700" },
           "Vampiro One",
-          { name: "Playfair Display", styles: "wght@700" },
+          { name: "Playfair Display", styles: "ital,wght@0,900" },
         ],
       },
     }),

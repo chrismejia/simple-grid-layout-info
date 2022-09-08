@@ -13,8 +13,8 @@ export default function RecentPhotos() {
       <div className="side-1">
         <img src="../examples/pexels-3.jpg" alt="Hot Air Balloons" />
       </div>
-      <div className="titling">
-        <h4 className="centered-text">Recent Photos</h4>
+      <div className="photos-titling">
+        <h3 className="centered-text">Recent Photos</h3>
       </div>
       <div className="side-2">
         <img

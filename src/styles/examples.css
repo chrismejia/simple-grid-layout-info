@@ -11,32 +11,32 @@
  */
 
 .classic-article {
-  grid-template: auto 1fr auto / auto auto auto;
+  grid-template: auto 1fr auto / auto 1fr auto;
 
   color: black;
-  background-color: burlywood;
+  background-color: floralwhite;
   margin-top: 2rem;
   border-radius: 0.75rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .classic-article > * {
   padding: 1rem;
 }
+.article-title {
+  grid-column: 1 / 4;
+  border-bottom: 2px solid black;
+}
 
-.classic-article h3 {
-  font-family: "Playfair Display";
-  font-weight: bold;
+.article-title h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
   margin-top: 0;
 }
 
 .article-text {
-  line-height: 1.25;
-}
-
-header {
-  grid-column: 1 / 4;
-  border-bottom: 2px solid black;
+  line-height: 1.5;
+  padding-bottom: 0;
 }
 
 .sidebar-left {
@@ -103,7 +103,7 @@ footer {
 .picture-collage {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 9vw);
-  background-color: var(--vivid);
+  background-color: moccasin;
 
   padding: 1.5rem;
   gap: 0.75rem;
@@ -116,14 +116,15 @@ footer {
   object-fit: cover;
 }
 
-.titling {
+.photos-titling {
   grid-column: span 2;
   grid-row: span 1;
   display: grid;
   place-items: center;
 }
 
-.titling h4 {
+.photos-titling h3 {
+  font-family: "Playfair Display", serif;
   color: black;
   margin: 0;
 }
