@@ -11,7 +11,7 @@ import {
 
 export default function MindTheGap() {
   return (
-    <>
+    <section className="container">
       <h3>Mind The Gap</h3>
       <p>
         You might've noticed the{" "}
@@ -20,7 +20,6 @@ export default function MindTheGap() {
         values we can choose to dictate when setting up a new{" "}
         <code className="inline">grid</code>.
       </p>
-
       <p>
         From MDN: The <code className="inline">gap</code> CSS property sets the
         gaps (gutters) between rows and columns. <Footnote refLabel={7} />
@@ -29,7 +28,6 @@ export default function MindTheGap() {
         There's also a <code className="inline">row-gap</code> value. Without
         gap values, each grid section would touch each other.
       </p>
-
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={no_gap_jsx}
@@ -42,9 +40,7 @@ export default function MindTheGap() {
           codeLang={"css"}
         />
       </CodeWrapper>
-
       <NoGaps />
-
       <p>
         Gap sizes can be assigned individually to{" "}
         <code className="inline">column-gap</code> or to{" "}
@@ -54,7 +50,6 @@ export default function MindTheGap() {
         <code className="inline">margin</code> can have multiple combined
         values.
       </p>
-
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={individual_gaps}
@@ -67,6 +62,6 @@ export default function MindTheGap() {
           codeLang={"css"}
         />
       </CodeWrapper>
-    </>
+    </section>
   );
 }

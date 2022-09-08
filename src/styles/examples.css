@@ -11,7 +11,7 @@
  */
 
 .classic-article {
-  grid-template: auto 1fr auto / auto 1fr auto;
+  grid-template: auto 1fr auto / auto auto auto;
 
   color: black;
   background-color: burlywood;
