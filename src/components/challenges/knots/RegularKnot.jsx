@@ -2,12 +2,12 @@ export default function RegularKnot() {
   function TopEdge() {
     return (
       <>
-        <div className="filled knot-3-wide">3</div>
+        <div className="filled knot-3-wide">3 Wide</div>
         <div className="h-blank">
-          <span>1 wide</span>
-          <span>2 tall</span>
+          <span>1 Wide</span>
+          <span>2 Tall</span>
         </div>
-        <div className="filled knot-3-wide">3</div>
+        <div className="filled knot-3-wide">3 Wide</div>
       </>
     );
   }
@@ -27,22 +27,22 @@ export default function RegularKnot() {
   }
 
   function KnotFullWidth() {
-    return <div className="filled knot-full">7 wide</div>;
+    return <div className="filled knot-full">7 Wide</div>;
   }
 
   function CentralSection() {
     return (
       <>
         <div className="v-blank">
-          <span>2 wide</span>
-          <span>1 tall</span>
+          <span>2 Wide</span>
+          <span>1 Tall</span>
         </div>
         <div className="filled">1</div>
         <div>1</div>
         <div className="filled">1</div>
         <div className="v-blank">
-          <span>2 wide</span>
-          <span>1 tall</span>
+          <span>2 Wide</span>
+          <span>1 Tall</span>
         </div>
       </>
     );
@@ -55,8 +55,8 @@ export default function RegularKnot() {
         <div>1</div>
         <div className="filled">1</div>
         <div className="h-blank">
-          <span>1 wide</span>
-          <span>2 tall</span>
+          <span>1 Wide</span>
+          <span>2 Tall</span>
         </div>
         <div className="filled">1</div>
         <div>1</div>
@@ -68,8 +68,8 @@ export default function RegularKnot() {
   function BottomEdge() {
     return (
       <>
-        <div className="filled knot-3-wide">3</div>
-        <div className="filled knot-3-wide">3</div>
+        <div className="filled knot-3-wide">3 Wide</div>
+        <div className="filled knot-3-wide">3 Wide</div>
       </>
     );
   }
