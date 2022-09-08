@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.example {
+  margin: 3rem 0;
+}
+
 /*
  * Three Column Article Example Layout
  */
@@ -46,14 +50,6 @@ header {
 
 .article {
   grid-column: 2 / 3;
-}
-
-.byline {
-  /* grid-column: span 2;
-  grid-row: span 1; */
-  text-align: right;
-  height: fit-content;
-  background-color: aqua;
 }
 
 .ad {
@@ -228,7 +224,7 @@ footer {
 
 .no-gap {
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 50px);
+  grid-template-rows: repeat(2, 100px);
 }
 
 .no-gap :first-child,

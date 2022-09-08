@@ -64,18 +64,6 @@ export const inter_jsx_cols_start = `<div className="grid-columns">
 
 export const inter_jsx_cols_end = `\n</div>`;
 
-/**************************************
- * MindTheGap.jsx
- *************************************/
-export const no_gap_jsx = `<div className="grid no-gap outer-border">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-</div>`;
-
-export const no_gap_css = ``;
-
 /**
  * InteractiveGridCells.jsx
  */
