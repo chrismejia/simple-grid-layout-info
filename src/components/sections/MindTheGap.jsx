@@ -1,4 +1,5 @@
 import CodeWrapper from "../helpers/CodeWrapper";
+import Footnote from "../helpers/Footnote";
 import HighlightedCode from "../helpers/HighlightedCode";
 import NoGaps from "../examples/NoGaps";
 import {
@@ -22,7 +23,7 @@ export default function MindTheGap() {
 
       <p>
         From MDN: The <code className="inline">gap</code> CSS property sets the
-        gaps (gutters) between rows and columns.
+        gaps (gutters) between rows and columns. <Footnote refLabel={7} />
       </p>
       <p>
         There's also a <code className="inline">row-gap</code> value. Without
