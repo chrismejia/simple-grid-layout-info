@@ -5,7 +5,7 @@ import HighlightedCode from "../helpers/HighlightedCode";
 import {
   full_width_container_css,
   full_width_container_jsx,
-} from "../../code-samples/ex-fullWidthContainer";
+} from "../../code-samples/ex-fullwidthcontainer";
 
 export default function ContainerPartOne() {
   return (

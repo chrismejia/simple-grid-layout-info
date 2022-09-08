@@ -24,7 +24,7 @@
   /* Font Base */
   font-family: "Fira Code", monospace;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +45,7 @@ body {
 
 /* Font Settings */
 p {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 h1,
@@ -56,6 +56,7 @@ h5,
 h6 {
   font-family: "Vampiro One", serif;
   margin-bottom: 0;
+  margin-top: 5rem;
 }
 
 ul {
@@ -131,7 +132,7 @@ button:active {
 }
 
 p + p {
-  margin-top: 1.15rem;
+  margin-top: 2rem;
 }
 
 section:last-child {
