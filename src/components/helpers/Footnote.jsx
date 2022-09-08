@@ -1,10 +1,10 @@
 export default function Footnote({ refLabel }) {
   return (
-    <sup>
+    <span>
       {" "}
-      <a className="footnote external" href={`#ref-${refLabel}`}>
-        <i>{`[${refLabel}]`}</i>
+      <a className="footnote styled-link" href={`#ref-${refLabel}`}>
+        {`[${refLabel}]`}
       </a>
-    </sup>
+    </span>
   );
 }
