@@ -3,13 +3,14 @@ import ContainerPartTwo from "./components/chapters/ContainerPartTwo";
 import GridBasics from "./components/chapters/GridBasics";
 import GridTemplating from "./components/chapters/GridTemplating";
 import LayoutChallenges from "./components/chapters/LayoutChallenges";
-
+import SiteHeader from "./components/chapters/SiteHeader";
 import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
 import HighlightedElement from "./components/helpers/HighlightedElement";
 
 export default function App() {
   return (
     <main className="App">
+      <SiteHeader />
       <ContainerPartOne />
       <HighlightedElement elementLabel={`<section className="container">`}>
         <div className="ex-container">

@@ -9,9 +9,9 @@ export default defineConfig({
     VitePluginFonts({
       google: {
         families: [
-          { name: "Fira Code", styles: "wght@500;700" },
+          { name: "Noto Sans Mono", styles: "wght@400;700" },
           "Vampiro One",
-          { name: "Playfair Display", styles: "wght@400;700" },
+          { name: "Playfair Display", styles: "wght@700" },
         ],
       },
     }),

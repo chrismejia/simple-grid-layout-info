@@ -2,9 +2,9 @@
   /* Breakpoint Variables */
   /* 768px (largest mobile size), 960, 1152, 1344 all divisible by 12 and 16 */
 
-  --desktop: 960px;
-  --widescreen: 1152px;
-  --fullhd: 1344px;
+  --desktop: 1024px;
+  --widescreen: 1216px;
+  --fullhd: 1408px;
 
   /* Color Variables */
   --vivid: #f81fff;
@@ -22,9 +22,8 @@
   --size-6: 1.1rem;
 
   /* Font Base */
-  font-family: "Fira Code", monospace;
   font-size: 16px;
-  font-weight: 500;
+  font-family: "Noto Sans Pro", monospace;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,8 +31,8 @@
   -webkit-text-size-adjust: 100%;
 
   /* Site Universals */
-  color: var(--platinum);
-  background-image: url(../../memphis-mini-dark.webp);
+  color: whitesmoke;
+  background-image: url(../../papyrus-dark.webp);
   scroll-behavior: smooth;
 }
 
@@ -43,8 +42,23 @@ body {
   min-height: 100vh;
 }
 
+hr {
+  color: var(--vivid);
+  background-color: var(--vivid);
+  width: 50%;
+  height: 2px;
+}
+
+.divider {
+  margin-top: 5rem;
+  place-items: center;
+  font-size: var(--size-1);
+  grid-template-columns: 1fr 25px 1fr;
+}
+
 /* Font Settings */
 p {
+  font-size: var(--size-6);
   line-height: 1.75;
 }
 
@@ -61,6 +75,10 @@ h6 {
 
 ul {
   margin-bottom: 0;
+}
+
+li {
+  padding: 0.25rem 0;
 }
 
 h1 {
@@ -90,6 +108,12 @@ del {
 fieldset {
   margin-top: 2rem;
   border: 3px dotted var(--platinum);
+}
+
+.goal {
+  display: inline;
+  padding: 1rem;
+  font-size: var(--size-5);
 }
 
 table {
@@ -143,15 +167,17 @@ section:last-child {
   /* RESET */
   text-decoration: none;
   line-height: 1;
+  font-weight: 700;
 
   position: relative;
   z-index: 0;
   display: inline-block;
-  padding: 5px 5px;
+  padding: 5px;
   overflow: hidden;
   color: var(--platinum);
   vertical-align: bottom;
   transition: color 0.3s ease-out;
+  margin-bottom: -2px;
 }
 
 .external::before {

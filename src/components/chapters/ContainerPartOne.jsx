@@ -10,26 +10,6 @@ import {
 export default function ContainerPartOne() {
   return (
     <section className="container">
-      <h1 className="title centered-text neon-effect">
-        Build Layouts Using CSS Grid
-      </h1>
-      <p>You want to build a layout for your pages, but you don't want to:</p>
-
-      <ul>
-        <li>install CSS frameworks, no matter how lightweight</li>
-        <li>don't want to spend the time to become a wizened CSS sage</li>
-        <li>prefer simplicity, because simple = easy</li>
-        <li>bottom text</li>
-      </ul>
-
-      <fieldset style={{ display: "inline" }}>
-        <legend style={{ fontSize: "var(--size-5)" }}>The Goal</legend>
-        <b style={{ fontSize: "var(--size-5)" }}>
-          Build a container that holds a grid to build layouts using rows,
-          columns, and more.
-        </b>
-      </fieldset>
-
       <GridExamples />
 
       <h2>Containers + Grid = Win</h2>

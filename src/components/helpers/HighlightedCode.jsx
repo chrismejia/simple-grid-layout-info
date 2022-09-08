@@ -4,7 +4,7 @@ import synthwave84 from "prism-react-renderer/themes/synthwave84";
 export default function HighlightedCode({ code, codeFilename, codeLang }) {
   return (
     <article className="single-code-block">
-      <div className="code-label">
+      <div className="example-code-label">
         <p>{codeFilename}</p>
       </div>
       <Highlight

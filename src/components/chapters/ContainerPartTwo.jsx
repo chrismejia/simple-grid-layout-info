@@ -1,10 +1,11 @@
-import CodeWrapper from "../helpers/CodeWrapper";
 import BreakpointWidths from "../sections/BreakpointWidths";
+import CodeWrapper from "../helpers/CodeWrapper";
+import Divider from "../helpers/Divider";
+import ExternalLink from "../helpers/ExternalLink";
+import Footnote from "../helpers/Footnote";
 import HighlightedCode from "../helpers/HighlightedCode";
 import HighlightedElement from "../helpers/HighlightedElement";
-import ExternalLink from "../helpers/ExternalLink";
 import SectionReferences from "../helpers/SectionReferences";
-import Footnote from "../helpers/Footnote";
 import {
   index_css,
   container_with_media,
@@ -26,7 +27,6 @@ export default function ContainerPartTwo() {
         queries
         <Footnote refLabel={3} />.
       </p>
-
       <h4 id="breakpoints">Column Widths & Breakpoints</h4>
       <p>
         We want our <code className="inline">.container</code> to be able to
@@ -35,9 +35,7 @@ export default function ContainerPartTwo() {
         columns have integer column sizes
         <Footnote refLabel={4} />:
       </p>
-
       <BreakpointWidths />
-
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={index_css}
@@ -50,14 +48,11 @@ export default function ContainerPartTwo() {
           codeLang={"css"}
         />
       </CodeWrapper>
-
       <h4 style={{ marginBottom: "2rem" }}>Our Container Now</h4>
-
       <p>
         Don't forget to import the new <code className="inline">index</code> CSS
         file into your App!
       </p>
-
       <HighlightedElement elementLabel={`<section className="container" />`}>
         <div className="ex-container">
           <p>
@@ -65,7 +60,6 @@ export default function ContainerPartTwo() {
           </p>
         </div>
       </HighlightedElement>
-
       <SectionReferences>
         <ExternalLink
           url={"https://bulma.io/documentation/layout/container/"}
@@ -102,6 +96,7 @@ export default function ContainerPartTwo() {
           refLabel={4}
         />
       </SectionReferences>
+      <Divider />
     </section>
   );
 }
