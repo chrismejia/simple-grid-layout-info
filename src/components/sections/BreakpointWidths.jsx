@@ -17,7 +17,7 @@ export default function BreakpointWidths() {
           <td>960px</td>
         </tr>
         <tr>
-          <th>{"Widescreen (1216px to 1407px)"}</th>
+          <th>{"Laptop (1216px to 1407px)"}</th>
           <td>1152px</td>
         </tr>
         <tr>

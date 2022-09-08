@@ -91,7 +91,7 @@ export default function ContainerPartTwo() {
           }
           label={"[Bulma] Responsive docs"}
           description={
-            "CSS framework whose breakpoint widths I shamelessly stole and swear by"
+            "CSS framework whose breakpoint widths I shamelessly stole, and expanded"
           }
           refLabel={4}
         />

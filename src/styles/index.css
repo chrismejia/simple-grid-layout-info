@@ -2,6 +2,8 @@
   /* Breakpoint Variables */
   /* 768px (largest mobile size), 960, 1152, 1344 all divisible by 12 and 16 */
 
+  --container-margin: 64px;
+
   --desktop: 1024px;
   --widescreen: 1216px;
   --fullhd: 1408px;
