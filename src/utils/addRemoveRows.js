@@ -1,15 +1,15 @@
 /**
  * Adds/removes columns from {@link InteractiveGridCells}
- * @function addRemoveColumns
+ * @function addRemoveRows
  * @param {string} operation - one of "add" or "remove"
  */
-export default function addRemoveColumns(operation) {
+export default function addRemoveRows(operation) {
   /**
-   * NB: Columns example is the top (first) in the {@link RowsAndColumns} component!
+   * NB: Rows example is the bottom (last) in the {@link RowsAndColumns} component!
    * Grab the parent div and one of the column
    */
-  const element = document.getElementsByClassName("interactive-content")[0];
-  const col = document.getElementsByClassName("ex-col")[0];
+  const element = document.getElementsByClassName("interactive-content")[1];
+  const col = document.getElementsByClassName("ex-row")[0];
 
   // Use the operation to determine what action is taken.
   if (operation === "add") {

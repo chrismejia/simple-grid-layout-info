@@ -58,32 +58,6 @@ export const grid_cols_base = `.grid-wrapper {
   grid-template-columns: 1fr 1fr;
 }`;
 
-export const inter_css_cols_start = `.grid-columns {
-    display: grid;
-
-    /* For this example: 1 col min; 8 col max */
-    grid-template-columns: 1fr`;
-
-export const inter_css_cols_end = `;\n    column-gap: .75rem;\n}`;
-
-export const inter_jsx_cols_start = `<div className="grid-columns">
-  <div className="ex-col" />`;
-
-export const inter_jsx_cols_end = `\n</div>`;
-
-/**
- * InteractiveGridCells.jsx
- */
-export const css_repeat_cols_start = `.grid-columns {
-    display: grid;
-
-    /* For this example: 1 col min; 8 col max */
-    grid-template-columns: repeat(`;
-
-export const css_repeat_cols_end = `, 1fr);
-    column-gap: .75rem;
-}`;
-
 /**************************************
  * FiveColsFourWide.jsx
  *************************************/

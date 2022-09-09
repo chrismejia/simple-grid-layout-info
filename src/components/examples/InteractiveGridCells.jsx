@@ -7,17 +7,22 @@ import {
   inter_jsx_cols_end,
   inter_css_cols_start,
   inter_css_cols_end,
-} from "../../code-samples/code-examples";
+  inter_jsx_rows_start,
+  inter_jsx_rows_end,
+  inter_css_rows_start,
+  inter_css_rows_end,
+} from "../../code-samples/ex-interactiveGrid";
+import addRemoveRows from "../../utils/addRemoveRows";
 
-export default function InteractiveGridCells({ rowOrCol, cssStart, cssEnd }) {
+export default function InteractiveGridCells({ rowOrCol }) {
   let initialCSSCode, initialJSXCode;
 
   if (rowOrCol === "column") {
     initialCSSCode = inter_css_cols_start + inter_css_cols_end;
     initialJSXCode = inter_jsx_cols_start + inter_jsx_cols_end;
   } else {
-    initialCSSCode;
-    initialJSXCode;
+    initialCSSCode = inter_css_rows_start + inter_css_rows_end;
+    initialJSXCode = inter_jsx_rows_start + inter_jsx_rows_end;
   }
 
   const [cssCode, setCSSCode] = useState(initialCSSCode);
@@ -50,23 +55,41 @@ export default function InteractiveGridCells({ rowOrCol, cssStart, cssEnd }) {
    */
   const adjustExample = (numSections, operation) => {
     // Edit display JSX code
-    const jsxDivs = `\n  <div className="ex-col" />`.repeat(numSections);
-    const updatedJSX = `${inter_jsx_cols_start}${jsxDivs}${inter_jsx_cols_end}`;
+
+    let updatedJSX, jsxDivs;
+    if (rowOrCol === "column") {
+      jsxDivs = `\n  <div className="ex-col" />`.repeat(numSections);
+      updatedJSX = `${inter_jsx_cols_start}${jsxDivs}${inter_jsx_cols_end}`;
+    } else {
+      jsxDivs = `\n  <div className="ex-row" />`.repeat(numSections);
+      updatedJSX = `${inter_jsx_rows_start}${jsxDivs}${inter_jsx_rows_end}`;
+    }
     setJSXCode(updatedJSX);
 
     // Edit display CSS code
     const cssFr = " 1fr".repeat(numSections);
-    const updatedCSS = `${cssStart}${cssFr}${cssEnd}`;
+
+    // Merge CSS Code based on "column" or "row" rowOrCol value:
+    let updatedCSS;
+    if (rowOrCol === "column") {
+      updatedCSS = `${inter_css_cols_start}${cssFr}${inter_css_cols_end}`;
+    } else {
+      updatedCSS = `${inter_css_rows_start}${cssFr}${inter_css_rows_end}`;
+    }
     setCSSCode(updatedCSS);
 
     // Set new col count
     setSectionCount(numSections);
 
-    addRemoveColumns(operation);
+    if (rowOrCol === "column") {
+      addRemoveColumns(operation);
+    } else {
+      addRemoveRows(operation);
+    }
   };
 
   return (
-    <>
+    <article>
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={jsxCode}
@@ -79,7 +102,8 @@ export default function InteractiveGridCells({ rowOrCol, cssStart, cssEnd }) {
           codeLang={"css"}
         />
       </CodeWrapper>
-      <div className="result-grid">
+
+      <div className="grid interactive example">
         <div className="column-controls">
           <button
             onClick={() => {
@@ -97,12 +121,26 @@ export default function InteractiveGridCells({ rowOrCol, cssStart, cssEnd }) {
           </button>
         </div>
         <div
-          id="ex-cols"
-          style={{ gridTemplateColumns: `repeat(${sections + 1}, 1fr)` }}
+          className={
+            rowOrCol === "column"
+              ? "grid interactive-content ex-cols"
+              : "grid interactive-content ex-rows"
+          }
+          style={
+            rowOrCol === "column"
+              ? { gridTemplateColumns: `repeat(${sections + 1}, 1fr)` }
+              : {
+                  gridTemplateRows: `repeat(${sections + 1}, 1fr)`,
+                }
+          }
         >
-          <div className="ex-col" />
+          {rowOrCol === "column" ? (
+            <div className="ex-col" />
+          ) : (
+            <div className="ex-row" />
+          )}
         </div>
       </div>
-    </>
+    </article>
   );
 }

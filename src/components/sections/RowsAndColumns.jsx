@@ -49,6 +49,7 @@ export default function RowsAndColumns() {
           codeLang={"css"}
         />
       </CodeWrapper>
+
       <p>
         Want more columns? Just keep adding on widths or fractional parts to the{" "}
         <code className="inline">grid-template-columns</code>! Space out these
@@ -57,7 +58,8 @@ export default function RowsAndColumns() {
 
       <InteractiveGridCells rowOrCol={"column"} />
 
-      {/* <InteractiveGridCells rowOrCol={"row"} /> */}
+      <p>Creating rows work pretty much the same way, just </p>
+      <InteractiveGridCells rowOrCol={"row"} />
     </section>
   );
 }

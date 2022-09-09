@@ -151,11 +151,10 @@ footer {
 
 /* Interactive Grid Cells */
 
-.result-grid {
+.interactive {
   grid-column: span 2;
 
-  display: grid;
-  grid-template-rows: 50px 100px;
+  grid-template-rows: 50px minmax(100px, auto);
   row-gap: 0.75rem;
   padding: 1rem;
   border: 2px solid var(--vivid);
@@ -168,17 +167,27 @@ footer {
   column-gap: 0.75rem;
 }
 
-#ex-cols {
+.interactive-content {
   grid-column: span 1;
+}
 
-  display: grid;
+.ex-cols {
   column-gap: 0.75rem;
 }
 
-.ex-col {
-  background-color: var(--vivid);
+.ex-rows {
+  row-gap: 0.75rem;
+}
+
+.ex-col,
+.ex-row {
+  background-color: var(--purp);
   border: 2px solid var(--platinum);
   border-radius: 0.75rem;
+}
+
+.ex-row {
+  min-height: 50px;
 }
 
 /* Grid Example Base Styles */
