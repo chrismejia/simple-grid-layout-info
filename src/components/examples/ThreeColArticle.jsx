@@ -20,12 +20,11 @@ export default function ThreeColArticle() {
         <p className="article-text">
           <a href="#">Ix Peron Al</a>
         </p>
-      </aside>{" "}
+      </aside>
       <article className="article">
         <p className="article-text">
           <i>by Ixion</i>
         </p>
-        <time></time>
         <p className="article-text">
           Dolor purus non enim praesent elementum facilisis leo vel. Iaculis
           nunc sed augue lacus. Quam id leo in vitae turpis massa sed elementum.

@@ -222,3 +222,18 @@
 .single-challenge:not(:first-child) {
   margin-top: 2rem;
 }
+
+/**************************************
+* ShowExampleCode.jsx
+**************************************/
+.show-ex-code {
+  width: 100%;
+  grid-template-rows: 50px auto;
+  grid-template-columns: repeat(2, max-content);
+}
+
+.btn-ex-code {
+  padding: 0 1rem;
+  width: max-content;
+  grid-column: span 2;
+}
