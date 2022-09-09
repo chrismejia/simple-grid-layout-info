@@ -69,7 +69,9 @@ export default function RowsAndColumns() {
 
       <InteractiveGridCells rowOrCol={"row"} />
 
-      <h4>Putting It All Together (mixed row & columns)</h4>
+      <h4>Putting It All Together</h4>
+
+      <p></p>
 
       <h4>Heights & Widths of All Sizes (mixed sizings)</h4>
       <Divider />

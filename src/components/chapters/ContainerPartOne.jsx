@@ -1,6 +1,5 @@
 import CodeWrapper from "../helpers/CodeWrapper";
 import Footnote from "../helpers/Footnote";
-import GridExamples from "../sections/GridExamples";
 import HighlightedCode from "../helpers/HighlightedCode";
 import {
   full_width_container_css,
@@ -10,8 +9,6 @@ import {
 export default function ContainerPartOne() {
   return (
     <section className="container">
-      <GridExamples />
-
       <h2>Containers + Grid = Win</h2>
       <p>
         Let's start with the <code className="inline">container</code>.
