@@ -13,7 +13,7 @@ export default function BreakpointWidths() {
           <td>Window Width</td>
         </tr>
         <tr>
-          <th>{"Desktop (1204px to 1215px)"}</th>
+          <th>{"Desktop (1024px to 1215px)"}</th>
           <td>960px</td>
         </tr>
         <tr>
