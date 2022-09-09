@@ -1,4 +1,4 @@
-import BreakpointWidths from "../sections/BreakpointWidths";
+import BreakpointExamples from "../sections/BreakpointExamples";
 import CodeWrapper from "../helpers/CodeWrapper";
 import Divider from "../helpers/Divider";
 import ExternalLink from "../helpers/ExternalLink";
@@ -23,7 +23,7 @@ export default function ContainerPartTwo() {
       </p>
       <p>
         We can do this by defining some reusable CSS variables
-        <Footnote refLabel={2} /> for some widths and creating some media
+        <Footnote refLabel={2} /> for some Examples and creating some media
         queries
         <Footnote refLabel={3} />.
       </p>
@@ -35,7 +35,9 @@ export default function ContainerPartTwo() {
         columns have integer column sizes
         <Footnote refLabel={4} />:
       </p>
-      <BreakpointWidths />
+
+      <BreakpointExamples />
+
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={index_css}

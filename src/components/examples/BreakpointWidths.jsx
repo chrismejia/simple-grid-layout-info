@@ -1,6 +1,6 @@
 export default function BreakpointWidths() {
   return (
-    <table className="table">
+    <table className="table breakpoints-table">
       <thead>
         <tr>
           <th>Breakpoints</th>
@@ -13,11 +13,11 @@ export default function BreakpointWidths() {
           <td>Window Width</td>
         </tr>
         <tr>
-          <th>{"Desktop (1024px to 1215px)"}</th>
+          <th>{"Desktop (1024px - 1215px)"}</th>
           <td>960px</td>
         </tr>
         <tr>
-          <th>{"Laptop (1216px to 1407px)"}</th>
+          <th>{"Widescreen (1216px - 1407px)"}</th>
           <td>1152px</td>
         </tr>
         <tr>

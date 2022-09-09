@@ -1,4 +1,5 @@
 import CodeWrapper from "../helpers/CodeWrapper";
+import Divider from "../helpers/Divider";
 import Footnote from "../helpers/Footnote";
 import HighlightedCode from "../helpers/HighlightedCode";
 import InteractiveGridCells from "../examples/InteractiveGridCells";
@@ -13,15 +14,15 @@ export default function RowsAndColumns() {
         The simplest grid is one that has just 1 column or 1 row; essentially
         just one cell on the grid. We can dictate the grid's breakdown using{" "}
         <code className="inline">grid-template-rows</code>,{" "}
-        <code className="inline">grid-template-columns</code>, or a combination
-        of both.
+        <code className="inline">grid-template-columns</code>, explicitly
+        defining both,or by using <code className="inline">grid-template</code>.
       </p>
       <p>
         Just like other CSS, you can use units like{" "}
         <code className="inline">px/pt</code>,{" "}
         <code className="inline">em/rem</code>, and{" "}
-        <code className="inline">vw/vh</code> to designate the size of the
-        grid's rows or columns
+        <code className="inline">vw/vh</code> to set the size of the grid's rows
+        or columns
         <Footnote refLabel={5} />.
       </p>
 
@@ -32,6 +33,8 @@ export default function RowsAndColumns() {
         <code className="inline">fr</code> unit is that it saves you the hassle
         of having to manually calculate the percentage for a grid space.
       </p>
+
+      <h4>Working with Columns</h4>
 
       <p>
         If you wanted two even columns, you could write{" "}
@@ -58,8 +61,18 @@ export default function RowsAndColumns() {
 
       <InteractiveGridCells rowOrCol={"column"} />
 
-      <p>Creating rows work pretty much the same way, just </p>
+      <h4>Working with Rows</h4>
+      <p>
+        Creating rows works pretty much the same way, just using{" "}
+        <code className="inline">grid-template-rows</code>.
+      </p>
+
       <InteractiveGridCells rowOrCol={"row"} />
+
+      <h4>Putting It All Together (mixed row & columns)</h4>
+
+      <h4>Heights & Widths of All Sizes (mixed sizings)</h4>
+      <Divider />
     </section>
   );
 }

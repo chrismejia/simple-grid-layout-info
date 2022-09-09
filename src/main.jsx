@@ -8,6 +8,7 @@ import PageSquareKnot from "./pages/05-SquareKnot";
 import "./styles/index.css";
 import "./styles/challenges.css";
 import "./styles/container.css";
+import "./styles/sections.css";
 import "./styles/examples.css";
 import "./styles/helpers.css";
 
