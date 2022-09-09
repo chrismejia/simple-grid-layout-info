@@ -102,6 +102,32 @@ h4 {
   font-size: var(--size-4);
 }
 
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: var(--size-2);
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: var(--size-3);
+    padding-top: 0;
+  }
+
+  h3 {
+    font-size: var(--size-4);
+  }
+
+  h4 {
+    font-size: var(--size-5);
+  }
+
+  p,
+  .token-line {
+    font-size: 0.9rem;
+  }
+}
+
 del {
   text-decoration-thickness: 4px;
   text-decoration-color: var(--vivid);

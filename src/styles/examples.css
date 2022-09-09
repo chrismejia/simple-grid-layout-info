@@ -179,7 +179,9 @@ footer {
   grid-row: span 1;
 }
 
-/* Interactive Grid Cells */
+/**************************************
+* InteractiveGridCells.jsx
+**************************************/
 
 .interactive {
   grid-column: span 2;
@@ -254,7 +256,3 @@ footer {
   color: black;
   background-color: var(--vivid);
 }
-
-/**************************************
-* BreakpointExamples.jsx
-**************************************/

@@ -1,4 +1,11 @@
-/* Footnote.jsx */
+/**************************************
+* Footnote.jsx
+**************************************/
+.footnote {
+  margin-left: -10px;
+  margin-bottom: 3px;
+  color: var(--vivid);
+}
 
 .styled-link {
   /* RESET */
@@ -42,13 +49,9 @@
   transition: transform 0.25s ease-out;
 }
 
-.footnote {
-  margin-left: -10px;
-  margin-bottom: 3px;
-  color: var(--vivid);
-}
-
-/* CodeWrapper.jsx */
+/**************************************
+* CodeWrapper.jsx
+**************************************/
 .code-wrapper {
   column-gap: 0.75rem;
   padding: 0.75rem 0;
@@ -106,10 +109,11 @@
   border-right: 2px solid var(--platinum);
 }
 
-/*  HighlightedElement.jsx */
-
+/**************************************
+* HighlightedElement.jsx
+**************************************/
 .highlighted-element {
-  margin: 0.75rem 0;
+  margin: 3rem 0;
   padding: 0 0.75rem;
   display: grid;
   place-items: center;
@@ -122,7 +126,9 @@
   font-weight: bold;
 }
 
-/* OpenGraphLayout */
+/**************************************
+* OpenGraphLayout.jsx
+**************************************/
 .og-image {
   width: 1158px;
   height: 588px;
@@ -197,8 +203,9 @@
   grid-column: span 3;
 }
 
-/* Layout Challenges */
-
+/**************************************
+* LayoutChallenges.jsx
+**************************************/
 .single-challenge {
   grid-template-columns: minmax(150px, 25%) 1fr;
   column-gap: 2rem;
