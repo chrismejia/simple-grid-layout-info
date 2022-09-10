@@ -15,16 +15,14 @@ export const container_with_media = `/* Center the container by auto setting lef
 }
 
 /*
- * Manage the container's width at different screen widths
+ * Below desktop size, our container is the full browser width.
+ * We instead pad the container by (½ * --container-margin), 32px
  *
- * Below desktop size we want our container to be the full window width,
- * but pad the container's contents on each side by 2rem.
- *
- * Above it, we ensure a 32px space on the container, per side, per breakpoint
+ * Above it, we ensure at least 32px space per container side
  */
 @media (max-width: 1023px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 32px;
   }
 }
 
@@ -35,7 +33,7 @@ export const container_with_media = `/* Center the container by auto setting lef
   }
 }
 
-/* laptop (1216px to 1407px) | 1152px wide */
+/* Widescreen (1216px to 1407px) | 1152px wide */
 @media (min-width: 1216px) and (max-width: 1407px) {
   .container {
     max-width: calc(var(--widescreen) - var(--container-margin));
