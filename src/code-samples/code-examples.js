@@ -15,8 +15,8 @@ export const container_with_media = `/* Center the container by auto setting lef
 }
 
 /*
- * Below desktop size, our container is the full browser width.
- * We instead pad the container by (½ * --container-margin), 32px
+ * Below desktop size, .container is the full browser width.
+ * Instead, pad .container by (½ * --container-margin), 32px
  *
  * Above it, we ensure at least 32px space per container side
  */

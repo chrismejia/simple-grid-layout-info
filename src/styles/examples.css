@@ -133,8 +133,8 @@
 .picture-collage {
   grid-template:
     "lava lava lava lava station station"
-    "model model photos-titling photos-titling station station"
-    "model model river-road river-road station station";
+    "model model titling titling station station"
+    "model model river river station station";
 
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 200px);
@@ -146,7 +146,7 @@
 }
 
 .photos-titling {
-  grid-area: photos-titling;
+  grid-area: titling;
 
   display: grid;
   place-items: center;
@@ -177,7 +177,7 @@
 }
 
 .river-road {
-  grid-area: river-road;
+  grid-area: river;
 }
 
 /**************************************

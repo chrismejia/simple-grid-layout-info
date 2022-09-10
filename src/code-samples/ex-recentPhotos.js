@@ -2,14 +2,14 @@ export const recentPhotosJSX = `<article className="grid example picture-collage
   <div className="lava">
     <img
       src="../examples/pexels-1.jpg"
-      alt="Body of Water during Golden Hour"
+      alt="Flowing lava"
     />
   </div>
 
   <div className="station">
     <img
       src="../examples/pexels-2.jpg"
-      alt="City Buildings"
+      alt="Train station"
     />
   </div>
 
@@ -20,14 +20,14 @@ export const recentPhotosJSX = `<article className="grid example picture-collage
   <div className="model">
     <img
       src="../examples/pexels-3.jpg"
-      alt="Hot Air Balloons"
+      alt="Model in sunglasses"
     />
   </div>
 
   <div className="river-road">
     <img
       src="../examples/pexels-4.jpg"
-      alt="Body of Water during Golden Hour"
+      alt="Winding road by river"
     />
   </div>
 </article>`;
