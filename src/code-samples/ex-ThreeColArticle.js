@@ -50,6 +50,7 @@ export const threeColJSX = `<div className="grid example classic-article">
 </div>`;
 
 export const threeColCSS = `.classic-article {
+  display: grid;
   grid-template: auto 1fr auto / auto 1fr auto;
 
   color: black;
@@ -110,9 +111,15 @@ export const threeColCSS = `.classic-article {
   border-radius: 0.75rem;
 }
 
+.article-footer {
+  grid-column: span 12;
+  border-top: 2px solid black;
+}
+
+/* Reflow article into skinny layout */
 @media (max-width: 1024px) {
   .classic-article {
-    grid-template: auto 1fr auto / minmax(30ch, 65ch) 1fr;
+    grid-template: auto 1fr auto / minmax(30ch, 55ch) 1fr;
   }
 
   .article {
@@ -124,7 +131,7 @@ export const threeColCSS = `.classic-article {
   }
 
   .sidebar-left {
-    grid-column: 1/3;
+    grid-column: 1 / 3;
     grid-row: 3;
     display: inline-block;
   }

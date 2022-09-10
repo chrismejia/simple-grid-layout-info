@@ -64,7 +64,7 @@ export default function ThreeColArticle() {
         <img src="../../examples/pexels-article-ad.jpg" alt="Tonic ad" />
         <i>Buy Tonic&#8482;!</i>
       </aside>
-      <footer>
+      <footer className="article-footer">
         <i>&copy; Dignissim Lectus LLC MCCCVII</i>
       </footer>
     </div>
