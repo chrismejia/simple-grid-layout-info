@@ -16,7 +16,6 @@
 }
 
 .outer-border {
-  margin-top: 2rem;
   border: 2px solid var(--vivid);
   padding: 1rem;
   border-radius: 0.75rem;
@@ -27,13 +26,6 @@
   place-items: center;
   color: var(--platinum);
   font-weight: bold;
-}
-
-.generic-ex * {
-  height: 100px;
-  border: 2px solid var(--platinum);
-  border-radius: 0.75rem;
-  background-color: var(--purp);
 }
 
 /**************************************

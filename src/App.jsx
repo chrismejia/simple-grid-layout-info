@@ -25,7 +25,7 @@ export default function App() {
       <ContainerPartTwo />
       <GridBasics />
       <GridTemplating />
-      {/* <LayoutChallenges /> */}
+      <LayoutChallenges />
       {/* <OpenGraphLayout /> */}
     </main>
   );

@@ -2,6 +2,7 @@ import ThreeByThree from "../challenges/01-3x3Grid";
 import Pyramid from "../challenges/02-Pyramid";
 import Staircase from "../challenges/03-Staircase";
 import CelticKnot from "../challenges/CelticKnots";
+import RecursiveSquare from "../challenges/RecursiveSquare";
 
 import SingleChallenge from "../helpers/SingleChallenge";
 
@@ -53,6 +54,16 @@ export default function LayoutChallenges() {
       <SingleChallenge {...allChallengeProps.tic_tac_toe} />
       <SingleChallenge {...allChallengeProps.staircase} />
       <SingleChallenge {...allChallengeProps.pyramid} />
+      <section
+        className="outer-border"
+        style={{ width: "900px", height: "1200px" }}
+      >
+        <RecursiveSquare>
+          <RecursiveSquare>
+            <RecursiveSquare />
+          </RecursiveSquare>
+        </RecursiveSquare>
+      </section>
 
       {/* <ol>
         <li>Build a 3x3 grid.</li>

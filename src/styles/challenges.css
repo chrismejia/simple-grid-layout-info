@@ -1,5 +1,6 @@
 .filled {
   background-color: var(--purp);
+  min-height: 50px;
 }
 
 .challenge {
@@ -108,7 +109,6 @@
 /****************
 * Square Knot
 *****************/
-
 .square-knot {
   grid-template-columns: repeat(7, 125px);
   grid-template-rows: repeat(7, 125px);
@@ -188,4 +188,17 @@
 
 .b-to-black {
   background: linear-gradient(to top, var(--vivid) 50%, var(--purp));
+}
+
+/**************************************
+* Recursive Square
+**************************************/
+.recursive-square {
+  height: 100%;
+  width: 100%;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 1rem;
 }
