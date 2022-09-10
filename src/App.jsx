@@ -1,10 +1,10 @@
-import ContainerPartOne from "./components/chapters/ContainerPartOne";
-import ContainerPartTwo from "./components/chapters/ContainerPartTwo";
+import SiteHeader from "./components/chapters/01-SiteHeader";
+import ContainerPartOne from "./components/chapters/02-ContainerPartOne";
+import ContainerPartTwo from "./components/chapters/03-ContainerPartTwo";
 import GridBasics from "./components/chapters/GridBasics";
 import GridTemplating from "./components/chapters/GridTemplating";
 import GridExamples from "./components/chapters/GridExamples";
 import LayoutChallenges from "./components/chapters/LayoutChallenges";
-import SiteHeader from "./components/chapters/SiteHeader";
 import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
 import HighlightedElement from "./components/helpers/HighlightedElement";
 
