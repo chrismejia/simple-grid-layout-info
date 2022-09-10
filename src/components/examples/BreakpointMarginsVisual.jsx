@@ -8,8 +8,8 @@ export default function BreakpointMarginsVisual() {
             <span>32px</span>
           </div>
           <div>
-            <span>{"Touch (< 1024px)"}</span>
-            <span>Window Width | 0 margin</span>
+            <span>{"Touch"}</span>
+            <span>Window Width</span>
           </div>
           <div>
             <span>pad</span>
@@ -24,7 +24,7 @@ export default function BreakpointMarginsVisual() {
           <span>32px</span>
         </div>
         <div className="ex-padded filled">
-          <span>{"Desktop (1024px - 1215px)"}</span>
+          <span>{"Desktop"}</span>
           <span>960px</span>
         </div>
         <div className="ex-padded filled">
@@ -38,7 +38,7 @@ export default function BreakpointMarginsVisual() {
           <span>32px</span>
         </div>
         <div className="ex-padded filled">
-          <span>{"Widescreen (1216px - 1407px)"}</span>
+          <span>{"Widescreen"}</span>
           <span>1152px</span>
         </div>
         <div className="ex-padded filled">
@@ -52,7 +52,7 @@ export default function BreakpointMarginsVisual() {
           <span>32px</span>
         </div>
         <div className="ex-padded filled">
-          <span>{"FullHD (> 1408px)"}</span>
+          <span>{"FullHD"}</span>
           <span>1344px</span>
         </div>
         <div className="ex-padded filled">

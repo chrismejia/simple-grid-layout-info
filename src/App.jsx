@@ -15,11 +15,9 @@ export default function App() {
       <GridExamples />
       <ContainerPartOne />
       <HighlightedElement elementLabel={`<section className="container">`}>
-        <div className="ex-container">
-          <p>
-            This is our container. It currently extends the full width of your
-            browser window.
-          </p>
+        <div className="ex-container centered-text">
+          <p>This is our container.</p>
+          <p>It currently extends the full width of your browser window.</p>
         </div>
       </HighlightedElement>
       <ContainerPartTwo />
