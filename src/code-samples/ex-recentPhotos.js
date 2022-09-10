@@ -33,11 +33,10 @@ export const recentPhotosJSX = `<article className="grid example picture-collage
 </article>`;
 
 export const recentPhotosCSS = `.picture-collage {
-  display: grid;
   grid-template:
-    "lava lava lava lava station station"
-    "model model photos-titling photos-titling station station"
-    "model model river-road river-road station station";
+    "lava  lava  lava    lava    station station"
+    "model model titling titling station station"
+    "model model road    road    station station";
 
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 200px);
@@ -48,17 +47,19 @@ export const recentPhotosCSS = `.picture-collage {
   border-radius: 0.75rem;
 }
 
-.photos-titling {
-  grid-area: photos-titling;
-
-  display: grid;
-  place-items: center;
-}
-
 .picture-collage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Area assignments */
+
+.photos-titling {
+  grid-area: titling;
+
+  display: grid;
+  place-items: center;
 }
 
 .photos-titling h3 {
@@ -80,5 +81,5 @@ export const recentPhotosCSS = `.picture-collage {
 }
 
 .river-road {
-  grid-area: river-road;
+  grid-area: river;
 }`;
