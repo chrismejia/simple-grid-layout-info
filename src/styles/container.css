@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.container article.text {
+  margin: 5rem auto;
+  width: 75%;
+}
+
 /*
  * Below desktop size, our container is the full browser width.
  * We instead pad the container by (½ * --container-margin), 32px
@@ -12,6 +17,11 @@
 @media (max-width: 1023px) {
   .container {
     padding: 0 32px;
+  }
+
+  .container article.text {
+    margin: 2rem auto;
+    width: 80%;
   }
 }
 

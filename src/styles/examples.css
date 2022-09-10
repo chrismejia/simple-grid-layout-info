@@ -9,6 +9,10 @@
   margin: 3rem 0;
 }
 
+.example + .example {
+  margin: 0;
+}
+
 @media screen and (max-width: 1216px) {
   .example {
     grid-template-columns: 1fr;
@@ -231,9 +235,17 @@
 /**************************************
 * Specific Grid Examples
 **************************************/
+.two-cols,
 .twelve-cols,
 .four-cols {
   gap: 0.75rem;
+}
+
+/**************************************
+* SuperCentered.jsx
+**************************************/
+.two-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .twelve-cols {

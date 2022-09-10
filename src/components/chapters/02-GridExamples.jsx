@@ -20,9 +20,10 @@ import { trueCenterCSS, trueCenterJSX } from "../../code-samples/ex-trueCenter";
 export default function GridExamples() {
   return (
     <section className="container">
-      <h2>What Can You Build With The Grid?</h2>
-
-      <p>Stuff like this article.</p>
+      <article className="text">
+        <h2>What Can You Build With The Grid?</h2>
+        <p>Stuff like this article.</p>
+      </article>
 
       <ThreeColArticle />
 
@@ -41,7 +42,9 @@ export default function GridExamples() {
         </CodeWrapper>
       </ShowExampleCode>
 
-      <p>Or like this photo collage.</p>
+      <article className="text">
+        <p>Or like this photo collage.</p>
+      </article>
 
       <RecentPhotos />
 
@@ -60,10 +63,12 @@ export default function GridExamples() {
         </CodeWrapper>
       </ShowExampleCode>
 
-      <p>
-        Or finally learn to <b>TRULY</b> center something, once and for all,{" "}
-        <b>IN JUST ONE LINE.</b>
-      </p>
+      <article className="text">
+        <p>
+          Or finally learn to <b>TRULY</b> center something, once and for all,{" "}
+          <b>IN JUST ONE LINE.</b>
+        </p>
+      </article>
 
       <SuperCentered />
 

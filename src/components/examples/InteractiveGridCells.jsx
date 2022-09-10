@@ -89,7 +89,7 @@ export default function InteractiveGridCells({ rowOrCol }) {
   };
 
   return (
-    <article>
+    <article className="example">
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={jsxCode}

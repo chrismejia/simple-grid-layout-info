@@ -14,27 +14,29 @@ import {
 export default function ContainerPartTwo() {
   return (
     <section className="container">
-      <h3>Fixing the Container's Width</h3>
-      <p>
-        We have a container, but it's currently the full width of the page.
-        Instead of setting the width directly on the{" "}
-        <code className="inline">.container</code>, let's base the width on the
-        current browser width.
-      </p>
-      <p>
-        We can do this by defining some reusable CSS variables
-        <Footnote refLabel={2} /> for some Examples and creating some media
-        queries
-        <Footnote refLabel={3} />.
-      </p>
-      <h4 id="breakpoints">Column Widths & Breakpoints</h4>
-      <p>
-        We want our <code className="inline">.container</code> to be able to
-        split into as many as 12 columns, to give us a bunch of layout options.
-        We can set three breakpoint widths that are divisible by 12 so our grid
-        columns have integer column sizes
-        <Footnote refLabel={4} />:
-      </p>
+      <article className="text">
+        <h3>Fixing the Container's Width</h3>
+        <p>
+          We have a container, but it's currently the full width of the page.
+          Instead of setting the width directly on the{" "}
+          <code className="inline">.container</code>, let's base the width on
+          the current browser width.
+        </p>
+        <p>
+          We can do this by defining some reusable CSS variables
+          <Footnote refLabel={2} /> for some Examples and creating some media
+          queries
+          <Footnote refLabel={3} />.
+        </p>
+        <h4 id="breakpoints">Column Widths & Breakpoints</h4>
+        <p>
+          We want our <code className="inline">.container</code> to be able to
+          split into as many as 12 columns, to give us a bunch of layout
+          options. We can set three breakpoint widths that are divisible by 12
+          so our grid columns have integer column sizes
+          <Footnote refLabel={4} />:
+        </p>
+      </article>
 
       <BreakpointExamples />
 
@@ -50,11 +52,15 @@ export default function ContainerPartTwo() {
           codeLang={"css"}
         />
       </CodeWrapper>
-      <h4 style={{ marginBottom: "2rem" }}>Our Container Now</h4>
-      <p>
-        Don't forget to import the new <code className="inline">index</code> CSS
-        file into your App!
-      </p>
+
+      <article className="text">
+        <h4 style={{ marginBottom: "2rem" }}>Our Container Now</h4>
+        <p>
+          Don't forget to import the new <code className="inline">index</code>{" "}
+          CSS file into your App!
+        </p>
+      </article>
+
       <HighlightedElement elementLabel={`<section className="container" />`}>
         <div className="ex-container">
           <p>
@@ -62,6 +68,7 @@ export default function ContainerPartTwo() {
           </p>
         </div>
       </HighlightedElement>
+
       <SectionReferences>
         <ExternalLink
           url={"https://bulma.io/documentation/layout/container/"}

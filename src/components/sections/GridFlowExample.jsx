@@ -8,12 +8,13 @@ import {
 
 export default function GridFlowExample() {
   return (
-    <>
-      <h3>
-        What happens when you declared columns, but not rows and then insert
-        over the number of rows?
-      </h3>
-
+    <section className="container">
+      <article className="text">
+        <h3>
+          What happens when you declared columns, but not rows and then insert
+          over the number of rows?
+        </h3>
+      </article>
       <CodeWrapper sections={2}>
         <HighlightedCode
           code={four_cols_wide_jsx}
@@ -26,8 +27,7 @@ export default function GridFlowExample() {
           codeLang={"css"}
         />
       </CodeWrapper>
-
       <FiveColsFourWide />
-    </>
+    </section>
   );
 }
