@@ -52,6 +52,7 @@
 .token-line {
   white-space: pre-wrap;
 }
+
 /**************************************
 * CodeWrapper.jsx
 **************************************/
@@ -80,7 +81,6 @@
   .token-line {
     display: flex;
     flex-wrap: wrap;
-    /* padding-right: 0.5rem; */
   }
 
   .single-code-block:not(:last-child) {

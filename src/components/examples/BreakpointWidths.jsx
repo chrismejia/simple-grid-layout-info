@@ -9,7 +9,7 @@ export default function BreakpointWidths() {
       </thead>
       <tbody>
         <tr>
-          <th>{"Touch (up to 1023px)"}</th>
+          <th>{"Touch (< 1024px)"}</th>
           <td>Window Width</td>
         </tr>
         <tr>
@@ -21,7 +21,7 @@ export default function BreakpointWidths() {
           <td>1152px</td>
         </tr>
         <tr>
-          <th>{"FullHD (1408px and up)"}</th>
+          <th>{"FullHD (> 1408px)"}</th>
           <td>1344px</td>
         </tr>
       </tbody>
