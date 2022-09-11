@@ -1,6 +1,6 @@
 import { useState } from "react";
 import HighlightedElement from "./HighlightedElement";
-import ShowExample from "./ShowExample";
+import ShowLayoutExample from "./ShowLayoutExample";
 
 export default function SingleChallenge({
   challengeText,
@@ -25,11 +25,11 @@ export default function SingleChallenge({
           {open ? "Hide Example" : "Show Example"}
         </button>
       </div>
-      <ShowExample isOpen={open}>
+      <ShowLayoutExample isOpen={open}>
         <HighlightedElement elementLabel={challengeFileLabel}>
           <ExampleComponent />
         </HighlightedElement>
-      </ShowExample>
+      </ShowLayoutExample>
     </div>
   );
 }
