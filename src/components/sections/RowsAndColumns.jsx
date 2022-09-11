@@ -2,11 +2,14 @@ import CodeWrapper from "../helpers/CodeWrapper";
 import Divider from "../helpers/Divider";
 import Footnote from "../helpers/Footnote";
 import HighlightedCode from "../helpers/HighlightedCode";
+import MDNQuote from "../helpers/MDNQuote";
 
 import BasicEvenColumns from "../examples/BasicEvenColumns";
+import BasicRowsColumns from "../examples/BasicRowsColumns";
 import InteractiveGridCells from "../examples/InteractiveGridCells";
 
 import { grid_cols_base } from "../../code-samples/code-examples";
+import { mdnQuoteData } from "../../data/mdnQuote.data";
 
 export default function RowsAndColumns() {
   return (
@@ -18,7 +21,7 @@ export default function RowsAndColumns() {
           just one cell on the grid. We can dictate the grid's breakdown using{" "}
           <code className="inline">grid-template-rows</code>,{" "}
           <code className="inline">grid-template-columns</code>, explicitly
-          defining both,or by using{" "}
+          defining both, or by using{" "}
           <code className="inline">grid-template</code>.
         </p>
         <p>
@@ -61,18 +64,15 @@ export default function RowsAndColumns() {
       <article className="text">
         <p>
           Want more columns? Just keep adding on widths or fractional parts to
-          the <code className="inline">grid-template-columns</code>! Space out
-          these columns with <code className="inline">column-gap: 1rem</code>.
+          the <code className="inline">grid-template-columns</code>! Make these
+          columns visible by spacing them out by setting a gap,{" "}
+          <code className="inline">column-gap: .75rem</code>.
         </p>
       </article>
 
       <InteractiveGridCells rowOrCol={"column"} />
 
       <article className="text">
-        <p>
-          Using <code className="inline">fr</code> values makes it easy to
-          assign column and row sizes relative to the grid's area. You can also
-        </p>
         <h4>Working with Rows</h4>
         <p>
           Creating rows works pretty much the same way, just using{" "}
@@ -84,8 +84,30 @@ export default function RowsAndColumns() {
 
       <article className="text">
         <h4>Putting It All Together</h4>
-        <p></p>
+        <p>
+          If you want both columns and rows, you can declare both{" "}
+          <code className="inline">grid-template-columns</code> and{" "}
+          <code className="inline">grid-template-rows</code>.
+        </p>
+
+        <p>
+          Let's say we want 3 columns and 3 rows; that's 9 grid areas available.
+          Thanks to the <code className="inline">grid-auto-flow</code> property,
+          we don't have to worry about <b>HOW</b> to fill the next
+        </p>
+
+        <MDNQuote {...mdnQuoteData.grid_auto_flow} />
+      </article>
+
+      <BasicRowsColumns />
+
+      <article className="text">
         <h4>Heights & Widths of All Sizes (mixed sizings)</h4>
+        <p>
+          Using <code className="inline">fr</code> values makes it easy to
+          assign column and row sizes relative to the grid's area. You can also
+          mix different
+        </p>
       </article>
 
       <Divider />

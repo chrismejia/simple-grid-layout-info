@@ -44,20 +44,6 @@ body {
   min-height: 100vh;
 }
 
-hr {
-  color: var(--vivid);
-  background-color: var(--vivid);
-  width: 50%;
-  height: 2px;
-}
-
-.divider {
-  margin-top: 5rem;
-  place-items: center;
-  font-size: var(--size-1);
-  grid-template-columns: 1fr 25px 1fr;
-}
-
 /* Font Settings */
 p {
   font-size: var(--size-6);
