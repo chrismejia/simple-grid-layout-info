@@ -239,13 +239,19 @@
 .two-cols,
 .twelve-cols,
 .four-cols,
-.basic-rows-cols {
+.basic-rows-cols,
+.mixed-rows-cols {
   gap: 0.75rem;
 }
 
 .basic-rows-cols {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.mixed-rows-cols {
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 3fr 2fr 1fr;
 }
 
 .two-cols {

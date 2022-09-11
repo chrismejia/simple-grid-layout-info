@@ -5,11 +5,18 @@ import HighlightedCode from "../helpers/HighlightedCode";
 import MDNQuote from "../helpers/MDNQuote";
 
 import BasicEvenColumns from "../examples/BasicEvenColumns";
-import BasicRowsColumns from "../examples/BasicRowsColumns";
+import BasicRowsColumns from "../examples/BaseRowsColumns";
 import InteractiveGridCells from "../examples/InteractiveGridCells";
 
 import { grid_cols_base } from "../../code-samples/code-examples";
 import { mdnQuoteData } from "../../data/mdnQuote.data";
+import {
+  basicRowsCols_jsx,
+  basicRowsCols_css,
+  mixedRowsCols_jsx,
+  mixedRowsCols_css,
+} from "../../code-samples/ex-RowsAndColumns";
+import ShowExampleCode from "../helpers/ShowExampleCode";
 
 export default function RowsAndColumns() {
   return (
@@ -93,22 +100,63 @@ export default function RowsAndColumns() {
         <p>
           Let's say we want 3 columns and 3 rows; that's 9 grid areas available.
           Thanks to the <code className="inline">grid-auto-flow</code> property,
-          we don't have to worry about <b>HOW</b> to fill the next
+          we don't have to worry about <b>HOW</b> to fill the next row or
+          column.
         </p>
 
         <MDNQuote {...mdnQuoteData.grid_auto_flow} />
+
+        <p>
+          Here, <code className="inline">grid-auto-flow</code> defaults to{" "}
+          <code className="inline">'row'</code>, so the grid will organize its
+          fourth child,{" "}
+          <code className="inline">{`<div className="filled"> 4 </div>`}</code>,
+          in the second row of the first column, since all columns on the first
+          row have been filled.
+        </p>
       </article>
 
-      <BasicRowsColumns />
+      <BasicRowsColumns isMixed={false} />
+
+      <ShowExampleCode exampleLabel={"Even Rows & Cols"}>
+        <CodeWrapper sections={2}>
+          <HighlightedCode
+            code={basicRowsCols_jsx}
+            codeFilename={"EvenRowsColumns.jsx"}
+            codeLang={"jsx"}
+          />
+          <HighlightedCode
+            code={basicRowsCols_css}
+            codeFilename={"even-rows-cols.css"}
+            codeLang={"css"}
+          />
+        </CodeWrapper>
+      </ShowExampleCode>
 
       <article className="text">
-        <h4>Heights & Widths of All Sizes (mixed sizings)</h4>
+        <h4>Rows & Columns of All Sizes</h4>
         <p>
           Using <code className="inline">fr</code> values makes it easy to
           assign column and row sizes relative to the grid's area. You can also
-          mix different
+          define different sizes for each row, or column, independently.
         </p>
       </article>
+
+      <BasicRowsColumns isMixed={true} />
+      <ShowExampleCode exampleLabel={"Mixed Rows & Cols"}>
+        <CodeWrapper sections={2}>
+          <HighlightedCode
+            code={mixedRowsCols_jsx}
+            codeFilename={"MixedRowsColumns.jsx"}
+            codeLang={"jsx"}
+          />
+          <HighlightedCode
+            code={mixedRowsCols_css}
+            codeFilename={"mixed-rows-cols.css"}
+            codeLang={"css"}
+          />
+        </CodeWrapper>
+      </ShowExampleCode>
 
       <Divider />
     </section>
