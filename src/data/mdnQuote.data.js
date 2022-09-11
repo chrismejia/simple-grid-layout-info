@@ -7,4 +7,14 @@ export const mdnQuoteData = {
     mdnLink: "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow",
     defaultVal: "'row' (horizontal)",
   },
+  gap: {
+    propName: "gap (grid-gap)",
+    mdnQuotes: [
+      "The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.",
+      "This property is specified as a value for <'row-gap'> followed optionally by a value for <'column-gap'>. If <'column-gap'> is omitted, it's set to the same value as <'row-gap'>.",
+      "<'row-gap'> and <'column-gap'> are each specified as a <length> or a <percentage>.",
+    ],
+    mdnLink: "https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
+    defaultVal: "'unset' (0 row-gap, 0 column-gap)",
+  },
 };
