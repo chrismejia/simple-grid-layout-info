@@ -2,7 +2,7 @@ import SiteHeader from "./components/chapters/01-SiteHeader";
 import GridExamples from "./components/chapters/02-GridExamples";
 import ContainerPartOne from "./components/chapters/03-ContainerPartOne";
 import ContainerPartTwo from "./components/chapters/04-ContainerPartTwo";
-import GridBasics from "./components/chapters/GridBasics";
+import GridBasics from "./components/chapters/05-GridBasics";
 import GridTemplating from "./components/chapters/GridTemplating";
 import LayoutChallenges from "./components/chapters/LayoutChallenges";
 import OpenGraphLayout from "./components/helpers/OpenGraphLayout";

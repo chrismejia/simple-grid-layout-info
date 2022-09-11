@@ -1,17 +1,26 @@
+import Divider from "../helpers/Divider";
 import DontRepeatYourself from "../sections/DontRepeatYourself";
 import ExternalLink from "../helpers/ExternalLink";
-import TwelveColumnGrid from "../examples/TwelveColumnGrid";
 import SectionReferences from "../helpers/SectionReferences";
 import GridFlowExample from "../sections/GridFlowExample";
 import GridFirstDeclaration from "../sections/GridFirstDeclaration";
+import IntroToRowsColumns from "../sections/IntroToRowsColumns";
 import MindTheGap from "../sections/MindTheGap";
-import RowsAndColumns from "../sections/RowsAndColumns";
+import PuttingItAllTogether from "../sections/PuttingItAllTogether";
+import RowsColsAllSizes from "../sections/RowsColsAllSizes";
+import WorkingWithColumns from "../sections/WorkingWithColumns";
+import WorkingWithRows from "../sections/WorkingWithRows";
 
 export default function GridBasics() {
   return (
     <>
       <GridFirstDeclaration />
-      <RowsAndColumns />
+      <IntroToRowsColumns />
+      <WorkingWithColumns />
+      <WorkingWithRows />
+      <PuttingItAllTogether />
+      <RowsColsAllSizes />
+
       <MindTheGap />
       <DontRepeatYourself />
       <GridFlowExample />
@@ -38,6 +47,7 @@ export default function GridBasics() {
         <ExternalLink url={""} label={""} description={""} />
         <ExternalLink url={""} label={""} description={""} />
       </SectionReferences>
+      <Divider />
     </>
   );
 }

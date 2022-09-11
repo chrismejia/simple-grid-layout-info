@@ -1,4 +1,4 @@
-export default function BaseRowsAndColumns({ isMixed }) {
+export default function BaseRowsColumns({ isMixed }) {
   const style = isMixed
     ? "grid example outer-border mixed-rows-cols"
     : "grid example outer-border basic-rows-cols";

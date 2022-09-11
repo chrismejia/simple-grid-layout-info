@@ -1,0 +1,35 @@
+import Footnote from "../helpers/Footnote";
+
+export default function IntroToRowsColumns() {
+  return (
+    <section className="container">
+      <article className="text">
+        <h3>Rows, Columns, All at Once.</h3>
+        <p>
+          The simplest grid is one that has just 1 column or 1 row; essentially
+          just one cell on the grid. We can dictate the grid's breakdown using{" "}
+          <code className="inline">grid-template-rows</code>,{" "}
+          <code className="inline">grid-template-columns</code>, explicitly
+          defining both, or by using{" "}
+          <code className="inline">grid-template</code>.
+        </p>
+        <p>
+          Just like other CSS, you can use units like{" "}
+          <code className="inline">px/pt</code>,{" "}
+          <code className="inline">em/rem</code>, and{" "}
+          <code className="inline">vw/vh</code> to set the size of the grid's
+          rows or columns
+          <Footnote refLabel={5} />.
+        </p>
+        <p>
+          CSS Grid also provides the <code className="inline">fr</code> unit,
+          which allows for fractional divisions of an area
+          <Footnote refLabel={6} />. The neat thing about the{" "}
+          <code className="inline">fr</code> unit is that it saves you the
+          hassle of having to manually calculate the percentage for a grid
+          space.
+        </p>
+      </article>
+    </section>
+  );
+}
