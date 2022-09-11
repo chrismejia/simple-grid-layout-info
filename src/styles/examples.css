@@ -225,8 +225,6 @@
 .ex-col,
 .ex-row {
   background-color: var(--purp);
-  border: 2px solid var(--platinum);
-  border-radius: 0.75rem;
 }
 
 .ex-row {

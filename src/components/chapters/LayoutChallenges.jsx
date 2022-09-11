@@ -54,7 +54,8 @@ export default function LayoutChallenges() {
       <SingleChallenge {...allChallengeProps.tic_tac_toe} />
       <SingleChallenge {...allChallengeProps.staircase} />
       <SingleChallenge {...allChallengeProps.pyramid} />
-      <section
+
+      {/* <section
         className="outer-border"
         style={{ width: "900px", height: "1200px" }}
       >
@@ -63,7 +64,7 @@ export default function LayoutChallenges() {
             <RecursiveSquare />
           </RecursiveSquare>
         </RecursiveSquare>
-      </section>
+      </section> */}
 
       {/* <ol>
         <li>Build a 3x3 grid.</li>

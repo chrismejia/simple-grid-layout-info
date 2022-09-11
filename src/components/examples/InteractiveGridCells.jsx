@@ -47,7 +47,7 @@ export default function InteractiveGridCells({ rowOrCol }) {
   /**
    * Does three things
    * 1. Edits the display JSX & CSS code
-   * 2. Updates total column count
+   * 2. Updates total column/row count based
    * 3. Adds/removes column to interactive example
    * @function adjustExample
    * @param {number} numSections - number of rows OR cols; received from {@link sectionNumChecker}

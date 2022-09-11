@@ -268,3 +268,17 @@ hr {
   margin: 0 0 2rem;
   font-size: var(--size-5);
 }
+
+/**************************************
+* SiteFooter.jsx
+**************************************/
+.site-footer {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  bottom: 0;
+  height: 10rem;
+  margin-top: 4rem 0 -1rem;
+
+  background-color: var(--jewel);
+}

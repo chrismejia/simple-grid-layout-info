@@ -4,9 +4,10 @@ import ContainerPartOne from "./components/chapters/03-ContainerPartOne";
 import ContainerPartTwo from "./components/chapters/04-ContainerPartTwo";
 import GridBasics from "./components/chapters/05-GridBasics";
 import GridTemplating from "./components/chapters/GridTemplating";
+import HighlightedElement from "./components/helpers/HighlightedElement";
 import LayoutChallenges from "./components/chapters/LayoutChallenges";
 import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
-import HighlightedElement from "./components/helpers/HighlightedElement";
+import SiteFooter from "./components/helpers/SiteFooter";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <GridTemplating />
       <LayoutChallenges />
       {/* <OpenGraphLayout /> */}
+      <SiteFooter />
     </main>
   );
 }
