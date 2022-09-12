@@ -273,12 +273,9 @@ hr {
 * SiteFooter.jsx
 **************************************/
 .site-footer {
-  position: sticky;
-  position: -webkit-sticky;
-  left: 0;
-  bottom: 0;
   height: 10rem;
-  margin-top: 4rem 0 -1rem;
+  margin-top: 6rem 0 0;
+  border-top: 2px solid var(--vivid);
 
   background-color: var(--jewel);
 }

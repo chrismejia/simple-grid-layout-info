@@ -1,4 +1,4 @@
-import SiteHeader from "./components/chapters/01-SiteHeader";
+import SiteHeader from "./components/sections/SiteHeader";
 import GridExamples from "./components/chapters/02-GridExamples";
 import ContainerPartOne from "./components/chapters/03-ContainerPartOne";
 import ContainerPartTwo from "./components/chapters/04-ContainerPartTwo";
@@ -11,7 +11,7 @@ import SiteFooter from "./components/helpers/SiteFooter";
 
 export default function App() {
   return (
-    <main className="App">
+    <main>
       <SiteHeader />
       <GridExamples />
       <ContainerPartOne />

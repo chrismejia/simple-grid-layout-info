@@ -41,7 +41,10 @@
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+}
+
+main {
+  min-height: calc(100vh - 15rem);
 }
 
 /* Font Settings */

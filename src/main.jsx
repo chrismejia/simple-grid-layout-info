@@ -2,8 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import App from "./App";
-import PageSquareKnot from "./pages/05-SquareKnot";
+import IntroExamples from "./pages/01-Intro_Examples";
 
 import "./styles/index.css";
 import "./styles/challenges.css";
@@ -16,8 +15,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path={"/"} element={<App />} />
-        <Route path={"/square-knot"} element={<PageSquareKnot />} />
+        <Route path={"/"} element={<IntroExamples />} />
+        {/* <Route path={"/square-knot"} element={<PageSquareKnot />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
