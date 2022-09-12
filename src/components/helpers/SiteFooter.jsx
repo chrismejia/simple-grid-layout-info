@@ -28,18 +28,14 @@ export default function SiteFooter() {
           />
         </div>
         <div className="section-links">
-          <h5>
-            <ChapterLink linkURL="/container" linkText={"Container"} />
-          </h5>
+          <ChapterLink linkURL="/container" linkText={"Container"} />
           {/* <StyledLink linkText={"Container + Grid"} />
           <StyledLink linkText={"Container + Grid"} />
           <StyledLink linkText={"a"} />
           <StyledLink linkText={"a"} /> */}
         </div>
         <div className="section-links">
-          <h5>
-            <ChapterLink linkURL="/grid" linkText={"Grid"} />
-          </h5>
+          <ChapterLink linkURL="/grid" linkText={"Grid"} />
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>
@@ -47,9 +43,7 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="section-links">
-          <h5>
-            <ChapterLink linkURL="/subgrid" linkText={"Subgrid"} />
-          </h5>
+          <ChapterLink linkURL="/subgrid" linkText={"Subgrid"} />
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>
@@ -57,9 +51,7 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="section-links">
-          <h5>
-            <ChapterLink linkURL="/layouts" linkText={"Layouts"} />
-          </h5>
+          <ChapterLink linkURL="/layouts" linkText={"Layouts"} />
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>
@@ -67,9 +59,7 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="section-links">
-          <h5>
-            <ChapterLink linkURL="/challenges" linkText={"Challenges"} />
-          </h5>
+          <ChapterLink linkURL="/challenges" linkText={"Challenges"} />
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>

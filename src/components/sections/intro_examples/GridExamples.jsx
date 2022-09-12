@@ -1,6 +1,7 @@
 import CodeWrapper from "../../helpers/CodeWrapper";
 import Divider from "../../helpers/Divider";
 import HighlightedCode from "../../helpers/HighlightedCode";
+import PageNavigation from "../../helpers/PageNavigation";
 import ShowExampleCode from "../../helpers/ShowExampleCode";
 
 import ThreeColArticle from "../../examples/ThreeColArticle";
@@ -98,6 +99,7 @@ export default function GridExamples() {
       </article>
 
       <Divider />
+      <PageNavigation nextText={"Container"} nextURL={"/container"} />
     </section>
   );
 }
