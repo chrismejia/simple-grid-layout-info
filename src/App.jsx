@@ -1,5 +1,5 @@
 import SiteHeader from "./components/sections/SiteHeader";
-import GridExamples from "./components/chapters/02-GridExamples";
+import GridExamples from "./components/sections/intro_examples/GridExamples";
 import ContainerPartOne from "./components/chapters/03-ContainerPartOne";
 import ContainerPartTwo from "./components/chapters/04-ContainerPartTwo";
 import GridBasics from "./components/chapters/05-GridBasics";
