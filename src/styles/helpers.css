@@ -279,7 +279,7 @@ hr {
 
 .site-nav {
   height: 100%;
-  grid-template-columns: 2fr repeat(5, minmax(auto, 1fr));
+  grid-template-columns: 3fr repeat(6, minmax(50px, 2fr));
   column-gap: 2rem;
 
   padding: 2rem;
@@ -292,16 +292,6 @@ hr {
 .site-nav h4,
 .site-nav h5 {
   margin-top: 0;
-}
-
-.site-nav h5 {
-  font-size: var(--size-5);
-  color: var(--vivid);
-  margin-bottom: 1.5rem;
-}
-
-.site-nav h5 > a:visited {
-  color: var(--vivid);
 }
 
 .site-nav a {
@@ -322,6 +312,16 @@ hr {
   );
 }
 
-/* nav > div:not(:first-child) {
-  background-color: darkcyan;
-} */
+/**************************************
+* FooterChapterLink.jsx
+**************************************/
+.chapter-link {
+  font-size: var(--size-5);
+  color: var(--vivid);
+  margin-bottom: 1.5rem;
+}
+
+.current-chapter {
+  color: var(--platinum);
+  text-decoration: none;
+}

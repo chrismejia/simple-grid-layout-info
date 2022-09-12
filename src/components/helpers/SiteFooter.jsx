@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ChapterLink from "./ChapterLink";
 import StyledLink from "./StyledLink";
 
 export default function SiteFooter() {
@@ -14,9 +15,8 @@ export default function SiteFooter() {
           <div>link</div>
         </div>
         <div>
-          <h5>
-            <Link to="/">Intro</Link>
-          </h5>
+          <ChapterLink linkText={"Intro"} linkURL={"/"} />
+
           <StyledLink
             linkText={"Three Column Article"}
             linkURL={"/#three-col-article"}
@@ -29,7 +29,7 @@ export default function SiteFooter() {
         </div>
         <div className="section-links">
           <h5>
-            <Link to="/content-container">The Container</Link>
+            <ChapterLink linkURL="/container" linkText={"Container"} />
           </h5>
           {/* <StyledLink linkText={"Container + Grid"} />
           <StyledLink linkText={"Container + Grid"} />
@@ -37,7 +37,9 @@ export default function SiteFooter() {
           <StyledLink linkText={"a"} /> */}
         </div>
         <div className="section-links">
-          <h5>The Grid</h5>
+          <h5>
+            <ChapterLink linkURL="/grid" linkText={"Grid"} />
+          </h5>
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>
@@ -45,7 +47,9 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="section-links">
-          <h5>Subgrids + More</h5>
+          <h5>
+            <ChapterLink linkURL="/subgrid" linkText={"Subgrid"} />
+          </h5>
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>
@@ -53,7 +57,19 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="section-links">
-          <h5>Challenges</h5>
+          <h5>
+            <ChapterLink linkURL="/layouts" linkText={"Layouts"} />
+          </h5>
+          <ul>
+            <li className="styled-link">link</li>
+            <li className="styled-link">link</li>
+            <li className="styled-link">link</li>
+          </ul>
+        </div>
+        <div className="section-links">
+          <h5>
+            <ChapterLink linkURL="/challenges" linkText={"Challenges"} />
+          </h5>
           <ul>
             <li className="styled-link">link</li>
             <li className="styled-link">link</li>

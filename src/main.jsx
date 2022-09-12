@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path={"/"} element={<IntroExamples />} />
-        <Route path={"/content-container"} element={<ContentContainer />} />
+        <Route path={"/container"} element={<ContentContainer />} />
         {/* <Route path={"/square-knot"} element={<PageSquareKnot />} /> */}
       </Routes>
     </BrowserRouter>
