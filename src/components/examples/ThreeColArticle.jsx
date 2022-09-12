@@ -1,6 +1,6 @@
 export default function ThreeColArticle() {
   return (
-    <div className="grid example classic-article">
+    <div className="grid example classic-article" id="three-col-article">
       <header className="article-title">
         <h3>Lorem Ipsum Dolor</h3>
       </header>

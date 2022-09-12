@@ -1,10 +1,10 @@
-export default function Footnote({ refLabel }) {
+import StyledLink from "./StyledLink";
+
+export default function Footnote({ refLabel, refLink }) {
   return (
     <span>
       {" "}
-      <a className="footnote styled-link" href={`#ref-${refLabel}`}>
-        {`[${refLabel}]`}
-      </a>
+      <StyledLink isFootnote={true} linkText={refLabel} linkUrl={refLink} />
     </span>
   );
 }

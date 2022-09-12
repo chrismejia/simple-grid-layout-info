@@ -1,6 +1,6 @@
 export default function RecentPhotos() {
   return (
-    <article className="grid example picture-collage">
+    <article className="grid example picture-collage" id="photo-collage">
       <div className="lava">
         <img
           src="../examples/pexels-1.jpg"
