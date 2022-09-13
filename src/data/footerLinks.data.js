@@ -14,8 +14,8 @@ export const footerLinks = [
         linkText: "Content Component",
         linkURL: "/container#content-component",
       },
-      { linkText: "Intro", linkURL: "/container#photo-collage" },
-      { linkText: "Intro", linkURL: "/container#true-centering" },
+      { linkText: "Fixing the Width", linkURL: "/container#fixing-the-width" },
+      { linkText: "Final Container", linkURL: "/container#final-container" },
     ],
   },
   {

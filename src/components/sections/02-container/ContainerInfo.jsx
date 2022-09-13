@@ -60,7 +60,7 @@ export default function ContainerInfo() {
       <FullWidthExContainer />
       <section className="container">
         <article className="text">
-          <h3>Fixing the Container's Width</h3>
+          <h3 id="fixing-the-width">Fixing the Container's Width</h3>
           <p>
             We have a container, but it's currently the full width of the page.
             Instead of setting the width directly on the{" "}
@@ -99,7 +99,7 @@ export default function ContainerInfo() {
         </CodeWrapper>
 
         <article className="text">
-          <h3>Our Container Now</h3>
+          <h3 id="final-container">Our Container Now</h3>
           <p>
             Don't forget to import the new <code className="inline">index</code>{" "}
             CSS file into your App!
