@@ -99,7 +99,7 @@ export default function ContainerInfo() {
         </CodeWrapper>
 
         <article className="text">
-          <h4 style={{ marginBottom: "2rem" }}>Our Container Now</h4>
+          <h3>Our Container Now</h3>
           <p>
             Don't forget to import the new <code className="inline">index</code>{" "}
             CSS file into your App!
