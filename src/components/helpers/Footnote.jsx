@@ -1,10 +1,20 @@
-import StyledLink from "./StyledLink";
+import { Link } from "react-router-dom";
+import scrollToRef from "../../utils/scrollToRef";
 
-export default function Footnote({ refLabel }) {
+export default function Footnote({ refLabel, refToScrollTo }) {
   const refLink = `#ref-${refLabel}`;
   return (
     <span>
-      <StyledLink isFootnote={true} linkText={refLabel} linkURL={refLink} />
+      {" "}
+      <Link
+        className="footnote styled-link"
+        to={refLink}
+        onClick={() => {
+          scrollToRef(refToScrollTo);
+        }}
+      >
+        {`[${refLabel}]`}
+      </Link>
     </span>
   );
 }
