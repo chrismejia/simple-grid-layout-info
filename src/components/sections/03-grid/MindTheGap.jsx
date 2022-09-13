@@ -1,18 +1,18 @@
-import CodeWrapper from "../helpers/CodeWrapper";
-import Footnote from "../helpers/Footnote";
-import HighlightedCode from "../helpers/HighlightedCode";
-import MDNQuote from "../helpers/MDNQuote";
-import ShowExampleCode from "../helpers/ShowExampleCode";
+import CodeWrapper from "../../helpers/CodeWrapper";
+import Footnote from "../../helpers/Footnote";
+import HighlightedCode from "../../helpers/HighlightedCode";
+import MDNQuote from "../../helpers/MDNQuote";
+import ShowExampleCode from "../../helpers/ShowExampleCode";
 
-import NoGaps from "../examples/NoGaps";
+import NoGaps from "../../examples/NoGaps";
 
 import {
   no_gap_jsx,
   no_gap_css,
   individual_gaps,
   same_gaps,
-} from "../../code-samples/ex-MindTheGap";
-import { mdnQuoteData } from "../../data/mdnQuote.data";
+} from "../../../code-samples/ex-MindTheGap";
+import { mdnQuoteData } from "../../../data/mdnQuote.data";
 
 export default function MindTheGap() {
   return (

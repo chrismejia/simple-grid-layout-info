@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Intro from "./pages/01-Intro";
 import Container from "./pages/02-Container";
+import Grid from "./pages/03-Grid";
 
 import "./styles/index.css";
 import "./styles/challenges.css";
@@ -18,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path={"/"} element={<Intro />} />
         <Route path={"/container"} element={<Container />} />
-        {/* <Route path={"/square-knot"} element={<PageSquareKnot />} /> */}
+        <Route path={"/grid"} element={<Grid />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

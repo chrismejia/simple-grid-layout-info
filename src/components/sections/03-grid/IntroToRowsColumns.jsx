@@ -1,10 +1,10 @@
-import Footnote from "../helpers/Footnote";
+import Footnote from "../../helpers/Footnote";
 
 export default function IntroToRowsColumns() {
   return (
     <section className="container">
       <article className="text">
-        <h3>Rows, Columns, All at Once.</h3>
+        <h3 id="rows-and-columns">Rows, Columns, All at Once.</h3>
         <p>
           The simplest grid is one that has just 1 column or 1 row; essentially
           just one cell on the grid. We can dictate the grid's breakdown using{" "}

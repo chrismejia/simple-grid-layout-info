@@ -1,7 +1,7 @@
-import CodeWrapper from "../helpers/CodeWrapper";
-import HighlightedCode from "../helpers/HighlightedCode";
+import CodeWrapper from "../../helpers/CodeWrapper";
+import HighlightedCode from "../../helpers/HighlightedCode";
 
-import { grid_base } from "../../code-samples/code-examples";
+import { grid_base } from "../../../code-samples/code-examples";
 
 export default function GridFirstDeclaration() {
   return (
@@ -25,7 +25,7 @@ export default function GridFirstDeclaration() {
           A grid will typically have columns, rows, and then gaps between each
           row and column. The gaps are commonly referred to as gutters.
         </p>
-        <h3>Building A Grid</h3>
+        <h3 id="the-first-grid">The First Grid</h3>
         <p>
           Start with the grid wrapper. <code className="inline">grid</code>{" "}
           itself is a <code className="inline">display</code> CSS value, like{" "}

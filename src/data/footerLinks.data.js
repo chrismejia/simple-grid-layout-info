@@ -21,9 +21,14 @@ export const footerLinks = [
   {
     chapter: { linkText: "03. Grid", linkURL: "/grid" },
     links: [
-      { linkText: "Three Column Article", linkURL: "/grid#three-col-article" },
-      { linkText: "Intro", linkURL: "/grid#photo-collage" },
-      { linkText: "Intro", linkURL: "/grid#true-centering" },
+      {
+        linkText: "The First Grid",
+        linkURL: "/grid#the-first-grid",
+      },
+      { linkText: "Rows & Columns", linkURL: "/grid#rows-and-columns" },
+      { linkText: "Put It All Together", linkURL: "/grid#put-it-all-together" },
+      { linkText: "Repeat Yourself", linkURL: "/grid#repeat-yourself" },
+      { linkText: "From Here to There", linkURL: "/grid#from-here-to-there" },
     ],
   },
   {

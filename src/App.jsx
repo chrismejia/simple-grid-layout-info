@@ -1,4 +1,4 @@
-import GridBasics from "./components/chapters/05-GridBasics";
+import GridBasics from "./components/sections/03-grid/GridBasics";
 import GridTemplating from "./components/chapters/GridTemplating";
 import LayoutChallenges from "./components/chapters/LayoutChallenges";
 // import OpenGraphLayout from "./components/helpers/OpenGraphLayout";

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import BreakpointExamples from "../BreakpointExamples";
+import BreakpointExamples from "./BreakpointExamples";
 import CodeWrapper from "../../helpers/CodeWrapper";
 import Divider from "../../helpers/Divider";
 import { ExternalLink } from "../../helpers/ExternalLink";
