@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import StyledLink from "./StyledLink";
 import getPageNavData from "../../utils/getPageNavData";
+import scrollToTop from "../../utils/scrollToTop";
 
 export default function PageNavigation() {
   const { pathname } = useLocation();
@@ -12,7 +13,11 @@ export default function PageNavigation() {
         {back && (
           <>
             <div className="centered-text page-nav-label">PREVIOUS</div>
-            <StyledLink {...back} />
+            <StyledLink
+              {...back}
+              clickFunc={scrollToTop}
+              isSectionNavLink={true}
+            />
           </>
         )}
       </div>
@@ -20,7 +25,11 @@ export default function PageNavigation() {
         {next && (
           <>
             <div className="centered-text page-nav-label">NEXT</div>
-            <StyledLink {...next} />
+            <StyledLink
+              {...next}
+              clickFunc={scrollToTop}
+              isSectionNavLink={true}
+            />
           </>
         )}
       </div>

@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-export default function StyledLink({ linkURL, linkText }) {
+export default function StyledLink({ linkURL, linkText, isSectionNavLink }) {
+  const RenderComponent = isSectionNavLink ? HashLink : Link;
+
   return (
-    <Link
-      to={linkURL}
-      className={"styled-link"}
-      onClick={() => {
-        console.log(linkURL);
-      }}
-    >
+    <RenderComponent to={linkURL} className="styled-link">
       {linkText}
-    </Link>
+    </RenderComponent>
   );
 }

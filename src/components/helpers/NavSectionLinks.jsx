@@ -11,7 +11,7 @@ export default function NavSectionLinks() {
           <ul>
             {links.map((link) => (
               <li key={link.linkURL}>
-                <StyledLink {...link} />
+                <StyledLink {...link} isSectionNavLink={true} />
               </li>
             ))}
           </ul>

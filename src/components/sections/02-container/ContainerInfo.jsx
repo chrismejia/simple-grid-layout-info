@@ -29,7 +29,9 @@ export default function ContainerInfo() {
     <>
       <section className="container">
         <article className="text">
-          <h2>Container: Your All-Purpose Content Component</h2>
+          <h2 id="content-component">
+            Container: Your All-Purpose Content Component
+          </h2>
 
           <p>
             Let's start with the <code className="inline">container</code>.

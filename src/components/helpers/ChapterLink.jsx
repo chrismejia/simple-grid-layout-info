@@ -1,18 +1,11 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function ChapterLink({ linkText, linkURL }) {
-  // const { pathname } = useLocation();
-
   return (
     <h5 className="chapter-link">
-      <NavLink
-        to={linkURL}
-        className={({ isActive }) =>
-          isActive ? "current-chapter" : "chapter-link"
-        }
-      >
+      <HashLink to={`${linkURL}#`} className={"chapter-link"}>
         {linkText}
-      </NavLink>
+      </HashLink>
     </h5>
   );
 }
