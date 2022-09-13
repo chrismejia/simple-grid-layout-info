@@ -1,9 +1,6 @@
-import { useLocation } from "react-router-dom";
-
 import CodeWrapper from "../../helpers/CodeWrapper";
 import Divider from "../../helpers/Divider";
 import HighlightedCode from "../../helpers/HighlightedCode";
-import PageNavigation from "../../helpers/PageNavigation";
 import ShowExampleCode from "../../helpers/ShowExampleCode";
 
 import ThreeColArticle from "../../examples/ThreeColArticle";
@@ -99,9 +96,7 @@ export default function GridExamples() {
           <code className="inline">.container</code> element and a CSS Grid.
         </p>
       </article>
-
       <Divider />
-      <PageNavigation />
     </section>
   );
 }

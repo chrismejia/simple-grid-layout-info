@@ -1,15 +1,15 @@
-import BreakpointExamples from "../sections/BreakpointExamples";
-import CodeWrapper from "../helpers/CodeWrapper";
-import Divider from "../helpers/Divider";
-import ExternalLink from "../helpers/ExternalLink";
-import Footnote from "../helpers/Footnote";
-import HighlightedCode from "../helpers/HighlightedCode";
-import HighlightedElement from "../helpers/HighlightedElement";
-import SectionReferences from "../helpers/SectionReferences";
+import BreakpointExamples from "../BreakpointExamples";
+import CodeWrapper from "../../helpers/CodeWrapper";
+import Divider from "../../helpers/Divider";
+import ExternalLink from "../../helpers/ExternalLink";
+import Footnote from "../../helpers/Footnote";
+import HighlightedCode from "../../helpers/HighlightedCode";
+import HighlightedElement from "../../helpers/HighlightedElement";
+import SectionReferences from "../../helpers/SectionReferences";
 import {
   index_css,
   container_with_media,
-} from "../../code-samples/code-examples";
+} from "../../../code-samples/code-examples";
 
 export default function ContainerPartTwo() {
   return (

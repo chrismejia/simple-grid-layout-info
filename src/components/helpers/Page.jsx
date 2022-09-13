@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 
+import PageNavigation from "./PageNavigation";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "../sections/SiteHeader";
 
@@ -16,6 +17,7 @@ export default function Page({ children }) {
         <SiteHeader isMainPage={onMainPage} />
         {children}
       </main>
+      <PageNavigation />
       <SiteFooter />
     </>
   );

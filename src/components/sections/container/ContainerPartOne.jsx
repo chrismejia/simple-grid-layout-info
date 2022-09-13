@@ -1,16 +1,17 @@
-import CodeWrapper from "../helpers/CodeWrapper";
-import Footnote from "../helpers/Footnote";
-import HighlightedCode from "../helpers/HighlightedCode";
+import CodeWrapper from "../../helpers/CodeWrapper";
+import Footnote from "../../helpers/Footnote";
+import HighlightedCode from "../../helpers/HighlightedCode";
 import {
   full_width_container_css,
   full_width_container_jsx,
-} from "../../code-samples/ex-fullwidthcontainer";
+} from "../../../code-samples/ex-fullwidthcontainer";
 
 export default function ContainerPartOne() {
   return (
     <section className="container">
       <article className="text">
-        <h2>Containers + Grid = Win</h2>
+        <h2>Container: Your All-Purpose Content Component</h2>
+
         <p>
           Let's start with the <code className="inline">container</code>.
         </p>
