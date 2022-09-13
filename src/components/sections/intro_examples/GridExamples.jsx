@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom";
+
 import CodeWrapper from "../../helpers/CodeWrapper";
 import Divider from "../../helpers/Divider";
 import HighlightedCode from "../../helpers/HighlightedCode";
@@ -99,7 +101,7 @@ export default function GridExamples() {
       </article>
 
       <Divider />
-      <PageNavigation nextText={"Container"} nextURL={"/container"} />
+      <PageNavigation />
     </section>
   );
 }

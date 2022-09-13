@@ -1,26 +1,26 @@
+import { useLocation } from "react-router-dom";
 import StyledLink from "./StyledLink";
+import getPageNavData from "../../utils/getPageNavData";
 
-export default function PageNavigation({
-  backText,
-  backURL,
-  nextText,
-  nextURL,
-}) {
+export default function PageNavigation() {
+  const { pathname } = useLocation();
+  const { back, next } = getPageNavData(pathname);
+
   return (
-    <nav className="grid page-to-page">
+    <nav className="grid container page-to-page">
       <div>
-        {backURL && (
+        {back && (
           <>
             <div className="centered-text page-nav-label">PREVIOUS</div>
-            &#10096; <StyledLink linkText={backText} linkURL={backURL} />
+            <StyledLink {...back} />
           </>
         )}
       </div>
       <div>
-        {nextURL && (
+        {next && (
           <>
             <div className="centered-text page-nav-label">NEXT</div>
-            <StyledLink linkText={nextText} linkURL={nextURL} /> &#10097;
+            <StyledLink {...next} />
           </>
         )}
       </div>
