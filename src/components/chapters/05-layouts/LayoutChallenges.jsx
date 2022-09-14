@@ -1,10 +1,10 @@
-import ThreeByThree from "../challenges/01-3x3Grid";
-import Pyramid from "../challenges/02-Pyramid";
-import Staircase from "../challenges/03-Staircase";
-import CelticKnot from "../challenges/CelticKnots";
-import RecursiveSquare from "../challenges/RecursiveSquare";
+import ThreeByThree from "../../challenges/01-3x3Grid";
+import Pyramid from "../../challenges/02-Pyramid";
+import Staircase from "../../challenges/03-Staircase";
+import CelticKnot from "../../challenges/CelticKnots";
+import RecursiveSquare from "../../challenges/RecursiveSquare";
 
-import SingleChallenge from "../helpers/SingleChallenge";
+import SingleChallenge from "../../helpers/SingleChallenge";
 
 export default function LayoutChallenges() {
   const allChallengeProps = {

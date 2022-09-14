@@ -1,9 +1,9 @@
-import CodeWrapper from "../../helpers/CodeWrapper";
-import HighlightedCode from "../../helpers/HighlightedCode";
-import TwoEvenColumns from "../../examples/TwoEvenColumns";
-import InteractiveGridCells from "../../examples/InteractiveGridCells";
+import CodeWrapper from "../../../helpers/CodeWrapper";
+import HighlightedCode from "../../../helpers/HighlightedCode";
+import TwoEvenColumns from "./TwoEvenColumns";
+import InteractiveGridCells from "./InteractiveGridCells";
 
-import { grid_cols_base } from "../../../code-samples/code-examples";
+import { grid_cols_base } from "../../../../code-samples/code-examples";
 
 export default function WorkingWithColumns() {
   return (

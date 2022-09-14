@@ -1,6 +1,6 @@
-import GridBasics from "./components/sections/03-grid/GridBasics";
-import GridTemplating from "./components/chapters/GridTemplating";
-import LayoutChallenges from "./components/chapters/LayoutChallenges";
+import GridBasics from "./components/chapters/03-grid/GridBasics";
+// import GridTemplating from "./components/chapters/GridTemplating";
+// import LayoutChallenges from "./components/chapters/LayoutChallenges";
 // import OpenGraphLayout from "./components/helpers/OpenGraphLayout";
 import SiteFooter from "./components/helpers/SiteFooter";
 
@@ -11,8 +11,8 @@ export default function App() {
 
       <ContainerPartTwo />
       <GridBasics />
-      <GridTemplating />
-      <LayoutChallenges />
+      {/* <GridTemplating /> */}
+      {/* <LayoutChallenges /> */}
       {/* <OpenGraphLayout /> */}
       <SiteFooter />
     </main>

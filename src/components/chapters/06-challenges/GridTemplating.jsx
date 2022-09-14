@@ -1,5 +1,5 @@
-import ExternalLink from "../helpers/ExternalLink";
-import SectionReferences from "../helpers/SectionReferences";
+import ExternalLink from "../../helpers/ExternalLink";
+import SectionReferences from "../../helpers/SectionReferences";
 
 export default function GridTemplating() {
   return (

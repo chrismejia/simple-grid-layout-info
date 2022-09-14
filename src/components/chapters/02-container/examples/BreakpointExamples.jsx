@@ -1,5 +1,5 @@
-import BreakpointWidths from "../../examples/BreakpointWidths";
-import BreakpointMarginsVisual from "../../examples/BreakpointMarginsVisual";
+import BreakpointWidths from "./BreakpointWidths";
+import BreakpointMarginsVisual from "./BreakpointMarginsVisual";
 
 export default function BreakpointExamples() {
   return (

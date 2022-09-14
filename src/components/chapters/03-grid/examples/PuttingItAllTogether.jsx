@@ -1,14 +1,14 @@
-import BaseRowsColumns from "../../examples/BaseRowsColumns";
-import CodeWrapper from "../../helpers/CodeWrapper";
-import HighlightedCode from "../../helpers/HighlightedCode";
-import MDNQuote from "../../helpers/MDNQuote";
-import ShowExampleCode from "../../helpers/ShowExampleCode";
+import BaseRowsColumns from "./BaseRowsColumns";
+import CodeWrapper from "../../../helpers/CodeWrapper";
+import HighlightedCode from "../../../helpers/HighlightedCode";
+import MDNQuote from "../../../helpers/MDNQuote";
+import ShowExampleCode from "../../../helpers/ShowExampleCode";
 
 import {
   basicRowsCols_jsx,
   basicRowsCols_css,
-} from "../../../code-samples/ex-RowsAndColumns";
-import { mdnQuoteData } from "../../../data/mdnQuote.data";
+} from "../example-code/basicRowsCols.code";
+import { mdnQuoteData } from "../../../../data/mdnQuote.data";
 
 export default function PuttingItAllTogether() {
   return (

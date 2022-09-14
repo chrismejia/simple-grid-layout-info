@@ -3,22 +3,19 @@ import Divider from "../../helpers/Divider";
 import HighlightedCode from "../../helpers/HighlightedCode";
 import ShowExampleCode from "../../helpers/ShowExampleCode";
 
-import ThreeColArticle from "../../examples/ThreeColArticle";
-import RecentPhotos from "../../examples/RecentPhotos";
-import SuperCentered from "../../examples/TrueCenter";
+import ThreeColArticle from "./examples/ThreeColArticle";
+import RecentPhotos from "./examples/RecentPhotos";
+import SuperCentered from "./examples/SuperCentered";
 
 import {
   threeColJSX,
   threeColCSS,
-} from "../../../code-samples/ex-ThreeColArticle";
+} from "./example-code/threeColumnArticle.code";
 import {
   recentPhotosCSS,
   recentPhotosJSX,
-} from "../../../code-samples/ex-recentPhotos";
-import {
-  trueCenterCSS,
-  trueCenterJSX,
-} from "../../../code-samples/ex-trueCenter";
+} from "./example-code/recentPhotos.code";
+import { trueCenterCSS, trueCenterJSX } from "./example-code/trueCenter.code";
 
 export default function GridExamples() {
   return (

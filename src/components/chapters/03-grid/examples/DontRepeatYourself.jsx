@@ -1,4 +1,4 @@
-import TwelveColumnGrid from "../../examples/TwelveColumnGrid";
+import TwelveColumnGrid from "./TwelveColumnGrid";
 
 export default function DontRepeatYourself() {
   return (

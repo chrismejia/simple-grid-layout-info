@@ -1,4 +1,4 @@
-import Footnote from "../../helpers/Footnote";
+import Footnote from "../../../helpers/Footnote";
 
 export default function IntroToRowsColumns() {
   return (

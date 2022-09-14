@@ -1,7 +1,7 @@
-import CodeWrapper from "../../helpers/CodeWrapper";
-import HighlightedCode from "../../helpers/HighlightedCode";
+import CodeWrapper from "../../../helpers/CodeWrapper";
+import HighlightedCode from "../../../helpers/HighlightedCode";
 
-import { grid_base } from "../../../code-samples/code-examples";
+import { declaring_grid } from "../example-code/declaringGrid.code";
 
 export default function GridFirstDeclaration() {
   return (
@@ -35,7 +35,7 @@ export default function GridFirstDeclaration() {
 
       <CodeWrapper sections={1}>
         <HighlightedCode
-          code={grid_base}
+          code={declaring_grid}
           codeFilename={"styles/grid.css"}
           codeLang={"css"}
         />

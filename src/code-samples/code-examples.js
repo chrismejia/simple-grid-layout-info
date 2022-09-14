@@ -47,10 +47,6 @@ export const container_with_media = `/* Center the container by auto setting lef
   }
 }`;
 
-export const grid_base = `.grid-wrapper {
-  display: grid;
-}`;
-
 export const grid_cols_base = `.grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;

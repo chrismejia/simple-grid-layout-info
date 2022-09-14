@@ -3,7 +3,7 @@ import { useRef } from "react";
 import Divider from "../components/helpers/Divider";
 import { ExternalLink } from "../components/helpers/ExternalLink";
 import Page from "../components/helpers/Page";
-import GridBasics from "../components/sections/03-grid/GridBasics";
+import GridBasics from "../components/chapters/03-grid/GridBasics";
 import SectionReferences from "../components/helpers/SectionReferences";
 
 export default function Grid() {

@@ -1,11 +1,12 @@
 import { useRef } from "react";
 
-import BreakpointExamples from "./BreakpointExamples";
+import BreakpointExamples from "./examples/BreakpointExamples";
+import FullWidthExContainer from "./examples/FullWidthExContainer";
+
 import CodeWrapper from "../../helpers/CodeWrapper";
 import Divider from "../../helpers/Divider";
 import { ExternalLink } from "../../helpers/ExternalLink";
 import Footnote from "../../helpers/Footnote";
-import FullWidthExContainer from "./FullWidthExContainer";
 import HighlightedCode from "../../helpers/HighlightedCode";
 import HighlightedElement from "../../helpers/HighlightedElement";
 import SectionReferences from "../../helpers/SectionReferences";

@@ -1,4 +1,4 @@
-import HighlightedElement from "../../helpers/HighlightedElement";
+import HighlightedElement from "../../../helpers/HighlightedElement";
 
 export default function FullWidthExContainer() {
   return (

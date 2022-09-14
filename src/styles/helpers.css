@@ -309,8 +309,6 @@ hr {
   gap: 2rem;
 }
 
-/* .section-links a {} */
-
 @media screen and (max-width: 1216px) {
   .site-nav {
     grid-template-columns: 1fr 2fr;

@@ -1,13 +1,12 @@
-import BaseRowsColumns from "../../examples/BaseRowsColumns";
-import CodeWrapper from "../../helpers/CodeWrapper";
-import HighlightedCode from "../../helpers/HighlightedCode";
-import ShowExampleCode from "../../helpers/ShowExampleCode";
-import Footnote from "../../helpers/Footnote";
+import BaseRowsColumns from "./BaseRowsColumns";
+import CodeWrapper from "../../../helpers/CodeWrapper";
+import HighlightedCode from "../../../helpers/HighlightedCode";
+import ShowExampleCode from "../../../helpers/ShowExampleCode";
 
 import {
   mixedRowsCols_jsx,
   mixedRowsCols_css,
-} from "../../../code-samples/ex-RowsAndColumns";
+} from "../example-code/mixedRowsCols.code";
 
 export default function RowsColsAllSizes() {
   return (
@@ -22,6 +21,7 @@ export default function RowsColsAllSizes() {
       </article>
 
       <BaseRowsColumns isMixed={true} />
+
       <ShowExampleCode exampleLabel={"Mixed Rows & Cols"}>
         <CodeWrapper sections={2}>
           <HighlightedCode
