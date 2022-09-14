@@ -11,7 +11,7 @@ import {
   no_gap_css,
   individual_gaps,
   same_gaps,
-} from "../example-code/mindTheGap.code";
+} from "../ex-code/mindTheGap.code";
 import { mdnQuoteData } from "../../../../data/mdnQuote.data";
 
 export default function MindTheGap() {

@@ -1,4 +1,4 @@
-import InteractiveGridCells from "./InteractiveGridCells";
+import InteractiveGridCells from "../visuals/InteractiveGridCells";
 
 export default function WorkingWithRows() {
   return (

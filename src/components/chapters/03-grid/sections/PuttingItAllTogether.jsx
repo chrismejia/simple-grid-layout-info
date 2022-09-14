@@ -7,7 +7,7 @@ import ShowExampleCode from "../../../helpers/ShowExampleCode";
 import {
   basicRowsCols_jsx,
   basicRowsCols_css,
-} from "../example-code/basicRowsCols.code";
+} from "../ex-code/basicRowsCols.code";
 import { mdnQuoteData } from "../../../../data/mdnQuote.data";
 
 export default function PuttingItAllTogether() {

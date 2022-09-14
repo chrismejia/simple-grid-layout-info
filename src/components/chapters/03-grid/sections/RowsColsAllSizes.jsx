@@ -6,7 +6,7 @@ import ShowExampleCode from "../../../helpers/ShowExampleCode";
 import {
   mixedRowsCols_jsx,
   mixedRowsCols_css,
-} from "../example-code/mixedRowsCols.code";
+} from "../ex-code/mixedRowsCols.code";
 
 export default function RowsColsAllSizes() {
   return (
