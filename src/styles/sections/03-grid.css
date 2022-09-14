@@ -1,4 +1,14 @@
 /**************************************
+* Common
+**************************************/
+.two-cols,
+.twelve-cols,
+.basic-rows-cols,
+.mixed-rows-cols {
+  gap: 0.75rem;
+}
+
+/**************************************
 * InteractiveGridCells.jsx
 **************************************/
 .interactive {
@@ -36,4 +46,54 @@
 
 .ex-row {
   min-height: 50px;
+}
+
+/**************************************
+* BaseRowsColumns.jsx
+**************************************/
+.basic-rows-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.mixed-rows-cols {
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 3fr 2fr 1fr;
+}
+
+.mixed-rows-cols span {
+  margin-bottom: 0;
+}
+
+/**************************************
+* NoGaps.jsx
+**************************************/
+.no-gap {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.no-gap :first-child,
+.no-gap :last-child {
+  background-color: var(--jewel);
+}
+
+.no-gap :nth-child(2),
+.no-gap :nth-child(3) {
+  color: black;
+  background-color: var(--vivid);
+}
+
+/**************************************
+* TwoEvenColumns.jsx
+**************************************/
+.two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/**************************************
+* TwelveColumnGrid.jsx
+**************************************/
+.twelve-cols {
+  grid-template-columns: repeat(12, 1fr);
 }
