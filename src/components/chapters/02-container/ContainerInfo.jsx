@@ -1,8 +1,5 @@
 import { useRef } from "react";
 
-import BreakpointExamples from "./examples/BreakpointExamples";
-import FullWidthExContainer from "./examples/FullWidthExContainer";
-
 import CodeWrapper from "../../helpers/CodeWrapper";
 import Divider from "../../helpers/Divider";
 import { ExternalLink } from "../../helpers/ExternalLink";
@@ -10,15 +7,19 @@ import Footnote from "../../helpers/Footnote";
 import HighlightedCode from "../../helpers/HighlightedCode";
 import HighlightedElement from "../../helpers/HighlightedElement";
 import SectionReferences from "../../helpers/SectionReferences";
+
+import BreakpointExamples from "./visuals/BreakpointExamples";
+import FullWidthExContainer from "./visuals/FullWidthExContainer";
+
 import {
   full_width_container_css,
   full_width_container_jsx,
-} from "../../../code-samples/ex-fullwidthcontainer";
+} from "./ex-code/fullWidthContainer.code";
 
 import {
   index_css,
   container_with_media,
-} from "../../../code-samples/code-examples";
+} from "./ex-code/varsAndBreakpoints.code";
 
 export default function ContainerInfo() {
   const firstRef = useRef();

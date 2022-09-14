@@ -1,17 +1,22 @@
 import { useState } from "react";
+
 import CodeWrapper from "../../../helpers/CodeWrapper";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 import addRemoveColumns from "../../../../utils/addRemoveCols";
+
 import {
   inter_jsx_cols_start,
   inter_jsx_cols_end,
   inter_css_cols_start,
   inter_css_cols_end,
+} from "../ex-code/interactiveCols.code";
+import {
   inter_jsx_rows_start,
   inter_jsx_rows_end,
   inter_css_rows_start,
   inter_css_rows_end,
-} from "../../../../code-samples/ex-interactiveGrid";
+} from "../ex-code/interactiveRows.code";
+
 import addRemoveRows from "../../../../utils/addRemoveRows";
 
 export default function InteractiveGridCells({ rowOrCol }) {

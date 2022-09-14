@@ -2,7 +2,7 @@ export default function SuperCentered() {
   return (
     <article
       className="grid example super-center outer-border"
-      id="super-centered"
+      id="true-centering"
     >
       <p>▦</p>
     </article>

@@ -123,12 +123,6 @@
   height: 100%;
 }
 
-.ex-container {
-  color: var(--platinum);
-  font-size: var(--size-5);
-  font-weight: bold;
-}
-
 /**************************************
 * OpenGraphLayout.jsx
 **************************************/
@@ -261,12 +255,29 @@ hr {
   padding: 2rem;
   border: 2px solid white;
   border-radius: 0.75rem;
+
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: 50px auto;
 }
 
 .mdn-quote h4 {
   font-family: "Noto Sans Mono", monospace;
   margin: 0 0 2rem;
   font-size: var(--size-5);
+}
+
+.mdn-body {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .mdn-quote {
+    grid-template-columns: 1fr;
+  }
+
+  .mdn-logo {
+    grid-row: 1;
+  }
 }
 
 /**************************************

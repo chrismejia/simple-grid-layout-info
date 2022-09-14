@@ -1,0 +1,39 @@
+/**************************************
+* InteractiveGridCells.jsx
+**************************************/
+.interactive {
+  grid-column: span 2;
+
+  grid-template-rows: 50px minmax(100px, auto);
+  row-gap: 0.75rem;
+  padding: 1rem;
+  border: 2px solid var(--vivid);
+  border-radius: 0.75rem;
+}
+
+.column-controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.75rem;
+}
+
+.interactive-content {
+  grid-column: span 1;
+}
+
+.ex-cols {
+  column-gap: 0.75rem;
+}
+
+.ex-rows {
+  row-gap: 0.75rem;
+}
+
+.ex-col,
+.ex-row {
+  background-color: var(--purp);
+}
+
+.ex-row {
+  min-height: 50px;
+}

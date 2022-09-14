@@ -4,14 +4,14 @@ import HighlightedCode from "../../../helpers/HighlightedCode";
 import MDNQuote from "../../../helpers/MDNQuote";
 import ShowExampleCode from "../../../helpers/ShowExampleCode";
 
-import NoGaps from "./NoGaps";
+import NoGaps from "../visuals/NoGaps";
 
 import {
   no_gap_jsx,
   no_gap_css,
   individual_gaps,
   same_gaps,
-} from "../example-code/mindTheGap.code";
+} from "../ex-code/mindTheGap.code";
 import { mdnQuoteData } from "../../../../data/mdnQuote.data";
 
 export default function MindTheGap() {

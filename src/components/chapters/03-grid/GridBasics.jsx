@@ -1,12 +1,12 @@
 import Divider from "../../helpers/Divider";
-import DontRepeatYourself from "./examples/DontRepeatYourself";
-import GridFirstDeclaration from "./examples/GridFirstDeclaration";
-import IntroToRowsColumns from "./examples/IntroToRowsColumns";
-import MindTheGap from "./examples/MindTheGap";
-import PuttingItAllTogether from "./examples/PuttingItAllTogether";
-import RowsColsAllSizes from "./examples/RowsColsAllSizes";
-import WorkingWithColumns from "./examples/WorkingWithColumns";
-import WorkingWithRows from "./examples/WorkingWithRows";
+import DontRepeatYourself from "./sections/DontRepeatYourself";
+import GridFirstDeclaration from "./sections/GridFirstDeclaration";
+import IntroToRowsColumns from "./sections/IntroToRowsColumns";
+import MindTheGap from "./sections/MindTheGap";
+import PuttingItAllTogether from "./sections/PuttingItAllTogether";
+import RowsColsAllSizes from "./sections/RowsColsAllSizes";
+import WorkingWithColumns from "./sections/WorkingWithColumns";
+import WorkingWithRows from "./sections/WorkingWithRows";
 
 export default function GridBasics() {
   return (

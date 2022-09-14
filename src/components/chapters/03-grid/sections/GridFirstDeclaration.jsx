@@ -1,7 +1,7 @@
 import CodeWrapper from "../../../helpers/CodeWrapper";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 
-import { declaring_grid } from "../example-code/declaringGrid.code";
+import { declaring_grid } from "../ex-code/declaringGrid.code";
 
 export default function GridFirstDeclaration() {
   return (

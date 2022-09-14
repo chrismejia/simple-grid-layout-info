@@ -46,25 +46,3 @@ export const container_with_media = `/* Center the container by auto setting lef
     max-width: calc(var(--fullhd) - var(--container-margin));
   }
 }`;
-
-export const grid_cols_base = `.grid-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}`;
-
-/**************************************
- * FiveColsFourWide.jsx
- *************************************/
-export const four_cols_wide_css = `.outer-border {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}`;
-
-export const four_cols_wide_jsx = `<div class="outer-border">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-</div>`;

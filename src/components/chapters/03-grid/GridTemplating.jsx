@@ -26,8 +26,6 @@ export default function GridTemplating() {
           description={"Has useful examples and links to more articles"}
           refLabel={6}
         />
-        <ExternalLink url={""} label={""} description={""} />
-        <ExternalLink url={""} label={""} description={""} />
       </SectionReferences>
     </section>
   );

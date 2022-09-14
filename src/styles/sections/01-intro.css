@@ -1,0 +1,157 @@
+/**************************************
+* ThreeColArticle.jsx
+**************************************/
+.classic-article {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+
+  color: black;
+  background-color: floralwhite;
+  margin-top: 2rem;
+  border-radius: 0.75rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.classic-article > * {
+  padding: 1rem;
+}
+.article-title {
+  grid-column: 1 / 4;
+  border-bottom: 2px solid black;
+}
+
+.article-title h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.article-text {
+  line-height: 1.5;
+  padding-bottom: 0;
+}
+
+.sidebar-left {
+  grid-column: 1 / 2;
+}
+
+.sidebar-left a {
+  font-style: italic;
+  color: darkslategray;
+}
+
+.article {
+  grid-column: 2 / 3;
+}
+
+.ad {
+  grid-column: 3 / 4;
+
+  position: sticky;
+  position: -webkit-sticky;
+  margin: 1.5rem 0 3rem;
+  top: 2rem;
+  padding: 0.75rem;
+  text-align: right;
+}
+
+.ad img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+
+  border-radius: 0.75rem;
+}
+
+.article-footer {
+  grid-column: span 12;
+  border-top: 2px solid black;
+}
+
+/* Reflow article into skinny layout */
+@media (max-width: 1024px) {
+  .classic-article {
+    grid-template: auto 1fr auto / minmax(30ch, 55ch) 1fr;
+  }
+
+  .article {
+    grid-column: 1 / 2;
+  }
+
+  .ad {
+    grid-column: 2 / 3;
+  }
+
+  .sidebar-left {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    display: inline-block;
+  }
+}
+
+/**************************************
+* RecentPhotos.jsx
+**************************************/
+.picture-collage {
+  grid-template:
+    "lava lava lava lava station station"
+    "model model titling titling station station"
+    "model model river river station station";
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  background-color: moccasin;
+
+  padding: 1.5rem;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.photos-titling {
+  grid-area: titling;
+
+  display: grid;
+  place-items: center;
+}
+
+.picture-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos-titling h3 {
+  font-family: "Playfair Display", serif;
+  color: black;
+  margin: 0;
+}
+
+.lava {
+  grid-area: lava;
+}
+
+.station {
+  grid-area: station;
+}
+
+.model {
+  grid-area: model;
+}
+
+.river-road {
+  grid-area: river;
+}
+
+/**************************************
+* SuperCentered.jsx
+**************************************/
+.super-center {
+  height: 350px;
+  place-items: center;
+}
+
+.super-center p {
+  font-size: 8rem;
+  padding: 0;
+  margin: 0;
+}

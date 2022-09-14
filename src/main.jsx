@@ -7,9 +7,14 @@ import Container from "./pages/02-Container";
 import Grid from "./pages/03-Grid";
 
 import "./styles/index.css";
+import "./styles/sections/01-intro.css";
+import "./styles/sections/02-container.css";
+import "./styles/sections/03-grid.css";
+import "./styles/sections/04-subgrid.css";
+import "./styles/sections/05-layouts.css";
+import "./styles/sections/06-challenges.css";
 import "./styles/challenges.css";
 import "./styles/container.css";
-import "./styles/sections.css";
 import "./styles/examples.css";
 import "./styles/helpers.css";
 

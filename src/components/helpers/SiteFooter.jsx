@@ -1,5 +1,4 @@
 import NavSectionLinks from "./NavSectionLinks";
-import StyledLink from "./StyledLink";
 
 export default function SiteFooter() {
   return (

@@ -12,7 +12,7 @@ export default function ShowExampleCode({ exampleLabel, children }) {
       <button className="btn-ex-code" onClick={toggleOpen}>
         {isOpen ? `Hide ${exampleLabel} Code` : `Show ${exampleLabel} Code`}
       </button>
-      {isOpen ? children : null}
+      {isOpen && children}
     </article>
   );
 }
