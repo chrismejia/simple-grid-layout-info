@@ -9,14 +9,14 @@ export const pageNavFlow = {
   },
   grid: {
     back: { linkText: "Container", linkURL: "/container#" },
-    next: { linkText: "Subgrid", linkURL: "/subgrid#" },
+    next: { linkText: "Templating", linkURL: "/templating#" },
   },
-  subgrid: {
+  templating: {
     back: { linkText: "Grid", linkURL: "/grid#" },
     next: { linkText: "Layouts", linkURL: "/layouts#" },
   },
   layouts: {
-    back: { linkText: "Subgrid", linkURL: "/subgrid#" },
+    back: { linkText: "Templating", linkURL: "/templating#" },
     next: { linkText: "Challenges", linkURL: "/challenges#" },
   },
   challenges: {
