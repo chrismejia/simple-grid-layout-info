@@ -1,7 +1,7 @@
 import Footnote from "../../../helpers/Footnote";
 
-export default function IntroToRowsColumns({ footnotes }) {
-  const { ref5, ref6 } = footnotes;
+export default function IntroToRowsColumns({ footnoteRefs }) {
+  const { ref5, ref6 } = footnoteRefs;
 
   return (
     <section className="container">
@@ -21,13 +21,13 @@ export default function IntroToRowsColumns({ footnotes }) {
           <code className="inline">em/rem</code>, and{" "}
           <code className="inline">vw/vh</code> to set the size of the grid's
           rows or columns
-          <Footnote refLabel={5} refToScrollTo={ref5} />.
+          <Footnote refLabel={5} refLocation={ref5} />.
         </p>
         <p>
           CSS Grid also provides the <code className="inline">fr</code> unit,
           which allows for fractional divisions of an area
-          <Footnote refLabel={6} refToScrollTo={ref6} />. The neat thing about
-          the <code className="inline">fr</code> unit is that it saves you the
+          <Footnote refLabel={6} refLocation={ref6} />. The neat thing about the{" "}
+          <code className="inline">fr</code> unit is that it saves you the
           hassle of having to manually calculate the percentage for a grid
           space.
         </p>

@@ -1,10 +1,71 @@
-import ContainerInfo from "../components/chapters/02-container/ContainerInfo";
+import { useRef } from "react";
+
+import ContentContainer from "../components/chapters/02-container/sections/ContentContainer";
+import FixingContainerWidth from "../components/chapters/02-container/sections/FixingContainerWidth";
+
+import Divider from "../components/helpers/Divider";
+import { ExternalLink } from "../components/helpers/ExternalLink";
+
 import Page from "../components/helpers/Page";
+import SectionReferences from "../components/helpers/SectionReferences";
+
+import FullWidthExContainer from "../components/chapters/02-container/visuals/FullWidthExContainer";
 
 export default function Container() {
+  const footnote1 = useRef();
+  const footnote2 = useRef();
+  const footnote3 = useRef();
+  const footnote4 = useRef();
+
   return (
     <Page>
-      <ContainerInfo />
+      <ContentContainer footnoteRefs={{ footnote1 }} />
+      <FullWidthExContainer />
+      <FixingContainerWidth
+        footnoteRefs={{ footnote2, footnote3, footnote4 }}
+      />
+
+      <SectionReferences>
+        <ExternalLink
+          ref={footnote1}
+          url={"https://bulma.io/documentation/layout/container/"}
+          label={"[Bulma] Container docs"}
+          description={
+            "CSS framework whose container element I shamelessly stole and swear by"
+          }
+          footnoteNumber={1}
+        />
+        <ExternalLink
+          ref={footnote2}
+          url={
+            "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+          }
+          label={"[MDN] CSS Variables"}
+          description={"Official reference docs"}
+          footnoteNumber={2}
+        />
+        <ExternalLink
+          ref={footnote3}
+          url={"https://css-tricks.com/a-complete-guide-to-css-media-queries/"}
+          label={"[CSS-Tricks] A Complete Guide to CSS Media Queries"}
+          description={
+            "Great guide with lots of illustrations and codepen examples"
+          }
+          footnoteNumber={3}
+        />
+        <ExternalLink
+          ref={footnote4}
+          url={
+            "https://bulma.io/documentation/overview/responsiveness/#breakpoints"
+          }
+          label={"[Bulma] Responsive docs"}
+          description={
+            "CSS framework whose breakpoint widths I shamelessly stole, and expanded"
+          }
+          footnoteNumber={4}
+        />
+      </SectionReferences>
+      <Divider />
     </Page>
   );
 }

@@ -6,9 +6,9 @@ import { forwardRef } from "react";
 }}
  */
 export const ExternalLink = forwardRef(
-  ({ url, label, description, refNum }, ref) => {
+  ({ url, label, description, footnoteNumber }, ref) => {
     return (
-      <li id={`ref-${refNum}`} ref={ref}>
+      <li id={`ref-${footnoteNumber}`} ref={ref}>
         <a className="styled-link" target="_blank" rel="noopener" href={url}>
           {`${label}:`}
         </a>

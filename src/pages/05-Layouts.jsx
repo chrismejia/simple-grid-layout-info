@@ -6,6 +6,7 @@ export default function Layouts() {
       <section className="container">
         <article className="text">
           <h2>How Grid allows for flexible layouts</h2>
+          <h3>Before We Code: Dev Tools for Grid</h3>
           <h3></h3>
 
           <h3>Page Elements as Grids</h3>
@@ -19,8 +20,6 @@ export default function Layouts() {
           <h4>Three Col Article</h4>
           <h4>Photo Collage</h4>
           <h4>True Centering (like flex, but diff)</h4>
-
-          <h3>Dev Tools for Grid</h3>
         </article>
       </section>
     </Page>

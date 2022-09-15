@@ -210,20 +210,3 @@ section:last-child {
   padding: 0.25rem;
   border-radius: 0.25rem;
 }
-
-.references {
-  padding: 1.5rem;
-  margin-top: 2rem;
-
-  border: 2px solid var(--vivid);
-  border-radius: 1rem;
-  margin-bottom: -2rem;
-}
-
-.references h4 {
-  margin-top: 0;
-}
-
-span .inline-link {
-  margin-bottom: 1px;
-}

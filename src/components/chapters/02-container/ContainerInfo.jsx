@@ -41,8 +41,7 @@ export default function ContainerInfo() {
           <p>
             Our container is meant to act as a utility element that allow you to
             center content
-            <Footnote refLabel={1} refToScrollTo={firstRef} />. Let's set one
-            up.
+            <Footnote refLabel={1} refLocation={firstRef} />. Let's set one up.
           </p>
         </article>
 
@@ -71,9 +70,9 @@ export default function ContainerInfo() {
           </p>
           <p>
             We can do this by defining some reusable CSS variables
-            <Footnote refLabel={2} refToScrollTo={secondRef} /> for some
-            Examples and creating some media queries
-            <Footnote refLabel={3} refToScrollTo={thirdRef} />.
+            <Footnote refLabel={2} refLocation={secondRef} /> for some Examples
+            and creating some media queries
+            <Footnote refLabel={3} refLocation={thirdRef} />.
           </p>
           <h4 id="breakpoints">Column Widths & Breakpoints</h4>
           <p>
@@ -81,7 +80,7 @@ export default function ContainerInfo() {
             split into as many as 12 columns, to give us a bunch of layout
             options. We can set three breakpoint widths that are divisible by 12
             so our grid columns have integer column sizes
-            <Footnote refLabel={4} refToScrollTo={fourthRef} />:
+            <Footnote refLabel={4} refLocation={fourthRef} />:
           </p>
         </article>
 
@@ -125,7 +124,7 @@ export default function ContainerInfo() {
             description={
               "CSS framework whose container element I shamelessly stole and swear by"
             }
-            refNum={1}
+            footnoteNumber={1}
           />
           <ExternalLink
             ref={secondRef}
@@ -134,7 +133,7 @@ export default function ContainerInfo() {
             }
             label={"[MDN] CSS Variables"}
             description={"Official reference docs"}
-            refNum={2}
+            footnoteNumber={2}
           />
           <ExternalLink
             ref={thirdRef}
@@ -145,7 +144,7 @@ export default function ContainerInfo() {
             description={
               "Great guide with lots of illustrations and codepen examples"
             }
-            refNum={3}
+            footnoteNumber={3}
           />
           <ExternalLink
             ref={fourthRef}
@@ -156,7 +155,7 @@ export default function ContainerInfo() {
             description={
               "CSS framework whose breakpoint widths I shamelessly stole, and expanded"
             }
-            refNum={4}
+            footnoteNumber={4}
           />
         </SectionReferences>
         <Divider />
