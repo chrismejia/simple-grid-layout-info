@@ -32,14 +32,14 @@ export const footerLinks = [
     ],
   },
   {
-    chapter: { linkText: "04. Subgrid", linkURL: "/subgrid" },
+    chapter: { linkText: "04. Templating", linkURL: "/templating" },
     links: [
       {
         linkText: "Three Column Article",
-        linkURL: "/subgrid#three-col-article",
+        linkURL: "/templating#three-col-article",
       },
-      { linkText: "Intro", linkURL: "/subgrid#photo-collage" },
-      { linkText: "Intro", linkURL: "/subgrid#true-centering" },
+      { linkText: "Intro", linkURL: "/templating#photo-collage" },
+      { linkText: "Intro", linkURL: "/templating#true-centering" },
     ],
   },
   {

@@ -14,7 +14,7 @@
    3. Put It All Together
    4. Repeat Yourself
    5. From Here to There
-4. Templates
+4. Templating
    1. Combining template tools
 5. Layouts
    1. Common Layouts
