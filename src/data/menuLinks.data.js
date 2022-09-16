@@ -1,4 +1,4 @@
-export const footerLinks = [
+export const menuLinks = [
   {
     chapter: { linkText: "01. Intro", linkURL: "/" },
     links: [

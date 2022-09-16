@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import PageNavigation from "./PageNavigation";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
+import SlidingMenu from "./SlidingMenu";
 
 export default function Page({ children }) {
   /**
@@ -14,6 +15,7 @@ export default function Page({ children }) {
   return (
     <>
       <main>
+        <SlidingMenu />
         <SiteHeader isMainPage={onMainPage} />
         {children}
       </main>

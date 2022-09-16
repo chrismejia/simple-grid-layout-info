@@ -206,6 +206,62 @@ hr {
 }
 
 /**************************************
+* NavSectionLinks.jsx
+**************************************/
+.all-section-links {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .site-nav {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .all-section-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-links {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .all-section-links {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-links {
+    grid-column: span 1;
+  }
+}
+
+.site-nav h3,
+.site-nav h5 {
+  margin-top: 0;
+}
+
+.site-nav li {
+  margin-bottom: 0.75rem;
+  list-style: none;
+}
+
+.nav-info {
+  grid-template-rows: 1fr auto;
+}
+
+.nav-active {
+  width: 100%;
+  height: 100%;
+}
+
+/**************************************
 * OpenGraphLayout.jsx
 **************************************/
 .og-image {
@@ -349,55 +405,25 @@ span .inline-link {
     rgba(248, 31, 255, 0.15) -20px 20px, rgba(248, 31, 255, 0.05) -25px 25px;
 }
 
-.all-section-links {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+/**************************************
+* SlidingMenu.jsx
+**************************************/
+#menu {
+  position: fixed;
+  background-color: var(--purp);
+  z-index: 999;
+  left: 0;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+  transition: 0.75s cubic-bezier(0.16, 1, 0.3, 1); /* ease-out expo */
+  padding: 3rem;
 }
 
-@media screen and (max-width: 1216px) {
-  .site-nav {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .all-section-links {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section-links {
-    grid-column: span 1;
-  }
+.show {
+  transform: translate(100vw, 0);
 }
-
-@media screen and (max-width: 768px) {
-  .site-nav {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .all-section-links {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .section-links {
-    grid-column: span 1;
-  }
-}
-
-.site-nav h3,
-.site-nav h5 {
-  margin-top: 0;
-}
-
-.site-nav li {
-  margin-bottom: 0.75rem;
-  list-style: none;
-}
-
-.nav-info {
-  grid-template-rows: 1fr auto;
-}
-
-.nav-active {
-  width: 100%;
-  height: 100%;
+.hide {
+  transform: translate(-100vw, 0);
 }
