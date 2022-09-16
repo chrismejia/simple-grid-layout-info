@@ -1,4 +1,4 @@
-import Divider from "../helpers/Divider";
+import Divider from "./Divider";
 
 export default function SiteHeader({ isMainPage }) {
   return (

@@ -20,3 +20,4 @@
    1. Common Layouts
    2. Recreating Existing
 6. Challenges
+   1. Scoreboard, with home and away

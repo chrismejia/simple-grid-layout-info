@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 
 import PageNavigation from "./PageNavigation";
+import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
-import SiteHeader from "../chapters/SiteHeader";
 
 export default function Page({ children }) {
   /**
