@@ -28,33 +28,34 @@ export default function Container() {
       <SectionReferences>
         <ExternalLink
           ref={footnote1}
+          footnoteNumber={1}
           url={"https://bulma.io/documentation/layout/container/"}
           label={"[Bulma] Container docs"}
           description={
             "CSS framework whose container element I shamelessly stole and swear by"
           }
-          footnoteNumber={1}
         />
         <ExternalLink
           ref={footnote2}
+          footnoteNumber={2}
           url={
             "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
           }
           label={"[MDN] CSS Variables"}
           description={"Official reference docs"}
-          footnoteNumber={2}
         />
         <ExternalLink
           ref={footnote3}
+          footnoteNumber={3}
           url={"https://css-tricks.com/a-complete-guide-to-css-media-queries/"}
           label={"[CSS-Tricks] A Complete Guide to CSS Media Queries"}
           description={
             "Great guide with lots of illustrations and codepen examples"
           }
-          footnoteNumber={3}
         />
         <ExternalLink
           ref={footnote4}
+          footnoteNumber={4}
           url={
             "https://bulma.io/documentation/overview/responsiveness/#breakpoints"
           }
@@ -62,7 +63,6 @@ export default function Container() {
           description={
             "CSS framework whose breakpoint widths I shamelessly stole, and expanded"
           }
-          footnoteNumber={4}
         />
       </SectionReferences>
       <Divider />

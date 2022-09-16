@@ -32,6 +32,7 @@ export default function BreakpointMarginsVisual() {
           <span>32px</span>
         </div>
       </article>
+
       <article className="grid container-margin-ex">
         <div className="ex-padded filled">
           <span>min</span>
@@ -46,6 +47,7 @@ export default function BreakpointMarginsVisual() {
           <span>32px</span>
         </div>
       </article>
+
       <article className="grid container-margin-ex">
         <div className="ex-padded filled">
           <span>min</span>
