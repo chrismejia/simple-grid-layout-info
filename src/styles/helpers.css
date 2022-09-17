@@ -408,22 +408,135 @@ span .inline-link {
 /**************************************
 * SlidingMenu.jsx
 **************************************/
+h3.menu-titling {
+  position: fixed;
+  z-index: 10;
+
+  top: 0.65rem;
+  left: 7.5rem;
+  transition: 0.75s cubic-bezier(0.65, 0, 0.35, 1); /* ease-in-out cubic */
+}
+
+h3.menu-titling.show {
+  transform: translate3d(0, 0, 0);
+}
+
+h3.menu-titling.hide {
+  transform: translate3d(0, -15.2rem, 0);
+}
+
 #menu {
   position: fixed;
-  background-color: var(--purp);
-  z-index: 999;
+  background-color: var(--plum);
+  z-index: 9;
   left: 0;
   top: 0;
 
-  width: 100vw;
+  width: 500px;
   height: 100vh;
-  transition: 0.75s cubic-bezier(0.16, 1, 0.3, 1); /* ease-out expo */
-  padding: 3rem;
+  transition: 0.75s cubic-bezier(0.65, 0, 0.35, 1); /* ease-in-out cubic */
 }
 
-.show {
-  transform: translate(100vw, 0);
+#menu.show {
+  transform: translate3d(0, 0, 0);
 }
-.hide {
-  transform: translate(-100vw, 0);
+#menu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+
+.slide-menu {
+  margin-top: 15rem;
+  padding: 0 3rem;
+  height: 77.5vh;
+  overflow-y: scroll;
+  background-color: darkslategrey;
+}
+
+.slide-menu ul {
+  list-style: none;
+}
+
+/**************************************
+* MenuHamburger.jsx
+**************************************/
+#menu-btn {
+  position: fixed;
+  top: 6.5rem;
+  left: 3rem;
+  z-index: 10;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger:hover,
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: var(--platinum);
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: var(--platinum);
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/*
+ * Arrow
+ */
+.hamburger--arrow.is-active .hamburger-inner::before {
+  transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+}
+
+.hamburger--arrow.is-active .hamburger-inner::after {
+  transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }

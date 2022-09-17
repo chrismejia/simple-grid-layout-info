@@ -1,20 +1,28 @@
 import { useState } from "react";
-
-import NavSectionLinks from "./NavSectionLinks";
+import MenuHamburger from "./MenuHamburger";
+import SlidingMenuLinks from "./SlidingMenuLinks";
 
 export default function SlidingMenu() {
   const [isVisible, setVisible] = useState(false);
-
   const toggleVisibility = () => setVisible((state) => !state);
 
   return (
-    <nav id="menu">
-      <button onClick={toggleVisibility}>Menu</button>
-
-      <div className={isVisible ? "show" : "hide"}>
-        <h3>Building Layouts Using CSS Grid</h3>
-        <NavSectionLinks />
-      </div>
-    </nav>
+    <>
+      <h3
+        className={
+          isVisible
+            ? "neon-effect menu-titling show"
+            : "neon-effect menu-titling hide"
+        }
+      >
+        Building Layouts
+        <br />
+        Using CSS Grid
+      </h3>
+      <MenuHamburger toggleFunc={toggleVisibility} visible={isVisible} />
+      <nav id="menu" className={isVisible ? "show" : "hide"}>
+        <SlidingMenuLinks />
+      </nav>
+    </>
   );
 }
