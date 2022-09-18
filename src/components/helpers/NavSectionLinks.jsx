@@ -4,7 +4,7 @@ import StyledLink from "./StyledLink";
 
 export default function NavSectionLinks() {
   return (
-    <div className="grid all-section-links ">
+    <div className="grid all-section-links">
       {menuLinks.map(({ chapter, links }) => (
         <div className="section-links" key={`${chapter.linkURL}`}>
           <ChapterLink {...chapter} />
