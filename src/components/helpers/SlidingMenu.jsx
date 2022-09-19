@@ -8,7 +8,7 @@ export default function SlidingMenu() {
 
   return (
     <>
-      <h3
+      <h4
         className={
           isVisible
             ? "neon-effect menu-titling show"
@@ -18,7 +18,7 @@ export default function SlidingMenu() {
         Building Layouts
         <br />
         Using CSS Grid
-      </h3>
+      </h4>
       <MenuHamburger toggleFunc={toggleVisibility} visible={isVisible} />
       <nav id="menu" className={isVisible ? "show" : "hide"}>
         <SlidingMenuLinks />
