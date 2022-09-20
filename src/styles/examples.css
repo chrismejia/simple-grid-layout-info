@@ -14,14 +14,23 @@
   margin: 0;
 }
 
-.filled {
-  background-color: var(--purp);
-  min-height: 75px;
-}
-
 @media screen and (max-width: 1216px) {
   .example {
     grid-template-columns: 1fr;
+  }
+}
+
+.filled {
+  background-color: var(--purp);
+  min-height: 75px;
+
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .filled {
+    font-size: var(--size-7);
   }
 }
 

@@ -61,8 +61,23 @@
   grid-template-rows: 3fr 2fr 1fr;
 }
 
+.mixed-rows-cols .filled {
+  min-height: 100px;
+}
+
 .mixed-rows-cols span {
   margin-bottom: 0;
+}
+
+/**************************************
+* DifferentGaps.jsx
+**************************************/
+.different-gaps {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 100px);
+
+  row-gap: 1rem;
+  column-gap: 3rem;
 }
 
 /**************************************

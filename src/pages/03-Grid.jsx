@@ -5,6 +5,7 @@ import { ExternalLink } from "../components/helpers/ExternalLink";
 import SectionReferences from "../components/helpers/SectionReferences";
 import Page from "../components/helpers/Page";
 
+import DifferentGapSizing from "../components/chapters/03-grid/sections/DifferentGapSizing";
 import DontRepeatYourself from "../components/chapters/03-grid/sections/DontRepeatYourself";
 import GridFirstDeclaration from "../components/chapters/03-grid/sections/GridFirstDeclaration";
 import IntroToRowsColumns from "../components/chapters/03-grid/sections/IntroToRowsColumns";
@@ -29,8 +30,9 @@ export default function Grid() {
       <PuttingItAllTogether />
       <RowsColsAllSizes />
       <MindTheGap />
+      <DifferentGapSizing />
       <DontRepeatYourself />
-      <h4>Start Here, End There (declaring spans)</h4>
+
       <SectionReferences startRef={5}>
         <ExternalLink
           ref={ref5}

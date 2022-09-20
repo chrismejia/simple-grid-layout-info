@@ -1,7 +1,7 @@
 export default function BaseRowsColumns({ isMixed }) {
   const style = isMixed
-    ? "grid example outer-border mixed-rows-cols"
-    : "grid example outer-border basic-rows-cols";
+    ? "grid is-visual outer-border mixed-rows-cols"
+    : "grid is-visual outer-border basic-rows-cols";
 
   return (
     <div className="resize">

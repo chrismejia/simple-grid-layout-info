@@ -1,4 +1,4 @@
-import BaseRowsColumns from "./BaseRowsColumns";
+import BaseRowsColumns from "../visuals/BaseRowsColumns";
 import CodeWrapper from "../../../helpers/CodeWrapper";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 import MDNQuote from "../../../helpers/MDNQuote";

@@ -484,7 +484,7 @@ h4.menu-titling.hide {
   top: 3.5rem;
   left: 2rem;
   z-index: 10;
-  background-color: var(--jewel);
+  background-color: var(--vivid);
   padding: 1rem;
   border-radius: 100%;
 }
