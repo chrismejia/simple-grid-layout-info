@@ -1,4 +1,5 @@
 import MDNSVG from "./MDNSVG";
+
 export default function MDNQuote({ propName, mdnQuotes, mdnLink, defaultVal }) {
   return (
     <article className=" grid mdn-quote">
@@ -20,9 +21,11 @@ export default function MDNQuote({ propName, mdnQuotes, mdnLink, defaultVal }) {
         {mdnQuotes.map((quote, i) => (
           <p key={`${i}-${propName}`}>{quote}</p>
         ))}
-        <p>
-          <b>default:</b> {defaultVal}
-        </p>
+        {defaultVal && (
+          <p>
+            <b>default:</b> {defaultVal}
+          </p>
+        )}
       </div>
     </article>
   );
