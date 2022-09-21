@@ -1,4 +1,7 @@
+import MDNQuote from "../../../helpers/MDNQuote";
 import TwelveColumnGrid from "../visuals/TwelveColumnGrid";
+
+import { mdnQuoteData } from "../../../../data/mdnQuote.data";
 
 export default function DontRepeatYourself() {
   return (
@@ -28,6 +31,14 @@ export default function DontRepeatYourself() {
           easy to understand how many columns you've got in your grid at a
           glance. Thankfully, you can just{" "}
           <code className="inline">repeat</code> yourself.
+        </p>
+
+        <MDNQuote {...mdnQuoteData.repeat} />
+        <p>
+          Using the <code className="inline">repeat()</code> function, we can
+          rewrite the above by setting the{" "}
+          <code className="inline">{`<repeat count>`}</code> to 12 and the{" "}
+          <code className="inline">{`<tracks>`}</code> to 1fr:
         </p>
         <p className="centered-text">
           <code className="inline">grid-template-columns: repeat(12, 1fr)</code>

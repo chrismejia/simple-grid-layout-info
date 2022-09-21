@@ -50,8 +50,6 @@ export default function Grid() {
           label={"[CSS-Tricks] An Introduction to the `fr` CSS Unit"}
           description={"Has useful examples and links to more articles"}
         />
-        <ExternalLink ref={seventhRef} url={""} label={""} description={""} />
-        <ExternalLink ref={eighthRef} url={""} label={""} description={""} />
       </SectionReferences>
       <Divider />
     </Page>
