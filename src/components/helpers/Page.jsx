@@ -14,12 +14,12 @@ export default function Page({ children }) {
 
   return (
     <>
+      <SlidingMenu />
+      <SiteHeader isMainPage={onMainPage} />
       <main>
-        <SlidingMenu />
-        <SiteHeader isMainPage={onMainPage} />
         {children}
+        <PageNavigation />
       </main>
-      <PageNavigation />
       <SiteFooter />
     </>
   );

@@ -2,7 +2,7 @@ import Divider from "./Divider";
 
 export default function SiteHeader({ isMainPage }) {
   return (
-    <section className="container">
+    <header className="container">
       <article className="text">
         <h1 className="title centered-text neon-effect">
           Build Layouts Using CSS Grid
@@ -29,6 +29,6 @@ export default function SiteHeader({ isMainPage }) {
         )}
       </article>
       <Divider />
-    </section>
+    </header>
   );
 }

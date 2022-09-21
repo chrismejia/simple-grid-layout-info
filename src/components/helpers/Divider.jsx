@@ -1,9 +1,9 @@
 export default function Divider() {
   return (
     <section className="container">
-      <footer className="grid divider">
+      <div className="grid divider">
         <hr />▦<hr />
-      </footer>
+      </div>
     </section>
   );
 }
