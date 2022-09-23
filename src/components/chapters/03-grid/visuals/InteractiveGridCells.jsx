@@ -2,36 +2,19 @@ import { useState } from "react";
 
 import CodeWrapper from "../../../helpers/CodeWrapper";
 import HighlightedCode from "../../../helpers/HighlightedCode";
-import addRemoveColumns from "../../../../utils/addRemoveCols";
 
-import {
-  inter_jsx_cols_start,
-  inter_jsx_cols_end,
-  inter_css_cols_start,
-  inter_css_cols_end,
-} from "../ex-code/interactiveCols.code";
-import {
-  inter_jsx_rows_start,
-  inter_jsx_rows_end,
-  inter_css_rows_start,
-  inter_css_rows_end,
-} from "../ex-code/interactiveRows.code";
+import addRemoveColumns from "../../../../utils/addRemoveCols";
+import getInteractiveBaseRowsColsCode from "../../../../utils/getInteractiveBaseRowsColsCode";
+import updateExampleCSSCode from "../../../../utils/updateExampleCSSCode";
+import updateExampleJSXCode from "../../../../utils/updateExampleJSXCode";
 
 import addRemoveRows from "../../../../utils/addRemoveRows";
 
 export default function InteractiveGridCells({ rowOrCol }) {
-  let initialCSSCode, initialJSXCode;
+  const { baseJSX, baseCSS } = getInteractiveBaseRowsColsCode(rowOrCol);
 
-  if (rowOrCol === "column") {
-    initialCSSCode = inter_css_cols_start + inter_css_cols_end;
-    initialJSXCode = inter_jsx_cols_start + inter_jsx_cols_end;
-  } else {
-    initialCSSCode = inter_css_rows_start + inter_css_rows_end;
-    initialJSXCode = inter_jsx_rows_start + inter_jsx_rows_end;
-  }
-
-  const [cssCode, setCSSCode] = useState(initialCSSCode);
-  const [jsxCode, setJSXCode] = useState(initialJSXCode);
+  const [jsxCode, setJSXCode] = useState(baseJSX);
+  const [cssCode, setCSSCode] = useState(baseCSS);
   const [sections, setSectionCount] = useState(0);
 
   /**
@@ -61,26 +44,11 @@ export default function InteractiveGridCells({ rowOrCol }) {
   const adjustExample = (numSections, operation) => {
     // Edit display JSX code
 
-    let updatedJSX, jsxDivs;
-    if (rowOrCol === "column") {
-      jsxDivs = `\n  <div className="ex-col" />`.repeat(numSections);
-      updatedJSX = `${inter_jsx_cols_start}${jsxDivs}${inter_jsx_cols_end}`;
-    } else {
-      jsxDivs = `\n  <div className="ex-row" />`.repeat(numSections);
-      updatedJSX = `${inter_jsx_rows_start}${jsxDivs}${inter_jsx_rows_end}`;
-    }
+    const updatedJSX = updateExampleJSXCode(numSections, operation);
     setJSXCode(updatedJSX);
 
-    // Edit display CSS code
-    const cssFr = " 1fr".repeat(numSections);
-
     // Merge CSS Code based on "column" or "row" rowOrCol value:
-    let updatedCSS;
-    if (rowOrCol === "column") {
-      updatedCSS = `${inter_css_cols_start}${cssFr}${inter_css_cols_end}`;
-    } else {
-      updatedCSS = `${inter_css_rows_start}${cssFr}${inter_css_rows_end}`;
-    }
+    const updatedCSS = updateExampleCSSCode(numSections, operation);
     setCSSCode(updatedCSS);
 
     // Set new col count
