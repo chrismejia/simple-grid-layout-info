@@ -9,7 +9,7 @@
 }
 
 /**************************************
-* InteractiveGridCells.jsx
+* InteractiveRowsCols.jsx
 **************************************/
 .interactive {
   grid-column: span 2;

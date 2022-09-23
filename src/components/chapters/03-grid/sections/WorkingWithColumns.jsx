@@ -1,7 +1,7 @@
 import CodeWrapper from "../../../helpers/CodeWrapper";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 import TwoEvenColumns from "../visuals/TwoEvenColumns";
-import InteractiveGridCells from "../visuals/InteractiveGridCells";
+import InteractiveRowsCols from "../visuals/InteractiveRowsCols";
 
 import { grid_cols_base } from "../ex-code/twoColsGrid.code";
 
@@ -39,7 +39,7 @@ export default function WorkingWithColumns() {
         </p>
       </article>
 
-      <InteractiveGridCells rowOrCol={"column"} />
+      <InteractiveRowsCols rowOrCol={"column"} />
     </section>
   );
 }

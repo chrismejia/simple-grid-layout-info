@@ -1,4 +1,4 @@
-export default function AddRemoveDivsOnGrid({ divType }) {
+export default function AddRemoveDivsOnGrid({ divType, sectionCount }) {
   const divTypeClass =
     divType === "column"
       ? "grid interactive-content ex-cols"
@@ -6,9 +6,9 @@ export default function AddRemoveDivsOnGrid({ divType }) {
 
   const inlineDivGridSetup =
     divType === "column"
-      ? { gridTemplateColumns: `repeat(${sections + 1}, 1fr)` }
+      ? { gridTemplateColumns: `repeat(${sectionCount + 1}, 1fr)` }
       : {
-          gridTemplateRows: `repeat(${sections + 1}, 1fr)`,
+          gridTemplateRows: `repeat(${sectionCount + 1}, 1fr)`,
         };
 
   const childrenDivType =

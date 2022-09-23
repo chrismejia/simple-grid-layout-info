@@ -1,10 +1,7 @@
-export default function InteractiveGridWithButtons({
-  interactiveButtons,
-  gridExample,
-}) {
+export default function InteractiveGridWithButtons({ children, gridExample }) {
   return (
     <article className="grid interactive example">
-      <div className="column-controls">{interactiveButtons}</div>
+      <div className="column-controls">{children}</div>
       {gridExample}
     </article>
   );

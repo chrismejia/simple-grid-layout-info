@@ -2,6 +2,9 @@ import { useState } from "react";
 
 import CodeWrapper from "../../../helpers/CodeWrapper";
 import HighlightedCode from "../../../helpers/HighlightedCode";
+import InteractiveGridWithButtons from "../../../helpers/InteractiveGridWithButtons";
+
+import AddRemoveDivsOnGrid from "./AddRemoveDivsOnGrid";
 
 import addRemoveColumns from "../../../../utils/addRemoveCols";
 import getInteractiveBaseRowsColsCode from "../../../../utils/getInteractiveBaseRowsColsCode";
@@ -10,7 +13,7 @@ import updateExampleJSXCode from "../../../../utils/updateExampleJSXCode";
 
 import addRemoveRows from "../../../../utils/addRemoveRows";
 
-export default function InteractiveGridCells({ rowOrCol }) {
+export default function InteractiveRowsCols({ rowOrCol }) {
   const { baseJSX, baseCSS } = getInteractiveBaseRowsColsCode(rowOrCol);
 
   const [jsxCode, setJSXCode] = useState(baseJSX);
@@ -76,44 +79,26 @@ export default function InteractiveGridCells({ rowOrCol }) {
         />
       </CodeWrapper>
 
-      <div className="grid interactive example">
-        <div className="column-controls">
-          <button
-            onClick={() => {
-              sectionNumChecker("add");
-            }}
-          >
-            {rowOrCol === "column" ? "Add a Column" : "Add a Row"}
-          </button>
-          <button
-            onClick={() => {
-              sectionNumChecker("remove");
-            }}
-          >
-            {rowOrCol === "column" ? "Remove a Column" : "Remove a Row"}
-          </button>
-        </div>
-        <div
-          className={
-            rowOrCol === "column"
-              ? "grid interactive-content ex-cols"
-              : "grid interactive-content ex-rows"
-          }
-          style={
-            rowOrCol === "column"
-              ? { gridTemplateColumns: `repeat(${sections + 1}, 1fr)` }
-              : {
-                  gridTemplateRows: `repeat(${sections + 1}, 1fr)`,
-                }
-          }
+      <InteractiveGridWithButtons
+        gridExample={
+          <AddRemoveDivsOnGrid divType={rowOrCol} sectionCount={sections} />
+        }
+      >
+        <button
+          onClick={() => {
+            sectionNumChecker("add");
+          }}
         >
-          {rowOrCol === "column" ? (
-            <div className="ex-col" />
-          ) : (
-            <div className="ex-row" />
-          )}
-        </div>
-      </div>
+          {rowOrCol === "column" ? "Add a Column" : "Add a Row"}
+        </button>
+        <button
+          onClick={() => {
+            sectionNumChecker("remove");
+          }}
+        >
+          {rowOrCol === "column" ? "Remove a Column" : "Remove a Row"}
+        </button>
+      </InteractiveGridWithButtons>
     </article>
   );
 }

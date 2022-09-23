@@ -1,5 +1,5 @@
 /**
- * Adds/removes columns from {@link InteractiveGridCells}
+ * Adds/removes columns from {@link InteractiveRowsCols}
  * @function addRemoveColumns
  * @param {string} operation - one of "add" or "remove"
  */

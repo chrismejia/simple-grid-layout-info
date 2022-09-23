@@ -1,4 +1,4 @@
-import InteractiveGridCells from "../visuals/InteractiveGridCells";
+import InteractiveRowsCols from "../visuals/InteractiveRowsCols";
 
 export default function WorkingWithRows() {
   return (
@@ -11,7 +11,7 @@ export default function WorkingWithRows() {
         </p>
       </article>
 
-      <InteractiveGridCells rowOrCol={"row"} />
+      <InteractiveRowsCols rowOrCol={"row"} />
     </section>
   );
 }
