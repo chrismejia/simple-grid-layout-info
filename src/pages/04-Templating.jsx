@@ -7,7 +7,7 @@ import SeeingTheGridLines from "../components/chapters/04-templating/visuals/See
 import IndividualGridLines from "../components/chapters/04-templating/visuals/IndividualGridLines";
 import NamingGridLines from "../components/chapters/04-templating/sections/NamingGridLines";
 
-NamingGridLines;
+import Divider from "../components/helpers/Divider";
 
 export default function Templating() {
   return (
@@ -39,6 +39,7 @@ export default function Templating() {
           <h3>ORDER?</h3>
         </article>
       </section>
+      <Divider />
     </Page>
   );
 }
