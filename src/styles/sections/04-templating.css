@@ -1,0 +1,13 @@
+.grid-lines {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 0.5rem;
+}
+
+.grid-lines.visible-lines {
+  background-color: var(--platinum);
+}
+
+.btn__toggle-lines {
+  grid-column: span 2;
+}

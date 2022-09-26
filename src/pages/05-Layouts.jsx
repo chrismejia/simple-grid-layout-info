@@ -16,6 +16,11 @@ export default function Layouts() {
           <h4>RAM (Repeat, Auto, MinMax)</h4>
           <h4></h4>
 
+          <h3>Playing with Dimensions of the Grid</h3>
+          <h4>centered within a container (12cols)</h4>
+          <h4>medium blog style (skinny text, wider photos) </h4>
+          <h4>full width (16cols)</h4>
+
           <h3>breakdown of example layouts</h3>
           <h4>Three Col Article</h4>
           <h4>Photo Collage</h4>
