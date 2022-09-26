@@ -11,3 +11,30 @@
 .btn__toggle-lines {
   grid-column: span 2;
 }
+
+/**************************************
+* IndividualGridLines.jsx
+**************************************/
+.individual-lines {
+  grid-template-columns:
+    [start-cols start-col] 1fr [end-col] repeat(3, [start-col] 1fr [end-col])
+    [start-col] 1fr [end-col end-cols];
+  grid-template-rows:
+    [start-rows start-row] 1fr [end-row] repeat(5, [start-row] 1fr [end-row])
+    [start-row] 1fr [end-row end-rows];
+  gap: 0.75rem;
+}
+
+.two-wide {
+  grid-column: start-col / end-col 2;
+}
+
+.three-wide-tall {
+  grid-column: start-col 2 / end-col 4;
+  grid-row: start-row 3 / end-row 5;
+}
+
+.full-wide-two-tall {
+  grid-column: start-cols / end-cols;
+  grid-row: start-row 6 / end-rows;
+}

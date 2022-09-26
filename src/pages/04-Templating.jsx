@@ -4,12 +4,18 @@ import LiningThingsUp from "../components/chapters/04-templating/sections/Lining
 import UsingASetUpGrid from "../components/chapters/04-templating/sections/UsingASetUpGrid";
 
 import SeeingTheGridLines from "../components/chapters/04-templating/visuals/SeeingTheGridLines";
+import IndividualGridLines from "../components/chapters/04-templating/visuals/IndividualGridLines";
+import NamingGridLines from "../components/chapters/04-templating/sections/NamingGridLines";
+
+NamingGridLines;
 
 export default function Templating() {
   return (
     <Page>
       <UsingASetUpGrid />
       <LiningThingsUp />
+      <NamingGridLines />
+      {/* <IndividualGridLines /> */}
 
       <section className="container">
         <article className="text">
@@ -24,7 +30,6 @@ export default function Templating() {
           <h5>with and without spans</h5>
 
           <h4>combined properties</h4>
-          <h4>Naming Lines/tracks</h4>
 
           <h3>Naming Areas (grid-template)</h3>
 
