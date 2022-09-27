@@ -39,7 +39,6 @@ export default function Templating() {
           <h3>ORDER?</h3>
         </article>
       </section>
-      <Divider />
     </Page>
   );
 }

@@ -51,7 +51,6 @@ export default function Grid() {
           description={"Has useful examples and links to more articles"}
         />
       </SectionReferences>
-      <Divider />
     </Page>
   );
 }

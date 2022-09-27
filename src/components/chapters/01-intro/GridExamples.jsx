@@ -87,7 +87,6 @@ export default function GridExamples() {
           <code className="inline">.container</code> element and a CSS Grid.
         </p>
       </article>
-      <Divider />
     </section>
   );
 }

@@ -2,26 +2,27 @@
  * C4-Target.jsx
  **************************************/
 .target {
-  grid-template-columns:
-    [c-all-start] 1fr [c-end-1] repeat(3, [c-start] 1fr [c-end])
-    [c-start] 1fr [c-end c-all-end];
-  grid-template-rows:
-    [r-all-start] 1fr repeat(3, [r-start] 1fr [r-end])
-    1fr [r-end r-all-end];
+  grid-template-columns: repeat(5, [c-start] 1fr [c-end]);
+  grid-template-rows: repeat(5, [r-start] 1fr [r-end]);
+  height: 800px;
 }
 
-.target .filled {
-  height: 150px;
-}
-
-.target-top {
-  grid-column: c-all-start / c-all-end;
-  grid-row: r-start 1 / r-end 1;
+.target .inline {
+  color: var(--platinum);
 }
 
 .target-left {
-  grid-column: c-start 1 / c-end 1;
-  grid-row: r-start 2 / r-end 5;
+  grid-column: span 1;
+  grid-row: span 5;
+}
+
+.target-top {
+  grid-column: 2 / span 3;
+}
+
+.target-right {
+  grid-column: c-start 5 / c-end 5;
+  grid-row: r-start 1 / r-end 5;
 }
 
 .target-center {
@@ -29,12 +30,36 @@
   grid-row: r-start 3 / r-end 3;
 }
 
-.target-right {
-  grid-column: c-start 5 / c-end 5;
-  grid-row: r-start 2 / r-end 5;
+.target-bottom {
+  grid-column: c-start 2 / c-end 4;
+  grid-row: r-start 5 / r-end 5;
 }
 
-.target-bottom {
-  grid-column: c-all-start / c-all-end;
+.target-left.detailed {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-color: aliceblue;
+}
+
+.target-top.detailed {
+  grid-column: 2 / span 3;
+  background-color: hotpink;
+}
+
+.target-right.detailed {
+  grid-column: c-start 5 / c-end 5;
+  grid-row: r-start 1 / r-end 5;
+  background-color: darkorange;
+}
+
+.target-center.detailed {
+  grid-column: c-start 3 / c-end 3;
+  grid-row: r-start 3 / r-end 3;
+  background-color: cyan;
+}
+
+.target-bottom.detailed {
+  grid-column: c-start 2 / c-end 4;
   grid-row: r-start 5 / r-end 5;
+  background-color: gold;
 }

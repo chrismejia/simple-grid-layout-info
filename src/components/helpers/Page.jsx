@@ -4,6 +4,7 @@ import PageNavigation from "./PageNavigation";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 import SlidingMenu from "./SlidingMenu";
+import Divider from "./Divider";
 
 export default function Page({ children }) {
   /**
@@ -18,6 +19,7 @@ export default function Page({ children }) {
       <SiteHeader isMainPage={onMainPage} />
       <main>
         {children}
+        <Divider />
         <PageNavigation />
       </main>
       <SiteFooter />
