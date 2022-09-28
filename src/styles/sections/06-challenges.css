@@ -5,32 +5,37 @@
   grid-template-columns: repeat(5, [c-start] 1fr [c-end]);
   grid-template-rows: repeat(5, [r-start] 1fr [r-end]);
   height: 800px;
+  width: 800px;
+}
+
+.target > div {
+  min-width: 150px;
 }
 
 .target .inline {
   color: var(--platinum);
 }
 
-.target-left {
+.target-left.filled {
   grid-column: span 1;
   grid-row: span 5;
 }
 
-.target-top {
+.target-top.filled {
   grid-column: 2 / span 3;
 }
 
-.target-right {
+.target-right.filled {
   grid-column: c-start 5 / c-end 5;
   grid-row: r-start 1 / r-end 5;
 }
 
-.target-center {
+.target-center.filled {
   grid-column: c-start 3 / c-end 3;
   grid-row: r-start 3 / r-end 3;
 }
 
-.target-bottom {
+.target-bottom.filled {
   grid-column: c-start 2 / c-end 4;
   grid-row: r-start 5 / r-end 5;
 }
@@ -62,4 +67,66 @@
   grid-column: c-start 2 / c-end 4;
   grid-row: r-start 5 / r-end 5;
   background-color: gold;
+}
+
+/**************************************
+ * PlainSpiral.jsx
+ **************************************/
+.spiral {
+  height: 800px;
+  width: 800px;
+
+  grid-template:
+    "long long long long long long long long ...."
+    "tall .... .... .... .... .... .... rght ...."
+    "tall .... left top  top  top  .... rght ...."
+    "tall .... left .... .... innr .... rght ...."
+    "tall .... left .... cntr innr .... rght ...."
+    "tall .... left .... .... .... .... rght ...."
+    "tall .... ibtm ibtm ibtm ibtm ibtm rght ...."
+    "tall .... .... .... .... .... .... .... ...."
+    "tall bttm bttm bttm bttm bttm bttm bttm bttm";
+
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.spiral div {
+  min-width: 25px;
+}
+
+.spiral .bttm {
+  grid-area: bttm;
+}
+
+.spiral .tall {
+  grid-area: tall;
+}
+
+.spiral .long {
+  grid-area: long;
+}
+
+.spiral .right {
+  grid-area: rght;
+}
+
+.spiral .ibtm {
+  grid-area: ibtm;
+}
+
+.spiral .left {
+  grid-area: left;
+}
+
+.spiral .top {
+  grid-area: top;
+}
+
+.spiral .innr {
+  grid-area: innr;
+}
+
+.spiral .cntr {
+  grid-area: cntr;
 }

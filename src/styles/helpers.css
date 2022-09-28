@@ -160,16 +160,13 @@ hr {
 .single-challenge {
   grid-template-columns: minmax(150px, 25%) 1fr;
   column-gap: 2rem;
+  margin-top: 6rem;
 }
 
 @media (max-width: 1024px) {
   .single-challenge {
     grid-template-columns: auto;
   }
-}
-
-.single-challenge:not(:first-child) {
-  margin-top: 2rem;
 }
 
 /**************************************

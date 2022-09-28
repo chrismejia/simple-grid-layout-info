@@ -23,7 +23,7 @@ export default function LiningThingsUp() {
       <InteractiveGridWithButtons
         gridExample={<SeeingTheGridLines linesAreVisible={linesVisible} />}
       >
-        <button className="btn__toggle-lines" onClick={toggleLines}>
+        <button className="btn__single-line" onClick={toggleLines}>
           {linesVisible ? "Hide Grid Lines" : "Show Grid Lines"}
         </button>
       </InteractiveGridWithButtons>

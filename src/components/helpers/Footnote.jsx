@@ -5,7 +5,6 @@ export default function Footnote({ refLabel, refLocation }) {
   const refLink = `#ref-${refLabel}`;
   return (
     <span>
-      {" "}
       <Link
         className="footnote styled-link"
         to={refLink}
@@ -13,7 +12,7 @@ export default function Footnote({ refLabel, refLocation }) {
           scrollToRef(refLocation);
         }}
       >
-        {`[${refLabel}]`}
+        {` [${refLabel}]`}
       </Link>
     </span>
   );
