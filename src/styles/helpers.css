@@ -567,4 +567,36 @@ h4.menu-titling.hide {
 * ChallengeSpecs.jsx
 **************************************/
 .challenge-specs {
+  grid-template:
+    "details details"
+    ".... ch-width"
+    "ch-height challenge";
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 0.75rem;
+}
+
+.challenge-details {
+  grid-area: details;
+}
+
+.challenge-width {
+  display: grid;
+  place-content: center;
+  grid-area: ch-width;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px dashed var(--platinum);
+}
+
+.challenge-height {
+  display: grid;
+  align-items: center;
+  padding-right: 0.5rem;
+  grid-area: ch-height;
+  border-right: 3px dashed var(--platinum);
+}
+
+.challenge {
+  grid-area: challenge;
 }

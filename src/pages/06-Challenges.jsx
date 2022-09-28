@@ -2,6 +2,7 @@ import Page from "../components/helpers/Page";
 import Divider from "../components/helpers/Divider";
 
 import SingleChallenge from "../components/helpers/SingleChallenge";
+import ChallengeSpecs from "../components/helpers/ChallengeSpecs";
 
 import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarget";
 import PlainSpiral from "../components/chapters/06-challenges/visuals/PlainSpiral";
@@ -28,7 +29,15 @@ export default function Challenges() {
       </SingleChallenge>
 
       <SingleChallenge {...brickWall}>
-        <BrickWall />
+        <ChallengeSpecs
+          details={"Details"}
+          width={800}
+          height={450}
+          cols={21}
+          rows={10}
+        >
+          <BrickWall />
+        </ChallengeSpecs>
       </SingleChallenge>
 
       <Divider />
