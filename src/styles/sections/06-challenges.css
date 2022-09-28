@@ -4,12 +4,8 @@
 .target {
   grid-template-columns: repeat(5, [c-start] 1fr [c-end]);
   grid-template-rows: repeat(5, [r-start] 1fr [r-end]);
-  height: 800px;
-  width: 800px;
-}
-
-.target > div {
-  min-width: 150px;
+  height: 400px;
+  width: 400px;
 }
 
 .target .inline {
@@ -73,9 +69,8 @@
  * PlainSpiral.jsx
  **************************************/
 .spiral {
-  height: 800px;
-  width: 800px;
-
+  height: 400px;
+  width: 400px;
   grid-template:
     "long long long long long long long long ...."
     "tall .... .... .... .... .... .... rght ...."
@@ -92,7 +87,7 @@
 }
 
 .spiral div {
-  min-width: 25px;
+  background-color: var(--purp);
 }
 
 .spiral .bttm {
