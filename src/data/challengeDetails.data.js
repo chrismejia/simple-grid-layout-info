@@ -2,7 +2,7 @@ import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarge
 
 export const allChallengeDetails = {
   tic_tac_toe: {
-    challengeBlurb: "Build a 3x3 grid.",
+    challengeBlurb: "Build a 3x3 square tic-tac-toe board.",
     challengeNum: 1,
     challengeFileLabel: "ThreeByThree.jsx",
   },
