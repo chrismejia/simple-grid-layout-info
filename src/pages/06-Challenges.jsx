@@ -5,11 +5,12 @@ import SingleChallenge from "../components/helpers/SingleChallenge";
 
 import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarget";
 import PlainSpiral from "../components/chapters/06-challenges/visuals/PlainSpiral";
+import BrickWall from "../components/chapters/06-challenges/visuals/C6-BrickWall";
 
 import { allChallengeDetails } from "../data/challengeDetails.data";
 
 export default function Challenges() {
-  const { target, spiral } = allChallengeDetails;
+  const { target, spiral, brickWall } = allChallengeDetails;
 
   return (
     <Page>
@@ -24,6 +25,10 @@ export default function Challenges() {
 
       <SingleChallenge {...spiral}>
         <PlainSpiral />
+      </SingleChallenge>
+
+      <SingleChallenge {...brickWall}>
+        <BrickWall />
       </SingleChallenge>
 
       <Divider />

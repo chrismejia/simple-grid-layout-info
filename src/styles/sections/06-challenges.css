@@ -125,3 +125,30 @@
 .spiral .cntr {
   grid-area: cntr;
 }
+
+/**************************************
+ * C6-BrickWall.jsx
+ **************************************/
+.brick-wall {
+  height: 450px;
+  width: 800px;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0.75rem;
+}
+
+.brick-wall div {
+  background-color: #cb4154;
+}
+
+/* .brick-wall div {
+  background-image: url("../../components/chapters/06-challenges/visuals/C6-brick-texture.jpg");
+} */
+
+.short-brick {
+  grid-column: span 1;
+}
+
+.long-brick {
+  grid-column: span 2;
+}
