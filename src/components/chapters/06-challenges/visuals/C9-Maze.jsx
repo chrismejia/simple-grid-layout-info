@@ -15,7 +15,6 @@ export default function Maze() {
       <div className="fin-top"></div>
       <div className="fin-left"></div>
       <div className="fin-right"></div>
-      <div className="fin-b-left"></div>
       <div className="fin-b-right"></div>
     </article>
   );

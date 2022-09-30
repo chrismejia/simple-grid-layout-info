@@ -440,13 +440,15 @@
   grid-column: c 13;
   grid-row: r 10 / r 13;
 }
-
+/*
 .fin-b-left {
-  grid-column: c 10;
+  grid-column: c 9;
   grid-row: r 12;
-}
+} */
 
 .fin-b-right {
-  grid-column: c 12;
+  grid-column: c 10 / c 12;
   grid-row: r 12;
 }
+
+/* Top Left Spiral */
