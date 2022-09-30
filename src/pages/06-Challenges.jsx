@@ -10,12 +10,24 @@ import Pyramid from "../components/chapters/06-challenges/visuals/C3-Pyramid";
 import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarget";
 import PlainSpiral from "../components/chapters/06-challenges/visuals/PlainSpiral";
 import BrickWall from "../components/chapters/06-challenges/visuals/C6-BrickWall";
+import Maze from "../components/chapters/06-challenges/visuals/C9-Maze";
+import Weave from "../components/chapters/06-challenges/visuals/C10-Weave";
 
 import { allChallengeDetails } from "../data/challengeDetails.data";
 
 export default function Challenges() {
-  const { tic_tac_toe, staircase, pyramid, target, spiral, brickWall } =
-    allChallengeDetails;
+  const {
+    tic_tac_toe,
+    staircase,
+    pyramid,
+    target,
+    spiral,
+    brickWall,
+    weave,
+    maze,
+    squareKnot,
+    interlockingSquares,
+  } = allChallengeDetails;
 
   return (
     <Page>
@@ -57,6 +69,18 @@ export default function Challenges() {
       <SingleChallenge {...brickWall}>
         <ChallengeSpecs width={800} height={450} cols={21} rows={10}>
           <BrickWall />
+        </ChallengeSpecs>
+      </SingleChallenge>
+
+      <SingleChallenge {...maze}>
+        <ChallengeSpecs width={800} height={800} cols={15} rows={15}>
+          <Maze />
+        </ChallengeSpecs>
+      </SingleChallenge>
+
+      <SingleChallenge {...weave}>
+        <ChallengeSpecs width={400} height={400} cols={8} rows={8}>
+          <Weave />
         </ChallengeSpecs>
       </SingleChallenge>
 

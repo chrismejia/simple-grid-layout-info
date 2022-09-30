@@ -243,8 +243,8 @@
 }
 
 /* .brick-wall div {
-  background-image: url("../../components/chapters/06-challenges/visuals/C6-brick-texture.jpg");
-} */
+    background-image: url("../../components/chapters/06-challenges/visuals/C6-brick-texture.jpg");
+  } */
 
 .short-brick {
   grid-column: span 1;
@@ -252,4 +252,201 @@
 
 .long-brick {
   grid-column: span 2;
+}
+
+/**************************************
+* C6-BrickWall.jsx
+**************************************/
+.basket-weave {
+  height: 400px;
+  width: 400px;
+
+  grid-template:
+    "a a b b c c d d"
+    "a a b b c c d d"
+    "e e f f g g h h"
+    "e e f f g g h h"
+    "i i j j k k l l"
+    "i i j j k k l l"
+    "m m n n o o p p "
+    "m m n n o o p p ";
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0.25rem;
+}
+
+.under-weave {
+  z-index: 2;
+}
+
+.over-weave {
+  z-index: 3;
+}
+
+.horiz {
+  background-color: darkgoldenrod;
+  grid-column: span 2;
+}
+
+.vert {
+  background-color: bisque;
+  grid-row: span 2;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+.a {
+  grid-area: a;
+}
+
+/**************************************
+* C9-Maze.jsx
+**************************************/
+.maze {
+  height: 800px;
+  width: 800px;
+  grid-template-columns: repeat(21, [c] 1fr);
+  grid-template-rows: repeat(21, [r] 1fr);
+}
+
+.maze div {
+  background-color: var(--purp);
+}
+
+/* Start/Finish */
+#start,
+#finish {
+  display: grid;
+  place-items: center;
+}
+
+#start {
+  grid-column: c 11;
+  grid-row: r 1;
+  background-color: darkgreen;
+}
+
+#finish {
+  grid-column: c 10 / c 13;
+  grid-row: r 10 / r 12;
+  background-color: black;
+
+  font-size: var(--size-4);
+}
+
+/* Outer Edges */
+.top-left {
+  grid-column: c 2 / c 11;
+  grid-row: r 2;
+}
+
+.top-right {
+  grid-column: c 12 / c 21;
+  grid-row: r 2;
+}
+
+.left-wall,
+.right-wall {
+  grid-row: r 2 / r 21;
+}
+
+.right-wall {
+  grid-column: c 21;
+}
+
+.bottom-wall {
+  grid-column: c 1 / span 21;
+  grid-row: r 21;
+}
+
+.enter-left {
+  grid-column: c 10;
+}
+
+.enter-right {
+  grid-column: c 12;
+}
+
+/* Finish Walls */
+.fin-top {
+  grid-column: c 9 / c 14;
+  grid-row: r 9;
+}
+
+.fin-left {
+  grid-column: c 9;
+  grid-row: r 10 / r 13;
+}
+
+.fin-right {
+  grid-column: c 13;
+  grid-row: r 10 / r 13;
+}
+
+.fin-b-left {
+  grid-column: c 10;
+  grid-row: r 12;
+}
+
+.fin-b-right {
+  grid-column: c 12;
+  grid-row: r 12;
 }

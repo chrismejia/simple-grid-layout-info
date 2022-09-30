@@ -31,11 +31,6 @@ export const allChallengeDetails = {
     challengeNum: 6,
     challengeFileLabel: "BrickWall.jsx",
   },
-  weave: {
-    challengeBlurb: "Build a pyramid 3 levels high.",
-    challengeNum: 7,
-    challengeFileLabel: "Pyramid.jsx",
-  },
   squareKnot: {
     challengeBlurb: "Build a square knot.",
     extras: [],
@@ -44,12 +39,17 @@ export const allChallengeDetails = {
   },
   interlockingSquares: {
     challengeBlurb: "Build a 9x9 maze.",
-    challengeNum: 9,
+    challengeNum: 7,
     challengeFileLabel: "Maze.jsx",
   },
   maze: {
-    challengeBlurb: "Build a 9x9 maze.",
-    challengeNum: 10,
+    challengeBlurb: "Build a maze.",
+    challengeNum: 9,
     challengeFileLabel: "Maze.jsx",
+  },
+  weave: {
+    challengeBlurb: "Build a basket weave.",
+    challengeNum: 10,
+    challengeFileLabel: "Pyramid.jsx",
   },
 };
