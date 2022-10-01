@@ -581,6 +581,14 @@ h4.menu-titling.hide {
   grid-area: details;
 }
 
+.challenge-details > :first-child {
+  margin-top: 0;
+}
+
+.challenge-details > hr {
+  margin: 2rem auto;
+}
+
 .challenge-width {
   display: grid;
   place-content: center;

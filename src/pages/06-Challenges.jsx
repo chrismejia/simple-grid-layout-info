@@ -36,40 +36,65 @@ export default function Challenges() {
           <h2>Art Challenges</h2>
         </article>
       </section>
+
       <SingleChallenge {...tic_tac_toe}>
-        <ChallengeSpecs width={400} height={400} cols={3} rows={3}>
-          <TicTacToe />
-        </ChallengeSpecs>
+        <ChallengeSpecs
+          width={400}
+          height={400}
+          cols={3}
+          rows={3}
+          example={<TicTacToe />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...staircase}>
-        <ChallengeSpecs width={700} height={350} cols={7} rows={7}>
-          <Staircase />
-        </ChallengeSpecs>
+        <ChallengeSpecs
+          width={700}
+          height={350}
+          cols={7}
+          rows={7}
+          example={<Staircase />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...pyramid}>
-        <ChallengeSpecs width={900} height={500} cols={9} rows={5}>
-          <Pyramid />
-        </ChallengeSpecs>
+        <ChallengeSpecs
+          width={900}
+          height={500}
+          cols={9}
+          rows={5}
+          example={<Pyramid />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...target}>
-        <ChallengeSpecs width={400} height={400} cols={5} rows={5}>
-          <PlainTarget />
-        </ChallengeSpecs>
+        <ChallengeSpecs
+          width={400}
+          height={400}
+          cols={5}
+          rows={5}
+          example={<PlainTarget />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...spiral}>
-        <ChallengeSpecs width={400} height={400} cols={9} rows={9}>
-          <PlainSpiral />
-        </ChallengeSpecs>
+        <ChallengeSpecs
+          width={400}
+          height={400}
+          cols={9}
+          rows={9}
+          example={<PlainSpiral />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...brickWall}>
-        <ChallengeSpecs width={800} height={450} cols={21} rows={10}>
-          <BrickWall />
-        </ChallengeSpecs>
+        <ChallengeSpecs
+          width={800}
+          height={450}
+          cols={21}
+          rows={10}
+          example={<BrickWall />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...maze}>
@@ -78,11 +103,37 @@ export default function Challenges() {
           height={800}
           cols={21}
           rows={21}
-          details={
-            "It's easier to create a maze with wrong paths if the maze is larger. Any wall take up at least 1 column & 1 row."
-          }
+          example={<Maze />}
         >
-          <Maze />
+          <p>
+            You don't need to replicate this exact maze; come up with your own.
+            I chose a center finish because I thought that
+          </p>
+          <p>Some guidance:</p>
+          <ol>
+            <li>
+              Any wall take up at least 1 column & 1 row, so two paths separated
+              by a wall is already 3 columns or 3 rows.
+            </li>
+            <li>
+              It's easier to create wrong paths if the maze is larger; more room
+              for walls to separate these wrong paths.
+            </li>
+            <li>
+              Once you've chosen your start and end points, a good way to build
+              the maze is to first draw the solution path, then the wrong paths,
+              and finally the walls. I took a screenshot and used excalidraw to
+              plot everything out:{" "}
+              <a
+                className="styled-link"
+                target="_blank"
+                rel="noopener"
+                href="https://build-layouts-using-css-grid.netlify.app/final-maze-layout.png"
+              >
+                [maze image]
+              </a>
+            </li>
+          </ol>
         </ChallengeSpecs>
       </SingleChallenge>
 
