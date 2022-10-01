@@ -11,6 +11,7 @@ import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarge
 import PlainSpiral from "../components/chapters/06-challenges/visuals/PlainSpiral";
 import BrickWall from "../components/chapters/06-challenges/visuals/C6-BrickWall";
 import Maze from "../components/chapters/06-challenges/visuals/C9-Maze";
+import PlainKnot from "../components/chapters/06-challenges/visuals/C7-PlainKnot";
 import Weave from "../components/chapters/06-challenges/visuals/C10-Weave";
 
 import { allChallengeDetails } from "../data/challengeDetails.data";
@@ -97,6 +98,16 @@ export default function Challenges() {
         />
       </SingleChallenge>
 
+      <SingleChallenge {...squareKnot}>
+        <ChallengeSpecs
+          width={700}
+          height={700}
+          cols={7}
+          rows={7}
+          example={<PlainKnot />}
+        />
+      </SingleChallenge>
+
       <SingleChallenge {...maze}>
         <ChallengeSpecs
           width={800}
@@ -107,7 +118,7 @@ export default function Challenges() {
         >
           <p>
             You don't need to replicate this exact maze; come up with your own.
-            I chose a center finish because I thought that
+            I chose a center finish because I thought it was cool.
           </p>
           <p>Some guidance:</p>
           <ol>

@@ -31,15 +31,15 @@ export const allChallengeDetails = {
     challengeNum: 6,
     challengeFileLabel: "BrickWall.jsx",
   },
-  interlockingSquares: {
-    challengeBlurb: "Build a 9x9 maze.",
-    challengeNum: 7,
-    challengeFileLabel: "Maze.jsx",
-  },
   squareKnot: {
     challengeBlurb: "Build a square knot.",
+    challengeNum: 7,
+    challengeFileLabel: "SquareKnot.jsx",
+  },
+  interlockingSquares: {
+    challengeBlurb: "Build three interlocking squares.",
     challengeNum: 8,
-    challengeFileLabel: "Pyramid.jsx",
+    challengeFileLabel: "Maze.jsx",
   },
   maze: {
     challengeBlurb: "Build a maze.",
