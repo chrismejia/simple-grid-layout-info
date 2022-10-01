@@ -15,7 +15,7 @@ export default function Maze() {
       <div className="fin-left"></div>
       <div className="fin-right"></div>
       <div className="fin-b-right"></div>
-      {/*  VerticalMaze Walls */}
+      {/*  Maze Walls */}
       <div className="w-1" />
       <div className="w-2" />
       <div className="w-3" />
@@ -46,26 +46,31 @@ export default function Maze() {
       <div className="w-28" />
       <div className="w-29" />
       <div className="w-30" />
-      {/* <div className="w-31" />
+      <div className="w-31" />
       <div className="w-32" />
       <div className="w-33" />
       <div className="w-34" />
-      <div className="w-35" /> */}
-      {/* <div className="w-36" />
+      <div className="w-35" />
+      <div className="w-36" />
       <div className="w-37" />
       <div className="w-38" />
       <div className="w-39" />
-      <div className="w-40" /> */}
-      {/* <div className="w-41" />
+      <div className="w-40" />
+      <div className="w-41" />
       <div className="w-42" />
       <div className="w-43" />
       <div className="w-44" />
-      <div className="w-45" /> */}
-      {/* <div className="w-46" />
+      <div className="w-45" />
+      <div className="w-46" />
       <div className="w-47" />
       <div className="w-48" />
       <div className="w-49" />
-      <div className="w-50" /> */}
+      <div className="w-50" />
+      <div className="w-51" />
+      <div className="w-52" />
+      <div className="w-53" />
+      <div className="w-54" />
+      <div className="w-55" />
     </article>
   );
 }

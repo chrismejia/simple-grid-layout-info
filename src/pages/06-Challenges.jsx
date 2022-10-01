@@ -73,16 +73,25 @@ export default function Challenges() {
       </SingleChallenge>
 
       <SingleChallenge {...maze}>
-        <ChallengeSpecs width={800} height={800} cols={15} rows={15}>
+        <ChallengeSpecs
+          width={800}
+          height={800}
+          cols={21}
+          rows={21}
+          details={
+            "It's easier to create a maze with wrong paths if the maze is larger. Any wall take up at least 1 column & 1 row."
+          }
+        >
           <Maze />
         </ChallengeSpecs>
       </SingleChallenge>
 
+      {/*
       <SingleChallenge {...weave}>
         <ChallengeSpecs width={400} height={400} cols={8} rows={8}>
           <Weave />
         </ChallengeSpecs>
-      </SingleChallenge>
+      </SingleChallenge> */}
 
       <Divider />
       <section className="container">
