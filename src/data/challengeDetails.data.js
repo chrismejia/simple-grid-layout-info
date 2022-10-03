@@ -37,18 +37,24 @@ export const allChallengeDetails = {
     challengeFileLabel: "SquareKnot.jsx",
   },
   interlockingSquares: {
-    challengeBlurb: "Build three interlocking squares.",
+    challengeBlurb: "Build four interlocking squares.",
     challengeNum: 8,
     challengeFileLabel: "Maze.jsx",
   },
+  tile: {
+    challengeBlurb:
+      "Build a greek style tile that can be reused as a component within a different grid.",
+    challengeNum: 9,
+    challengeFileLabel: "GreekTiling.jsx",
+  },
   maze: {
     challengeBlurb: "Build a maze.",
-    challengeNum: 9,
+    challengeNum: 10,
     challengeFileLabel: "Maze.jsx",
   },
   weave: {
     challengeBlurb: "Build a basket weave.",
-    challengeNum: 10,
+    challengeNum: 11,
     challengeFileLabel: "Pyramid.jsx",
   },
 };

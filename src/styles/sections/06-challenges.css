@@ -255,6 +255,34 @@
 }
 
 /**************************************
+* C8-InterlockingSquares.jsx
+**************************************/
+.interlocking-squares {
+  height: 400px;
+  width: 400px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+
+  gap: 0.5rem;
+}
+
+.olive {
+  background-color: #a3a762;
+}
+
+.peach {
+  background-color: #ffe1a8;
+}
+
+.terra-cotta {
+  background-color: #e26d5c;
+}
+
+.catawba {
+  background-color: #723d46;
+}
+
+/**************************************
 * C6-BrickWall.jsx
 **************************************/
 .basket-weave {
@@ -358,7 +386,7 @@
 }
 
 /**************************************
-* C9-Maze.jsx
+* C10-Maze.jsx
 **************************************/
 .maze {
   height: 800px;

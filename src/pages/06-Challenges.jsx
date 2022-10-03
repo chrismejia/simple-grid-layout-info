@@ -10,8 +10,9 @@ import Pyramid from "../components/chapters/06-challenges/visuals/C3-Pyramid";
 import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarget";
 import PlainSpiral from "../components/chapters/06-challenges/visuals/PlainSpiral";
 import BrickWall from "../components/chapters/06-challenges/visuals/C6-BrickWall";
-import Maze from "../components/chapters/06-challenges/visuals/C9-Maze";
 import PlainKnot from "../components/chapters/06-challenges/visuals/C7-PlainKnot";
+import InterlockingSquares from "../components/chapters/06-challenges/visuals/C8-InterlockingSquares";
+import Maze from "../components/chapters/06-challenges/visuals/C9-Maze";
 import Weave from "../components/chapters/06-challenges/visuals/C10-Weave";
 
 import { allChallengeDetails } from "../data/challengeDetails.data";
@@ -108,6 +109,25 @@ export default function Challenges() {
         />
       </SingleChallenge>
 
+      <SingleChallenge {...interlockingSquares}>
+        <ChallengeSpecs
+          width={400}
+          height={400}
+          cols={11}
+          rows={11}
+          example={<InterlockingSquares />}
+        >
+          <p>
+            You may choose to use the color of the example below or pick your
+            own colors.
+          </p>
+          <p>
+            If you pick your own, be sure that the contrast with each other to
+            make the square pop. Tools like
+          </p>
+        </ChallengeSpecs>
+      </SingleChallenge>
+
       <SingleChallenge {...maze}>
         <ChallengeSpecs
           width={800}
@@ -147,13 +167,6 @@ export default function Challenges() {
           </ol>
         </ChallengeSpecs>
       </SingleChallenge>
-
-      {/*
-      <SingleChallenge {...weave}>
-        <ChallengeSpecs width={400} height={400} cols={8} rows={8}>
-          <Weave />
-        </ChallengeSpecs>
-      </SingleChallenge> */}
 
       <Divider />
       <section className="container">

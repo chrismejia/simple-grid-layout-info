@@ -138,7 +138,7 @@ export default function PlainKnot() {
   }
 
   return (
-    <section className="grid square-knot">
+    <article className="grid square-knot">
       {/* row 1 */}
       <TopEdge />
       {/* row 2 */}
@@ -153,6 +153,6 @@ export default function PlainKnot() {
       {/* row 2 */}
       {/* row 3 */}
       <BottomEdge />
-    </section>
+    </article>
   );
 }

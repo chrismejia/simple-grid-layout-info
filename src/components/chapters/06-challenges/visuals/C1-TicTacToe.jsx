@@ -1,6 +1,6 @@
 export default function TicTacToe() {
   return (
-    <div className="grid tic-tac-toe">
+    <article className="grid tic-tac-toe">
       <div className="filled" />
       <div className="filled" />
       <div className="filled" />
@@ -10,6 +10,6 @@ export default function TicTacToe() {
       <div className="filled" />
       <div className="filled" />
       <div className="filled" />
-    </div>
+    </article>
   );
 }
