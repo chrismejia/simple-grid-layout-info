@@ -3,6 +3,7 @@ import Divider from "../components/helpers/Divider";
 
 import SingleChallenge from "../components/helpers/SingleChallenge";
 import ChallengeSpecs from "../components/helpers/ChallengeSpecs";
+import ExternalLink from "../components/helpers/ExternalLink";
 
 import TicTacToe from "../components/chapters/06-challenges/visuals/C1-TicTacToe";
 import Staircase from "../components/chapters/06-challenges/visuals/C2-Staircase";
@@ -109,7 +110,7 @@ export default function Challenges() {
         />
       </SingleChallenge>
 
-      <SingleChallenge {...interlockingSquares}>
+      {/* <SingleChallenge {...interlockingSquares}>
         <ChallengeSpecs
           width={400}
           height={400}
@@ -118,15 +119,20 @@ export default function Challenges() {
           example={<InterlockingSquares />}
         >
           <p>
-            You may choose to use the color of the example below or pick your
+            You may choose to use the colors of the example below or pick your
             own colors.
           </p>
           <p>
             If you pick your own, be sure that the contrast with each other to
-            make the square pop. Tools like
+            make the square pop. Tools like{" "}
+            <ExternalLink
+              externalURL={"https://coolors.co/"}
+              linkLabel={"Coolors.co"}
+            />{" "}
+            are fantastic for generating and modifying color palettes.
           </p>
         </ChallengeSpecs>
-      </SingleChallenge>
+      </SingleChallenge> */}
 
       <SingleChallenge {...maze}>
         <ChallengeSpecs
@@ -155,14 +161,12 @@ export default function Challenges() {
               the maze is to first draw the solution path, then the wrong paths,
               and finally the walls. I took a screenshot and used excalidraw to
               plot everything out:{" "}
-              <a
-                className="styled-link"
-                target="_blank"
-                rel="noopener"
-                href="https://build-layouts-using-css-grid.netlify.app/final-maze-layout.png"
-              >
-                [maze image]
-              </a>
+              <ExternalLink
+                externalURL={
+                  "https://build-layouts-using-css-grid.netlify.app/final-maze-layout.png"
+                }
+                linkLabel={"[maze image]"}
+              />
             </li>
           </ol>
         </ChallengeSpecs>

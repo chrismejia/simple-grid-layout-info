@@ -258,14 +258,15 @@
 * C8-InterlockingSquares.jsx
 **************************************/
 .interlocking-squares {
-  height: 400px;
-  width: 400px;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  height: 800px;
+  width: 800px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 
   gap: 0.5rem;
 }
 
+/* Colors */
 .olive {
   background-color: #a3a762;
 }
@@ -278,8 +279,52 @@
   background-color: #e26d5c;
 }
 
-.catawba {
-  background-color: #723d46;
+.cordovan {
+  background-color: #854752;
+}
+
+/* Square sections */
+
+/* Top Square */
+.ts-top {
+  grid-column: 5 / span 8;
+  grid-row: 1;
+}
+
+.ts-left {
+  grid-column: 5;
+  grid-row: 1 / span 6;
+}
+
+.ts-right {
+  grid-column: 11;
+  grid-row: 1 / span 6;
+}
+
+.ts-bottom {
+  grid-column: 6 / span 2;
+  grid-row: 6;
+}
+
+/* Left Square */
+.ls-top {
+  grid-column: 1 / span 8;
+  grid-row: 5;
+}
+
+.ls-left {
+  grid-column: 4;
+  grid-row: 5 / span 6;
+}
+
+.ls-right {
+  grid-column: 9;
+  grid-row: 8 / span 3;
+}
+
+.ls-bottom {
+  grid-column: 4 / span 4;
+  grid-row: 10;
 }
 
 /**************************************
