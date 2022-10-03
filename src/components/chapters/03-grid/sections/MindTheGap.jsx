@@ -1,5 +1,4 @@
 import CodeWrapper from "../../../helpers/CodeWrapper";
-import Footnote from "../../../helpers/Footnote";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 import MDNQuote from "../../../helpers/MDNQuote";
 import ShowExampleCode from "../../../helpers/ShowExampleCode";

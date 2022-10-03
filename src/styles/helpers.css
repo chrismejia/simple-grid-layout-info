@@ -89,11 +89,9 @@ hr {
 }
 
 /**************************************
-* Footnote.jsx
+* InlineFootnote.jsx
 **************************************/
-.footnote {
-  margin-left: -10px;
-  margin-bottom: 3px;
+.inline-footnote {
   color: var(--vivid);
 }
 
@@ -111,7 +109,7 @@ hr {
   color: var(--platinum);
   vertical-align: bottom;
   transition: color 0.3s ease-out;
-  margin-bottom: -2px;
+  margin-bottom: 2px;
 }
 
 .styled-link::before {

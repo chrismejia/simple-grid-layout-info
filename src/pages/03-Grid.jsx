@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import Divider from "../components/helpers/Divider";
-import { ExternalLink } from "../components/helpers/ExternalLink";
+import { FootnoteLink } from "../components/helpers/FootnoteLink";
 import SectionReferences from "../components/helpers/SectionReferences";
 import Page from "../components/helpers/Page";
 
@@ -34,7 +34,7 @@ export default function Grid() {
       <DontRepeatYourself />
 
       <SectionReferences startRef={5}>
-        <ExternalLink
+        <FootnoteLink
           ref={ref5}
           footnoteNumber={5}
           url={
@@ -43,7 +43,7 @@ export default function Grid() {
           label={"[MDN] CSS values and units"}
           description={"Official reference docs"}
         />
-        <ExternalLink
+        <FootnoteLink
           ref={ref6}
           footnoteNumber={6}
           url={"https://css-tricks.com/introduction-fr-css-unit/"}

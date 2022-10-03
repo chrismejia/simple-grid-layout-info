@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import scrollToRef from "../../utils/scrollToRef";
 
-export default function Footnote({ refLabel, refLocation }) {
+export default function InlineFootnote({ refLabel, refLocation }) {
   const refLink = `#ref-${refLabel}`;
   return (
     <span>
       <Link
-        className="footnote styled-link"
+        className="inline-footnote styled-link"
         to={refLink}
         onClick={() => {
           scrollToRef(refLocation);

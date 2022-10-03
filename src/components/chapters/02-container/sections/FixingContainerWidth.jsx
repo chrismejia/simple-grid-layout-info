@@ -1,5 +1,5 @@
 import CodeWrapper from "../../../helpers/CodeWrapper";
-import Footnote from "../../../helpers/Footnote";
+import InlineFootnote from "../../../helpers/InlineFootnote";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 import HighlightedElement from "../../../helpers/HighlightedElement";
 
@@ -24,9 +24,9 @@ export default function FixingContainerWidth({ footnoteRefs }) {
         </p>
         <p>
           We can do this by defining some reusable CSS variables
-          <Footnote refLabel={2} refLocation={footnote2} /> for some Examples
-          and creating some media queries
-          <Footnote refLabel={3} refLocation={footnote3} />.
+          <InlineFootnote refLabel={2} refLocation={footnote2} /> for some
+          Examples and creating some media queries
+          <InlineFootnote refLabel={3} refLocation={footnote3} />.
         </p>
         <h4 id="breakpoints">Column Widths & Breakpoints</h4>
         <p>
@@ -34,7 +34,7 @@ export default function FixingContainerWidth({ footnoteRefs }) {
           split into as many as 12 columns, to give us a bunch of layout
           options. We can set three breakpoint widths that are divisible by 12
           so our grid columns have integer column sizes
-          <Footnote refLabel={4} refLocation={footnote4} />:
+          <InlineFootnote refLabel={4} refLocation={footnote4} />:
         </p>
       </article>
 

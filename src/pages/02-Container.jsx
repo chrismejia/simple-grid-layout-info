@@ -4,7 +4,7 @@ import ContentContainer from "../components/chapters/02-container/sections/Conte
 import FixingContainerWidth from "../components/chapters/02-container/sections/FixingContainerWidth";
 
 import Divider from "../components/helpers/Divider";
-import { ExternalLink } from "../components/helpers/ExternalLink";
+import { FootnoteLink } from "../components/helpers/FootnoteLink";
 
 import Page from "../components/helpers/Page";
 import SectionReferences from "../components/helpers/SectionReferences";
@@ -26,7 +26,7 @@ export default function Container() {
       />
 
       <SectionReferences>
-        <ExternalLink
+        <FootnoteLink
           ref={footnote1}
           footnoteNumber={1}
           url={"https://bulma.io/documentation/layout/container/"}
@@ -35,7 +35,7 @@ export default function Container() {
             "CSS framework whose container element I shamelessly stole and swear by"
           }
         />
-        <ExternalLink
+        <FootnoteLink
           ref={footnote2}
           footnoteNumber={2}
           url={
@@ -44,7 +44,7 @@ export default function Container() {
           label={"[MDN] CSS Variables"}
           description={"Official reference docs"}
         />
-        <ExternalLink
+        <FootnoteLink
           ref={footnote3}
           footnoteNumber={3}
           url={"https://css-tricks.com/a-complete-guide-to-css-media-queries/"}
@@ -53,7 +53,7 @@ export default function Container() {
             "Great guide with lots of illustrations and codepen examples"
           }
         />
-        <ExternalLink
+        <FootnoteLink
           ref={footnote4}
           footnoteNumber={4}
           url={

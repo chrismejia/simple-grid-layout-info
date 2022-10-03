@@ -1,5 +1,5 @@
 import CodeWrapper from "../../../helpers/CodeWrapper";
-import Footnote from "../../../helpers/Footnote";
+import InlineFootnote from "../../../helpers/InlineFootnote";
 import HighlightedCode from "../../../helpers/HighlightedCode";
 
 import {
@@ -23,7 +23,8 @@ export default function ContentContainer({ footnoteRefs }) {
         <p>
           Our container is meant to act as a utility element that allow you to
           center content
-          <Footnote refLabel={1} refLocation={footnote1} />. Let's set one up.
+          <InlineFootnote refLabel={1} refLocation={footnote1} />. Let's set one
+          up.
         </p>
       </article>
 
