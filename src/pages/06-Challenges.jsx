@@ -110,12 +110,13 @@ export default function Challenges() {
         />
       </SingleChallenge>
 
-      {/* <SingleChallenge {...interlockingSquares}>
+      <SingleChallenge {...interlockingSquares}>
         <ChallengeSpecs
-          width={400}
-          height={400}
-          cols={11}
-          rows={11}
+          width={600}
+          height={600}
+          cols={8}
+          rows={8}
+          gap={"1rem"}
           example={<InterlockingSquares />}
         >
           <p>
@@ -132,7 +133,7 @@ export default function Challenges() {
             are fantastic for generating and modifying color palettes.
           </p>
         </ChallengeSpecs>
-      </SingleChallenge> */}
+      </SingleChallenge>
 
       <SingleChallenge {...maze}>
         <ChallengeSpecs

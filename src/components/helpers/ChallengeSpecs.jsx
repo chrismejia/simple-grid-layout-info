@@ -1,8 +1,9 @@
 export default function ChallengeSpecs({
   cols,
-  width,
   rows,
+  width,
   height,
+  gap,
   example,
   children,
 }) {
@@ -11,7 +12,10 @@ export default function ChallengeSpecs({
       <div className="challenge-details">
         {children}
         {children && <hr />}
-        <p className="centered-text">{`Width: ${width}px | Height: ${height}px`}</p>
+        <p className="centered-text">
+          {`Width: ${width}px | Height: ${height}px`}
+          {gap && ` | Gap: ${gap}`}
+        </p>
       </div>
       <div className="challenge-width">{`${cols} cols`}</div>
       <div className="challenge-height">{`${rows} rows`}</div>
