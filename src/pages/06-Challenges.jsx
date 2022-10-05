@@ -26,6 +26,11 @@ import {
   wrappedSingleTile_css,
 } from "../components/chapters/06-challenges/ex-code/wrappedSingleTile.code";
 
+import {
+  tiledFloor_jsx,
+  tiledFloor_css,
+} from "../components/chapters/06-challenges/ex-code/tiledFloor.code";
+
 export default function Challenges() {
   const {
     tic_tac_toe,
@@ -154,8 +159,8 @@ export default function Challenges() {
 
       <SingleChallenge {...tile}>
         <ChallengeSpecs
-          width={550}
-          height={550}
+          width={560}
+          height={560}
           cols={1}
           rows={1}
           example={
@@ -164,7 +169,24 @@ export default function Challenges() {
             </div>
           }
         >
-          <p>You do not need to copy this tile design.</p>
+          <p>
+            You do not need to copy this tile design; you can find others by
+            Googling stuff like{" "}
+            <ExternalLink
+              externalURL={
+                "https://www.google.com/search?q=geometric+pixel+art&tbm=isch&ved=2ahUKEwig_eXujMr6AhVGo3IEHUU3BxQQ2-cCegQIABAA&oq=geometric+pixel+art&gs_lcp=CgNpbWcQAzIFCAAQgAQyBAgAEEMyBggAEB4QBzIGCAAQHhAIMgYIABAeEAg6BAgjECdQlgdYlgdgvAhoAHAAeACAAVmIAaoBkgEBMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=JwA-Y-DNGcbGytMPxe6coAE"
+              }
+              linkLabel={"'geometric pixel art"}
+            />
+            ,{" "}
+            <ExternalLink
+              externalURL={
+                "https://www.google.com/search?q=seamless+geometric+pattern+square&tbm=isch&ved=2ahUKEwjf0c348cf6AhXOsHIEHZjSBOAQ2-cCegQIABAA&oq=seamless+geometric+pattern+square&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BAgAEEM6BggAEB4QCFDGBli7DmCTD2gAcAB4AIABPIgBxgOSAQE4mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=fNc8Y9-jLs7hytMPmKWTgA4&bih=1282&biw=1725&client=ubuntu&hl=en"
+              }
+              linkLabel={"'seamless geometric pattern'"}
+            />
+            , etc.
+          </p>
           <p>
             The key thing to note here is that the finished{" "}
             <code className="inline">{"<Tile />"}</code> component has no
@@ -180,6 +202,15 @@ export default function Challenges() {
             <code className="inline">width</code> values.
           </p>
 
+          <Divider />
+          <p>
+            To see if its working, create a wrapper element, assign it some{" "}
+            <code className="inline">height</code> and{" "}
+            <code className="inline">width</code>, make the element a{" "}
+            <code className="inline">grid</code>, and then use your{" "}
+            <code className="inline">{"<Tile />"}</code> component as its child.
+          </p>
+
           <CodeWrapper sections={2}>
             <HighlightedCode
               code={wrappedSingleTile_jsx}
@@ -193,14 +224,29 @@ export default function Challenges() {
             />
           </CodeWrapper>
         </ChallengeSpecs>
-        <hr />
+
         <ChallengeSpecs
-          width={550}
-          height={550}
-          cols={11}
-          rows={11}
+          width={50}
+          height={560}
+          cols={6}
+          rows={6}
           example={<TiledFloor />}
-        />
+        >
+          <Divider />
+          <p>Same as above, except this wrapper element is a 6x6 grid.</p>
+          <CodeWrapper sections={2}>
+            <HighlightedCode
+              code={tiledFloor_jsx}
+              codeLang={"jsx"}
+              codeFilename={"TiledFloor.jsx"}
+            />
+            <HighlightedCode
+              code={tiledFloor_css}
+              codeLang={"css"}
+              codeFilename={"tiled-floor.css"}
+            />
+          </CodeWrapper>
+        </ChallengeSpecs>
       </SingleChallenge>
 
       <SingleChallenge {...maze}>
