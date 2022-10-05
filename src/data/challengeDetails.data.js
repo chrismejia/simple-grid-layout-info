@@ -1,5 +1,3 @@
-import PlainTarget from "../components/chapters/06-challenges/visuals/PlainTarget";
-
 export const allChallengeDetails = {
   tic_tac_toe: {
     challengeBlurb: "Build a 3x3 square tic-tac-toe board.",
@@ -9,7 +7,7 @@ export const allChallengeDetails = {
   staircase: {
     challengeBlurb: "Build an ascending staircase with 7 steps.",
     challengeNum: 2,
-    challengeFileLabel: "Pyramid.jsx",
+    challengeFileLabel: "Staircase.jsx",
   },
   pyramid: {
     challengeBlurb: "Build a pyramid 5 levels high.",
@@ -39,13 +37,13 @@ export const allChallengeDetails = {
   interlockingSquares: {
     challengeBlurb: "Build four interlocking squares.",
     challengeNum: 8,
-    challengeFileLabel: "Maze.jsx",
+    challengeFileLabel: "InterlockingSquares.jsx",
   },
   tile: {
     challengeBlurb:
-      "Build a greek style tile that can be reused as a component within a different grid.",
+      "Build a seamless tile that can be reused as a component within a different grid.",
     challengeNum: 9,
-    challengeFileLabel: "GreekTiling.jsx",
+    challengeFileLabel: "Tile.jsx",
   },
   maze: {
     challengeBlurb: "Build a maze.",

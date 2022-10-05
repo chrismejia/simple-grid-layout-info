@@ -1,9 +1,10 @@
-import Page from "../components/helpers/Page";
-import Divider from "../components/helpers/Divider";
-
-import SingleChallenge from "../components/helpers/SingleChallenge";
 import ChallengeSpecs from "../components/helpers/ChallengeSpecs";
+import CodeWrapper from "../components/helpers/CodeWrapper";
+import Divider from "../components/helpers/Divider";
 import ExternalLink from "../components/helpers/ExternalLink";
+import HighlightedCode from "../components/helpers/HighlightedCode";
+import SingleChallenge from "../components/helpers/SingleChallenge";
+import Page from "../components/helpers/Page";
 
 import TicTacToe from "../components/chapters/06-challenges/visuals/C1-TicTacToe";
 import Staircase from "../components/chapters/06-challenges/visuals/C2-Staircase";
@@ -13,10 +14,17 @@ import PlainSpiral from "../components/chapters/06-challenges/visuals/PlainSpira
 import BrickWall from "../components/chapters/06-challenges/visuals/C6-BrickWall";
 import PlainKnot from "../components/chapters/06-challenges/visuals/C7-PlainKnot";
 import InterlockingSquares from "../components/chapters/06-challenges/visuals/C8-InterlockingSquares";
+import Tile from "../components/chapters/06-challenges/visuals/C9-Tile";
+import TiledFloor from "../components/chapters/06-challenges/visuals/C9-TiledFloor";
 import Maze from "../components/chapters/06-challenges/visuals/C9-Maze";
 import Weave from "../components/chapters/06-challenges/visuals/C10-Weave";
 
 import { allChallengeDetails } from "../data/challengeDetails.data";
+
+import {
+  wrappedSingleTile_jsx,
+  wrappedSingleTile_css,
+} from "../components/chapters/06-challenges/ex-code/wrappedSingleTile.code";
 
 export default function Challenges() {
   const {
@@ -26,10 +34,11 @@ export default function Challenges() {
     target,
     spiral,
     brickWall,
-    weave,
-    maze,
     squareKnot,
     interlockingSquares,
+    tile,
+    maze,
+    weave,
   } = allChallengeDetails;
 
   return (
@@ -132,7 +141,66 @@ export default function Challenges() {
             />{" "}
             are fantastic for generating and modifying color palettes.
           </p>
+          <ul>
+            <li>
+              <ExternalLink
+                externalURL={"https://coolors.co/a3a762-ffe1a8-e26d5c-a0ccda"}
+                linkLabel={"Color palette I used."}
+              />
+            </li>
+          </ul>
         </ChallengeSpecs>
+      </SingleChallenge>
+
+      <SingleChallenge {...tile}>
+        <ChallengeSpecs
+          width={550}
+          height={550}
+          cols={1}
+          rows={1}
+          example={
+            <div className="single-tile-wrapper">
+              <Tile />
+            </div>
+          }
+        >
+          <p>You do not need to copy this tile design.</p>
+          <p>
+            The key thing to note here is that the finished{" "}
+            <code className="inline">{"<Tile />"}</code> component has no
+            implicit height and width; it'll be inherited from its parent
+            container.
+          </p>
+
+          <p>
+            While you're developing your{" "}
+            <code className="inline">{"<Tile />"}</code>, you should give it a
+            height and width in order to see your tile. Once your tile is
+            complete, remove its <code className="inline">height</code> and{" "}
+            <code className="inline">width</code> values.
+          </p>
+
+          <CodeWrapper sections={2}>
+            <HighlightedCode
+              code={wrappedSingleTile_jsx}
+              codeLang={"jsx"}
+              codeFilename={"WrappedSingleTile.jsx"}
+            />
+            <HighlightedCode
+              code={wrappedSingleTile_css}
+              codeLang={"css"}
+              codeFilename={"wrapped-single-tile.css"}
+            />
+          </CodeWrapper>
+        </ChallengeSpecs>
+        <hr />
+        <ChallengeSpecs
+          width={550}
+          height={550}
+          cols={11}
+          rows={11}
+          example={<TiledFloor />}
+        />
       </SingleChallenge>
 
       <SingleChallenge {...maze}>

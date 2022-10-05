@@ -422,7 +422,7 @@ span .inline-link {
 **************************************/
 h4.menu-titling {
   position: fixed;
-  z-index: 10;
+  z-index: 99;
 
   top: -2rem;
   left: 7.5rem;
@@ -440,7 +440,7 @@ h4.menu-titling.hide {
 #menu {
   position: fixed;
   background: linear-gradient(to right, var(--vivid) 2%, var(--plum) 2%, black);
-  z-index: 9;
+  z-index: 98;
   left: 0;
   top: 0;
 
@@ -478,7 +478,7 @@ h4.menu-titling.hide {
   position: fixed;
   top: 3.5rem;
   left: 2rem;
-  z-index: 10;
+  z-index: 100;
   background-color: var(--vivid);
   padding: 1rem;
   border-radius: 100%;

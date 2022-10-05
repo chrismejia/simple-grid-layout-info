@@ -17,8 +17,16 @@ export default function ChallengeSpecs({
           {gap && ` | Gap: ${gap}`}
         </p>
       </div>
-      <div className="challenge-width">{`${cols} cols`}</div>
-      <div className="challenge-height">{`${rows} rows`}</div>
+      {cols && (
+        <div className="challenge-width">
+          {cols === 1 ? `${cols} col` : `${cols} cols`}
+        </div>
+      )}
+      {rows && (
+        <div className="challenge-height">
+          {rows === 1 ? `${rows} col` : `${rows} rows`}
+        </div>
+      )}
       <div className="challenge">{example}</div>
     </div>
   );
