@@ -117,20 +117,25 @@ export default function Challenges() {
 
       <SingleChallenge {...squareKnot}>
         <ChallengeSpecs
-          width={700}
-          height={700}
+          width={500}
+          height={500}
           cols={7}
           rows={7}
           example={<PlainKnot />}
         />
-
         <ChallengeSpecs
           width={500}
           height={500}
           cols={7}
           rows={7}
           example={<StyledKnot />}
-        ></ChallengeSpecs>
+        >
+          <Divider />
+          <p>
+            Extra Credit: Build a stylized square knot that has rounded corners
+            and "overlapping" segments.
+          </p>
+        </ChallengeSpecs>
       </SingleChallenge>
 
       <SingleChallenge {...interlockingSquares}>
