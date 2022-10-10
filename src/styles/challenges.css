@@ -5,15 +5,17 @@
 /****************
 * Square Knot
 *****************/
+.styled-knot,
 .square-knot {
-  height: 700px;
-  width: 700px;
+  height: 490px;
+  width: 490px;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
   column-gap: 0;
 }
 
-.square-knot * {
+.square-knot *,
+.styled-knot * {
   display: grid;
   place-items: center;
   font-weight: bold;
@@ -73,19 +75,19 @@
 
 /* Directional gradients to black */
 .l-to-black {
-  background: linear-gradient(to right, var(--vivid) 50%, var(--purp));
+  background: linear-gradient(to right, var(--purp) 50%, darken(var));
 }
 
 .r-to-black {
-  background: linear-gradient(to left, var(--vivid) 50%, var(--purp));
+  background: linear-gradient(to left, var(--purp) 50%, darken(var));
 }
 
 .t-to-black {
-  background: linear-gradient(to bottom, var(--vivid) 50%, var(--purp));
+  background: linear-gradient(to bottom, var(--purp) 50%, darken(var));
 }
 
 .b-to-black {
-  background: linear-gradient(to top, var(--vivid) 50%, var(--purp));
+  background: linear-gradient(to top, var(--purp) 50%, darken(var));
 }
 
 /**************************************

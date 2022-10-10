@@ -30,6 +30,7 @@ import {
   tiledFloor_jsx,
   tiledFloor_css,
 } from "../components/chapters/06-challenges/ex-code/tiledFloor.code";
+import StyledKnot from "../components/chapters/06-challenges/visuals/C7-StyledKnot";
 
 export default function Challenges() {
   const {
@@ -122,6 +123,14 @@ export default function Challenges() {
           rows={7}
           example={<PlainKnot />}
         />
+
+        <ChallengeSpecs
+          width={500}
+          height={500}
+          cols={7}
+          rows={7}
+          example={<StyledKnot />}
+        ></ChallengeSpecs>
       </SingleChallenge>
 
       <SingleChallenge {...interlockingSquares}>
@@ -226,7 +235,7 @@ export default function Challenges() {
         </ChallengeSpecs>
 
         <ChallengeSpecs
-          width={50}
+          width={560}
           height={560}
           cols={6}
           rows={6}
